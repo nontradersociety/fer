@@ -404,6 +404,21 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, ‘คัน’) !== false ) {
+                $text = ‘ใจเย็นๆ รอสัญญาณก่อน รีบเข้าเจ็บตัวได้นะ’;
+                $case = 1;
+            }
+
+            if (strpos($textinput, ‘แข็ง’) !== false ) {
+                $text = ‘ถ้าโดนกระแทกบ่อยๆก็อาจจะทะลุได้นะ ระวังกันด้วย’;
+                $case = 1;
+            }
+
+            if (strpos($textinput, ‘ฝันดี’) !== false || strpos($textinput, ‘หลับ’) !== false || strpos($textinput, ‘นอน’) !== false || strpos($textinput, ‘night’) !== false  || strpos($textinput, ‘gn’) !== false ) {
+                $text = ‘Good Night นะครับ ถ้ามีออเดอร์ตั้ง SL กำไรไว้ด้วยนะ’;
+                $case = 1;
+            }
+
             if (strpos($textinput, ‘เซ็ง’) !== false ) {
                 $rand = rand(0,1);
                 if($rand == 0){
