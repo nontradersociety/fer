@@ -503,6 +503,11 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, ‘สวัสดี’) !== false ) {
+                $text = ‘สวัสดีครับ’;
+                $case = 1;
+            }
+
             if (strpos($textinput, 'ตะกร้า') !== false || strpos($textinput, 'ตระกร้า') !== false || strpos($textinput, 'finviz') !== false   ) {
                 $text = 'เช็คอันดับค่าเงินได้ที่นี่
 
