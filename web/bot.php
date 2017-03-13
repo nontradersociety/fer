@@ -1,11 +1,10 @@
 <?php
-$access_token = 'S7u+m3LPEnv5g88DA1U/cgwTzJjBmVARDOKuCMsoBgIpi9kiltPJhQS3wi1x98au1DZpgwrYzYbtzKD0ze1C9LETZaGU7Jp2RD8vHsGOgDl3lwaTQcmBXs31PFffCp/Bl2UszxyvwRRaWvSlEQ/HOAdB04t89/1O/w1cDnyilFU=';
+$access_token = '2VpxkqV0Vz54m3WU3OVwQVE29YtZ3a0yQYuTla4cm6wvb69soXq7hMWvfGl5KH8OmgABT6iunly2fcdr0X/UG+kswxOSiP13+fqi09GYzbtuwrU+/BHjYhODTi5rVypFd1vVUVr2XmytvsgPxdivwAdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
-include_once('dom.php');
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
     // Loop through each event
