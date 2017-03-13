@@ -228,7 +228,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘ขมับ’) !== false) {
-                $rand = rand(0, 1);
+                $rand = rand(0, 2);
                 if($rand == 0){
                     $text = ‘จะขมับใคร’;
                 }else{
@@ -247,9 +247,9 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'บอ ท') !== false ||strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false) {
+            if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false) {
                 $case = 1;
-                $rand = rand(0, 1);
+                $rand = rand(0, 2);
                 if($rand == 1){
                     $text = ‘ใครบอท บ้าป่าว’;
                 }else{
@@ -258,8 +258,8 @@ if (!is_null($events['events'])) {
 
             }
 
-            if (strpos($textinput, 'มึง') !== false ||strpos($textinput, ‘กู’) !== false ||strpos($textinput, ‘เหีย’) !== false ) {
-                $rand = rand(0, 1);
+            if (strpos($textinput, 'มึง') !== false || strpos($textinput, ‘กู’) !== false || strpos($textinput, ‘เหีย’) !== false ) {
+                $rand = rand(0, 2);
                 $case = 1;
                 if($rand == 1){
                     $text = ‘พูดจาให้สุภาพหน่อยนะ’;
@@ -303,7 +303,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘แอ็ค’) !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 2);
                 if ($rand == 0) {
                     $text = ‘หมายถึง คุณวรวัฒน์ นาคแนวดี ใช่มั๊ย’;
                     $case = 1;
@@ -354,7 +354,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘ทอง’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘buy หรือ sell ดีละ’;
                 }elseif($rand == 1){
@@ -364,7 +364,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘buy’) !== false || strpos($textinput, ‘sell’) !== false || strpos($textinput, ‘บาย’) !== false || strpos($textinput, ‘เซล’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘กี่ lot ดี’;
                 }elseif($rand == 1){
@@ -384,7 +384,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘เฮด’) !== false || strpos($textinput, ‘เฮจ’) !== false || strpos($textinput, ‘hedg’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘เป็นสิ่งที่ไม่อยากให้ทำเลย แต่ถ้ามันจำเป็นก็ทำไปเถอะ’;
                 }elseif($rand == 1){
@@ -394,7 +394,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘เหนื่อย’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘หากเหนื่อยนักขอจงหยุดพักเสียก่อน อย่าใจร้อนรีบไปเดี๋ยวมันไม่เข้าที’;
                 }elseif($rand == 1){
@@ -420,7 +420,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘เซ็ง’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘ใจเย็นๆ สูดหายใจเข้าลึกๆ’;
                 }elseif($rand == 1){
@@ -430,7 +430,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘เงียบ’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘ให้พักบ้างเถอะ ซัด m-150 ไป 2 ลังละ’;
                 }elseif($rand == 1){
@@ -440,7 +440,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘โหด’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘ธรรมด๊า’;
                 }elseif($rand == 1){
@@ -450,7 +450,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, ‘เกรียน’) !== false || strpos($textinput, ‘เกียน’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘ว่าใครเกรียนเดี๋ยวโดนเตะออกจากห้อง’;
                 }elseif($rand == 1){
@@ -461,18 +461,18 @@ if (!is_null($events['events'])) {
 
 
             if (strpos($textinput, ‘เหล้า’) !== false || strpos($textinput, ‘เบีย’) !== false || strpos($textinput, ‘เมา’) !== false || strpos($textinput, ‘ปาตี้’) !== false || strpos($textinput, ‘ปาร์ตี้’) !== false || strpos($textinput, ‘party’) !== false  ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘จัดไปอย่าให้เสีย ที่ไหนว่ามา the pimp ดีมั๊ย’;
                 }elseif($rand == 1){
-                    $img = ‘http://www.bartendermixed.com/wp-content/uploads/2011/06/alcohol-bottles.jpg’;
+                    $img = ‘https://www.bartendermixed.com/wp-content/uploads/2011/06/alcohol-bottles.jpg’;
 		    $case = 2;
                 }
                 $case = 1;
             }
 
             if (strpos($textinput, ‘ล้าง’) !== false || strpos($textinput, ‘คัท’) !== false || strpos($textinput, ‘คัด’) !== false || strpos($textinput, ‘cut’) !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = ‘จงเชื่อในการสร้างใหม่’;
                 }elseif($rand == 1){
@@ -526,7 +526,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 $case = 1;
             }
 
-            if (strpos($textinput, '555') !== false || strpos($textinput, ‘ฮา’) !== false || strpos($textinput, ‘ฮ่า’) !== false || strpos($textinput, ‘ฮ่าๆ’) !== false || strpos($textinput, ‘ขำ’) !== false) {
+            if (strpos($textinput, '555') !== false || strpos($textinput, ‘ฮา’) !== false || strpos($textinput, ‘ฮ่า’) !== false || strpos($textinput, ‘ฮ่าๆ’) !== false || strpos($textinput, ‘ขำ’) !== false ) {
                 $rand = rand(0,1);
                 if($rand == 0){
                     $array = [
