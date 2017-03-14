@@ -228,21 +228,51 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'fuck') !== false ) {
-                $rand = rand(0, 2);
+                $rand = rand(0, 4);
                 if($rand == 0){
-                    $text = 'จะขมับใคร';
+                    $text = 'fuck พ่องมึงดิ';
+                }elseif($rand == 1){
+                    $text = 'Bullshit !!';
+                }elseif($rand == 2){
+                    $img = 'https://i.ytimg.com/vi/m-KTUvkMEIw/maxresdefault.jpg';
+                    $case = 2;
+                }elseif($rand == 3){
+                    $text = 'fuck แม่งมึงอะ';
                 }else{
-                    $text = 'เดี๋ยวจัดให้หนักๆ';
+                    $text = 'นี่มึงอยากมีเรื่องใช่่ป่ะ';
                 }
                 $case = 1;
             }
 
             if (strpos($textinput, 'หวย') !== false || strpos($textinput, 'huay') !== false) {
-                $rand = rand(0, 2);
+                $rand = rand(0, 4);
                 if($rand == 0){
                     $text = '000 1000x1000 ไป';
+                }elseif($rand == 1){
+                    $text = 'ใครมีเลขเด็ดก็บอกกันบ้าง';
+                }elseif($rand == 2){
+                    $text = 'จะรวยหรือจะเรียบวะเนี่ย';
+                }elseif($rand == 3){
+                    $text = 'มือทำรวยหวยทำจน';
                 }else{
                     $text = 'รวมสำนักอาจารย์ http://www.lotteryhot.net';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'รวย') !== false || strpos($textinput, 'rich') !== false) {
+                $rand = rand(0, 4);
+                if($rand == 0){
+                    $text = 'คนไหนรวยขอดูหน้าหน่อยดิ๊';
+                }elseif($rand == 1){
+                    $text = 'รวยแล้วก็มาแบ่งกันใช้บ้าง';
+                }elseif($rand == 2){
+                    $text = 'รวยจริงป่าว';
+                }elseif($rand == 3){
+                    $img = 'http://www.komando.com/wp-content/uploads/2014/04/moneyh.jpg';
+                    $case = 2;
+                }else{
+                    $text = 'เอามาเติมพอร์ตหน่อยดิ๊';
                 }
                 $case = 1;
             }
@@ -250,19 +280,11 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'โต๊ด') !== false ) {
                 $rand = rand(0, 2);
                 if($rand == 0){
-                    $text = 'โต๊ดได้น้อยอ่ะ 100 เอง';
+                    $text = 'โต๊ดได้น้อยอ่ะ บาทละ 100 เอง';
+                }elseif($rand == 1){
+                    $text = 'มีทีเด็ดก็ตรงหนักๆไปเลย';
                 }else{
-                    $text = 'ชอบเล่นตรงๆมากกว่าอ่ะ';
-                }
-                $case = 1;
-            }
-
-            if (strpos($textinput, 'เต็ง') !== false ) {
-                $rand = rand(0, 2);
-                if($rand == 0){
-                    $text = 'ถ้าบอล บอลชุดดีกว่า';
-                }else{
-                    $text = 'บอลหรือหวย';
+                    $text = 'ชอบเล่นตรงมากกว่าอ่ะ';
                 }
                 $case = 1;
             }
@@ -279,27 +301,37 @@ if (!is_null($events['events'])) {
 
             if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false) {
 
-                $rand = rand(0, 1);
+                $rand = rand(0, 4);
                 if($rand == 0){
                     $text = 'ใครบอท บ้าป่าว';
+                }elseif($rand == 1){
+                    $text = 'AI ไม่ใช่ bot';
+                }elseif($rand == 2){
+                    $text = 'เขาเรียกปัญญาประดิษฐ์ ไม่ได้รู้เรื่องเล๊ย';
+                }elseif($rand == 3){
+                    $text = 'I am Artificial Intelligence.';
                 }else{
-                    $text = 'แอดมินเช็คห้องด้วยนะ ว่าคนไหนเป็นบอท เดี๋ยวจะเตะออกจากห้อง';
+                    $text = 'ห้องนี้ไม่มีบอทนะ';
                 }
                 $case = 1;
             }
 
-            if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'เหีย') !== false || strpos($textinput, 'กรู') !== false || strpos($textinput, 'มรึง') !== false ) {
-                $rand = rand(0, 2);
+            if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'กรู') !== false || strpos($textinput, 'มรึง') !== false ) {
+                $rand = rand(0, 3);
                 if($rand == 0){
-                    $text = 'พูดจาให้สุภาพหน่อยนะ';
+                    $text = 'พูดจาให้มันเพราะๆหน่อยเป็นป่ะ';
+                }elseif($rand == 1){
+                    $text = 'มึง-กู กับใคร สนิทกับกูไง๊';
+                }elseif($rand == 2){
+                    $text = 'อย่าใช้ภาษาพ่อขุนรามกูไม่ชอบ';
                 }else{
-                    $text = 'พูดดีๆหน่อย อย่าต้องให้หัวร้อน';
+                    $text = 'มึงจะใช้้ภาษาพ่อขุนรามใช่ป่ะ';
                 }
                 $case = 1;
             }
 
             if (strpos($textinput, 'หิว') !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 6);
                 if ($rand == 0)
                 {
                     //กะเพราะ
@@ -376,7 +408,7 @@ if (!is_null($events['events'])) {
                     $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/181392_407913152563579_517848466_n.jpg?oh=49ce38b5ff3052219fcfdf8aafe501fd&oe=5966D8C0';
                     $case = 2;
                 } else {
-                    $text = 'ใช่ที่หน้าตาหล่อๆป่าว';
+                    $text = 'หน้าตาดีนะ อ.โบ อ่ะ';
                     $case = 1;
                 }
 
@@ -407,11 +439,13 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false ) {
-                $rand = rand(0,2);
+                $rand = rand(0,3);
                 if($rand == 0) {
                     $text = 'เอาไว้ฟาดหัวมึงอะครับ';
                 }elseif($rand == 1) {
                     $text = 'ควยอะไรละครับ';
+                }elseif($rand == 2) {
+                    $text = 'กูมีไม่ต้องแจก';
                 }else {
                     $text = 'อ้าวๆ อยากมีเรื่องว่างั้น';
                 }
@@ -428,14 +462,15 @@ if (!is_null($events['events'])) {
                     $text = 'panic หรือป่าว';
                 } elseif($rand == 3){
                     $text = 'สงสัยจะไปดาวนาแม๊ก';
-                } elseif($rand == 4){
-                    $text = 'panic หรือป่าว';
+                } else{
+                    $img = 'https://i.ytimg.com/vi/DUnO7weCfdM/maxresdefault.jpg';
+                    $case = 2;
                 }
                 $case = 1;
             }
 
             if (strpos($textinput, 'ทุบ') !== false ) {
-                $rand = rand(0,3);
+                $rand = rand(0,4);
                 if($rand == 0){
                     $text = 'สงสัยจะไปแกนโลก';
                 }elseif($rand == 1){
@@ -444,6 +479,9 @@ if (!is_null($events['events'])) {
                     $text = 'panic หรือป่าว';
                 }elseif($rand == 3){
                     $text = 'ทุบหนักๆ';
+                }else{
+                    $img = 'http://files.gamebanana.com/img/ico/sprays/mario_with_hammer_preview.png';
+                    $case = 2;
                 }
                 $case = 1;
             }
@@ -452,6 +490,8 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'buy หรือ sell ดีละ';
+                }elseif($rand == 1){
+                    $text = 'ผันผวนมั๊ยช่วงนี้';
                 }else{
                     $text = 'ตอนนี้เล่นหน้าไหนกัน';
                 }
@@ -483,7 +523,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'เฮด') !== false || strpos($textinput, 'เฮจ') !== false || strpos($textinput, 'hedg') !== false ) {
                 $rand = rand(0,2);
                 if($rand == 0){
-                    $text = 'เป็นสิ่งที่ไม่อยากให้ทำเลย แต่ถ้ามันจำเป็นก็ทำไปเถอะ';
+                    $text = 'เป็นสิ่งที่ไม่น่าทำ แต่ถ้ามันจำเป็นก็ทำไปเถอะ';
                 }else{
                     $text = 'ถึงกับเฮดเลยหรอ ขอให้ปลดได้ไวๆนะ';
                 }
@@ -494,6 +534,8 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'หากเหนื่อยนักขอจงหยุดพักเสียก่อน อย่าใจร้อนรีบไปเดี๋ยวมันไม่เข้าที';
+                }elseif($rand == 1){
+                    $text = 'เหนื่อยก็ไปพักผ่อนไป';
                 }else{
                     $img = 'https://i63.tinypic.com/35cmnn4.png';
                     $case = 2;
@@ -505,8 +547,10 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'แหนะๆ ไปทำอะไรมาเพลีย';
+                }elseif($rand == 1){
+                    $text = 'เพลียกราฟหรือเพลียอะไร';
                 }else{
-                    $text = 'ก็ไปพักผ่อนบ้าง';
+                    $text = 'ไม่หลับไม่นอนก็เป็นงี้แหละ';
                 }
                 $case = 1;
             }
@@ -522,14 +566,25 @@ if (!is_null($events['events'])) {
                     $text = 'ถ้าโดนกระแทกบ่อยๆก็อาจจะทะลุได้นะ ระวังกันด้วย';
                 }elseif($rand == 1){
                     $text = 'มันตรงกับจุดกลับตัว TF ไหนป่าว เช็คหน่อย';
+                }elseif($rand == 2){
+                    $text = 'เจอป้าเยกับลุงทรัมป์จะแข็งไหวหรอ 555';
                 }else{
-                    $text ='แท่งเทียนจุดกลับตัวขนาดใหญ่มากมั๊ย';
+                    $text ='ตรงกับจุดกลับตัวหลายคู่เลยมั๊ย';
                 }
                 $case = 1;
             }
 
             if (strpos($textinput, 'ฝันดี') !== false || strpos($textinput, 'หลับ') !== false || strpos($textinput, 'นอน') !== false || strpos($textinput, 'night') !== false  || strpos($textinput, 'gn') !== false ) {
-                $text = 'Good Night นะครับ ถ้ามีออเดอร์ตั้ง SL กำไรไว้ด้วยนะ';
+                $rand = rand(0,3);
+                if($rand == 0){
+                    $text = 'ฝันดีนะครับ';
+                }elseif($rand == 1){
+                    $text = 'Good Night.';
+                }elseif($rand == 2){
+                    $text = 'Sweet Dream ครับ';
+                }else{
+                    $text = 'Good Night ครับ ถ้ามีออเดอร์ตั้ง SL กำไรไว้ด้วยนะ';
+                }
                 $case = 1;
             }
 
@@ -537,28 +592,25 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'ใจเย็นๆ สูดหายใจเข้าลึกๆ';
+                }elseif($rand == 1){
+                    $text = 'เซ็งอะไร';
                 }else{
-                    $text = 'ยังงี้ต้องดื่มให้หายเซ็ง';
+                    $text = 'คืนนี้จัดไปให้หายเซ็ง';
                 }
                 $case = 1;
             }
-
-            if (strpos($textinput, 'สปาย') !== false || strpos($textinput, 'spy') !== false ) {
-                $rand = rand(0,2);
-                if($rand == 0){
-                    $text = 'คนไหน คนไหน เดี๋ยวจัดให้หนัก';
-                }else{
-                    $text = 'ใครแอบแฝงรีบออกไปซะ อย่าให้หัวร้อน';
-                }
-                $case = 1;
-            }
+            
 
             if (strpos($textinput, 'เงียบ') !== false ) {
-                $rand = rand(0,2);
+                $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'ให้พักบ้างเถอะ ซัด m-150 ไป 2 ลังละ';
+                }elseif($rand == 1){
+                    $text = 'จะให้พูดอะไรมากมาย เหนื่อยเป็นเข้าใจป่ะ';
+                }elseif($rand == 2){
+                    $text = 'พอใจอ่ะ มีปัญหา ?';
                 }else{
-                    $text = 'เดี๋ยวเปิดเพลงให้จะได้ไม่เงียบ';
+                    $text = 'เดี๋ยวเปิดเพลงให้ปะจะได้ไม่เงียบ';
                 }
                 $case = 1;
             }
@@ -567,6 +619,8 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'ธรรมด๊า';
+                }elseif($rand == 1){
+                    $text = 'โหดสัดรัสเซีย ไนจีเรียอ่ะ';
                 }else{
                     $text = 'อยากเห็นยิ่งกว่านี้ป่ะ';
                 }
@@ -574,14 +628,23 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'แม้ง') !== false || strpos($textinput, 'แม่ง') !== false ) {
-                $text = 'แม้งอะไรละ พูดให้มันดีๆ';
+                $rand = rand(0,1);
+                if($rand == 0){
+                    $text = 'พูดดีๆได้ป่ะ';
+                }else{
+                    $text = 'แม้งอะไรละ พูดให้มันดีๆ';
+                }
                 $case = 1;
             }
 
             if (strpos($textinput, 'เกรียน') !== false || strpos($textinput, 'เกียน') !== false ) {
-                $rand = rand(0,2);
+                $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'ว่าใครเกรียนเดี๋ยวโดนเตะออกจากห้อง';
+                }elseif($rand == 1){
+                    $text = 'มึงอะเกรียน';
+                }elseif($rand == 2){
+                    $text = 'เดี๋ยวมึงจะเกรียม';
                 }else{
                     $text = 'ไม่เกรียนแค่สกินเฮด';
                 }
@@ -611,7 +674,14 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'หี') !== false ) {
-                $text = 'พูดจาให้สุภาพหน่อย เดี๋ยวจะโดนเตะออกจากกลุ่ม';
+                $rand = rand(0,2);
+                if($rand == 0){
+                    $text = 'แม่งมึงอะดิ';
+                }elseif($rand == 1){
+                    $text = 'ทำไม คันหรอ';
+                }else{
+                    $text = 'พูดจาดีๆหน่อยสัส';
+                }
                 $case = 1;
             }
 
@@ -619,6 +689,8 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'ปัญญาที่จัดรายการปริศนาฟ้าแลปอะหรอ';
+                }elseif($rand == 1){
+                    $text = 'ปัญญา นิรันด์กุล ใช่ป่ะ';
                 }else{
                     $text = 'ว่าตัวเองทำไมครับ';
                 }
@@ -629,14 +701,16 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'ต้องพูดว่ารับประทาน';
+                }elseif($rand == 1){
+                    $text = 'จะแดกอะไรละ';
                 }else{
-                    $text = 'พูดเพราะๆหน่อย';
+                    $text = 'พูดเพราะๆหน่อยดิวะ';
                 }
                 $case = 1;
             }
 
             if (strpos($textinput, 'สดชื่น') !== false ) {
-                $rand = rand(0,2);
+                $rand = rand(0,1);
                 if($rand == 0){
                     $text = 'ระวังลื่นถ้าสดจัด';
                 }else{
@@ -646,11 +720,13 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'กะทะ') !== false || strpos($textinput, 'กระทะ') !== false ) {
-                $rand = rand(0,5);
+                $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'หมูกระทะจะเยียวยาทุกสิ่ง';
                 }elseif($rand == 1) {
                     $text = 'ไม่เบื่อไง๊ กินกันบ่อยเกิน';
+                }elseif($rand == 2) {
+                    $text = 'หมูกระทะอีกแล้วหรอ';
                 }else{
                     $text = 'กินกันบ่อยๆระวังอ้วน';
                 }
@@ -658,11 +734,13 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false  || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false) {
-                $rand = rand(0,5);
+                $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'ว่าตัวเองทำไมอ่ะ';
                 }elseif($rand == 1) {
-                    $text = 'ไม่เบื่อไง๊ กินกันบ่อยเกิน';
+                    $text = 'มึงอะกาก';
+                }elseif($rand == 2) {
+                    $text = 'กากพ่อง';
                 }else{
                     $text = 'ว่าตัวเองซะงั้น';
                 }
@@ -730,7 +808,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
             if (strpos($textinput, 'เงินไม่เข้า') !== false || strpos($textinput, 'เงินยังไม่เข้า') !== false ) {
-                $text = 'หลังจากโอนเงินและทำตามขั้นตอนของระบบแล้ว รอ 1-3 วันทำการ ถ้าเงินยังไม่เข้ารบกวนส่งหลักฐานการโอนเงินไปที่ finance@168fx.com และ support@168fx.com ครับ';
+                $text = 'หลังจากทำตามขั้นตอนของระบบแล้ว รอ 1-3 วันทำการ ถ้ายังไม่เข้า success รบกวนส่งหลักฐานไปที่ finance@168fx.com และ support@168fx.com ครับ';
                 $case = 1;
             }
 
@@ -740,7 +818,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
             if (strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false || strpos($textinput, 'ฮ่า') !== false || strpos($textinput, 'ฮ่าๆ') !== false || strpos($textinput, 'ขำ') !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,4);
                 if($rand == 0){
                     $array = [
                         "id" => "325708",
@@ -749,6 +827,12 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                         "stickerId" => "100"
                     ];
                     $case = 4;
+                }elseif($rand == 1) {
+                    $text = 'จะขำอะไรกันนักหนา';
+                }elseif($rand == 2) {
+                    $text = '55555';
+                }elseif($rand == 3) {
+                    $text = '555+';
                 }else{
                     $text = 'ขำท้องแข็งละ';
                     $case = 1;
