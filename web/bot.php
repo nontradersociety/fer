@@ -313,16 +313,16 @@ if (!is_null($events['events'])) {
                     $text = 'อ.หมวย UJ รู้จักป่าว';
                     $case = 1;
                 }elseif($rand == 1){
-                    $img = 'http://i65.tinypic.com/bgwols.jpg';
+                    $img = 'https://i65.tinypic.com/bgwols.jpg';
                     $case = 2;
                 }elseif($rand == 2){
-                    $img = 'http://i64.tinypic.com/mx0r2x.jpg';
+                    $img = 'https://i64.tinypic.com/mx0r2x.jpg';
                     $case = 2;
                 }elseif($rand == 3){
-                    $img = 'http://i63.tinypic.com/2my9sgp.jpg';
+                    $img = 'https://i63.tinypic.com/2my9sgp.jpg';
                     $case = 2;
                 } elseif($rand == 4) {
-                    $img = 'http://i66.tinypic.com/2hs0mt5.jpg';
+                    $img = 'https://i66.tinypic.com/2hs0mt5.jpg';
                     $case = 2;
                 }else {
                     $text = 'ที่ชอบกินหมูกระทะอะนะ';
@@ -332,15 +332,15 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'bo') !== false || strpos($textinput, 'โบ') !== false || strpos($textinput, 'โบว') !== false ) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'อ.โบ สายซิ่งใช่มั๊ย';
                     $case = 1;
                 }elseif($rand == 1){
-                    $img = 'http://i68.tinypic.com/2a94fg7.jpg';
+                    $img = 'https://i68.tinypic.com/2a94fg7.jpg';
                     $case = 2;
                 }elseif($rand == 2){
-                    $img = 'http://i63.tinypic.com/2mq3j88.jpg';
+                    $img = 'https://i63.tinypic.com/2mq3j88.jpg';
                     $case = 2;
                 } else {
                     $text = 'ใช่ที่หน้าตาหล่อๆป่าว';
