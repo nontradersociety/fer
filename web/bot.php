@@ -237,6 +237,16 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'หวย') !== false || strpos($textinput, 'huay') !== false) {
+                $rand = rand(0, 2);
+                if($rand == 0){
+                    $text = '000 1000x1000 ไป';
+                }else{
+                    $text = 'รวมสำนักอาจารย์ http://www.lotteryhot.net';
+                }
+                $case = 1;
+            }
+
             if (strpos($textinput, 'fuck') !== false || strpos($textinput, 'fck') !== false) {
                 $case = 1;
                 $rand = rand(0, 3);
@@ -258,7 +268,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'เหีย') !== false || strpos($textinput, 'กรู') !== false || strpos($textinput, 'กุ') !== false || strpos($textinput, 'มรึง') !== false ) {
+            if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'เหีย') !== false || strpos($textinput, 'กรู') !== false || strpos($textinput, 'มรึง') !== false ) {
                 $rand = rand(0, 2);
                 if($rand == 0){
                     $text = 'พูดจาให้สุภาพหน่อยนะ';
@@ -313,16 +323,16 @@ if (!is_null($events['events'])) {
                     $text = 'อ.หมวย UJ รู้จักป่าว';
                     $case = 1;
                 }elseif($rand == 1){
-                    $img = 'https://i65.tinypic.com/bgwols.jpg';
+                    $img = 'https://www.img.in.th/image/CXF4';
                     $case = 2;
                 }elseif($rand == 2){
-                    $img = 'https://i64.tinypic.com/mx0r2x.jpg';
+                    $img = 'https://www.img.in.th/image/CXFI';
                     $case = 2;
                 }elseif($rand == 3){
-                    $img = 'https://i63.tinypic.com/2my9sgp.jpg';
+                    $img = 'https://www.img.in.th/image/CXFR';
                     $case = 2;
                 } elseif($rand == 4) {
-                    $img = 'https://i66.tinypic.com/2hs0mt5.jpg';
+                    $img = 'https://www.img.in.th/image/CXFp';
                     $case = 2;
                 }else {
                     $text = 'ที่ชอบกินหมูกระทะอะนะ';
@@ -332,15 +342,18 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'bo') !== false || strpos($textinput, 'โบ') !== false || strpos($textinput, 'โบว') !== false ) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'อ.โบ สายซิ่งใช่มั๊ย';
                     $case = 1;
                 }elseif($rand == 1){
-                    $img = 'https://i68.tinypic.com/2a94fg7.jpg';
+                    $img = 'https://www.img.in.th/image/CXFX';
                     $case = 2;
                 }elseif($rand == 2){
-                    $img = 'https://i63.tinypic.com/2mq3j88.jpg';
+                    $img = 'https://www.img.in.th/image/CXFb';
+                    $case = 2;
+                }elseif($rand == 3){
+                    $img = 'https://www.img.in.th/image/CXF8';
                     $case = 2;
                 } else {
                     $text = 'ใช่ที่หน้าตาหล่อๆป่าว';
