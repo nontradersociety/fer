@@ -247,7 +247,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'โตด') !== false ) {
+            if (strpos($textinput, 'โต๊ด') !== false ) {
                 $rand = rand(0, 2);
                 if($rand == 0){
                     $text = 'โต๊ดได้น้อยอ่ะ 100 เอง';
@@ -257,7 +257,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'เตง') !== false ) {
+            if (strpos($textinput, 'เต็ง') !== false ) {
                 $rand = rand(0, 2);
                 if($rand == 0){
                     $text = 'ถ้าบอล บอลชุดดีกว่า';
