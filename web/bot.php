@@ -353,7 +353,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-            
+
             if (strpos($textinput, 'หิว') !== false) {
                 $rand = rand(0, 6);
                 if ($rand == 0)
@@ -549,7 +549,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-            
+
             if (strpos($textinput, 'ติดบาย') !== false || strpos($textinput, 'ติดbuy') !== false || strpos($textinput, 'ติดไม้buy') !== false || strpos($textinput, 'ติดไม้ buy') !== false  ) {
                 $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง buy limit ไว้';
                 $case = 1;
@@ -870,7 +870,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
             if (strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false || strpos($textinput, 'ฮ่า') !== false || strpos($textinput, 'ฮ่าๆ') !== false || strpos($textinput, 'ขำ') !== false ) {
-                $rand = rand(0,4);
+                $rand = rand(0,5);
                 if($rand == 0){
                     $array = [
                         "id" => "325708",
@@ -885,11 +885,12 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                     $text = 'พอได้ละมั้ง';
                 }elseif($rand == 3) {
                     $text = 'พอๆๆ น้ำหูน้ำตาไหลหมดละ';
+                }elseif($rand == 3) {
+                    $text = '5555';
                 }else{
                     $text = 'ขำท้องแข็งละ';
-                    $case = 1;
                 }
-
+                $case = 1;
             }
 
 
