@@ -289,14 +289,14 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'fuck') !== false || strpos($textinput, 'fck') !== false) {
-                $case = 1;
-                $rand = rand(0, 3);
+            if (strpos($textinput, 'ตีน') !== false || strpos($textinput, 'ตรีน') !== false) {
+                $rand = rand(0, 1);
                 if ($rand == 0) {
-                    $text = 'พูดจาให้มันเพราะๆหน่อยนะ';
+                    $text = 'พูดตีนกับใคร';
                 } else {
-                    $text = 'เอาภาษาไทยให้รอดนะก่อนค่อยพิมพ์อังกฤษ';
+                    $text = 'ใครจะกิน ?';
                 }
+                $case = 1;
             }
 
             if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false) {
@@ -521,7 +521,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เฮด') !== false || strpos($textinput, 'เฮจ') !== false || strpos($textinput, 'hedg') !== false ) {
-                $rand = rand(0,2);
+                $rand = rand(0,1);
                 if($rand == 0){
                     $text = 'เป็นสิ่งที่ไม่น่าทำ แต่ถ้ามันจำเป็นก็ทำไปเถอะ';
                 }else{
@@ -537,8 +537,7 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 1){
                     $text = 'เหนื่อยก็ไปพักผ่อนไป';
                 }else{
-                    $img = 'https://i63.tinypic.com/35cmnn4.png';
-                    $case = 2;
+                    $text = 'เหนื่อยมากมั๊ย';
                 }
                 $case = 1;
             }
@@ -599,7 +598,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-            
+
 
             if (strpos($textinput, 'เงียบ') !== false ) {
                 $rand = rand(0,3);
@@ -656,6 +655,8 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'จัดไปอย่าให้เสีย ที่ไหนว่ามา the pimp ดีมั๊ย';
+                }elseif($rand == 1){
+                    $text = '3 วัน 2 คืน ไปชิลๆ';
                 }else{
                     $img = 'https://www.bartendermixed.com/wp-content/uploads/2011/06/alcohol-bottles.jpg';
                     $case = 2;
@@ -667,6 +668,8 @@ if (!is_null($events['events'])) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'จงเชื่อในการสร้างใหม่';
+                }elseif($rand == 1){
+                    $text = 'ไม่ต้องเสียใจนะ สู้ๆ';
                 }else{
                     $text = 'ใจเย็นๆนะ เป็นกำลังใจให้';
                 }
@@ -780,7 +783,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'ตะกร้า') !== false || strpos($textinput, 'ตระกร้า') !== false || strpos($textinput, 'finviz') !== false   ) {
                 $text = 'เช็คอันดับค่าเงินได้ที่นี่
 
-https://www.tradersociety.org/finviz/';
+http://www.tradersociety.org/finviz/';
                 $case = 1;
             }
 
@@ -803,7 +806,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
             if (strpos($textinput, 'วิเคราะห์') !== false || strpos($textinput, 'วิเคราะ') !== false ) {
-                $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ https://www.tradersociety.org หรือ add line id @tradersociety ครับ ';
+                $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ http://www.tradersociety.org หรือ add line id @tradersociety ครับ ';
                 $case = 1;
             }
 
