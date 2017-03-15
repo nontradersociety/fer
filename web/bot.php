@@ -104,7 +104,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'สาว') !== false) {
+            if (strpos($textinput, 'สาว') !== false || strpos($textinput, 'นม') !== false) {
                 $rand = rand(1, 29);
                 switch ($rand) {
                     case 1:
@@ -294,7 +294,19 @@ if (!is_null($events['events'])) {
                 if ($rand == 0) {
                     $text = 'พูดตีนกับใคร';
                 } else {
-                    $text = 'ใครจะกิน ?';
+                    $text = 'ใครจะกินตีน ?';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'โม้') !== false ) {
+                $rand = rand(0, 2);
+                if ($rand == 0) {
+                    $text = 'ไม่ได้โม้ซักหน่อย';
+                }elseif($rand == 1){
+                    $text = 'ไม่ใช่สมรักษ์นะ ... ไม่ได้โม้ 555';
+                } else {
+                    $text = 'ว่าใครขี้โม้ ?';
                 }
                 $case = 1;
             }
@@ -330,6 +342,18 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'ลาบ') !== false ) {
+                $rand = rand(0, 2);
+                if($rand == 0){
+                    $text = 'จะกินลาบหรอ ขอลาบหมูนะ';
+                }elseif($rand == 1){
+                    $text = 'ร้านไหนเด็ดแนะนำหน่อยดิ๊';
+                }elseif($rand == 2){
+                    $text = 'ลาบนี่ของชอบเลย';
+                }
+                $case = 1;
+            }
+            
             if (strpos($textinput, 'หิว') !== false) {
                 $rand = rand(0, 6);
                 if ($rand == 0)
@@ -486,7 +510,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ทอง') !== false || strpos($textinput, 'uj') !== false || strpos($textinput, 'ยูเจ') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false ) {
+            if (strpos($textinput, 'ทอง') !== false || strpos($textinput, 'uj') !== false || strpos($textinput, 'ยูเจ') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false ) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'buy หรือ sell ดีละ';
@@ -499,17 +523,33 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'buy') !== false || strpos($textinput, 'sell') !== false || strpos($textinput, 'บาย') !== false || strpos($textinput, 'เซล') !== false ) {
-                $rand = rand(0,2);
+                $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'กี่ lot ดี';
                 }elseif($rand == 1){
                     $text = '100 Lot เลยดีมั๊ย';
                 }elseif($rand == 2){
                     $text = 'เทสตลาดซัก 1 Lot';
+                }else{
+                    $text = 'อยากจะกดแต่ใจไม่กล้า 55';
                 }
                 $case = 1;
             }
 
+            if (strpos($textinput, 'ปอด') !== false || strpos($textinput, 'ป็อด') !== false ) {
+                $rand = rand(0,3);
+                if($rand == 0){
+                    $text = 'ไม่ได้ป็อดหว่ะ';
+                }elseif($rand == 1){
+                    $text = 'ตลาดมันผันผวนไม่อยากเข้าไปเสี่ยง';
+                }elseif($rand == 2){
+                    $text = 'ดูเลเวลด้วย รุ่นนี้ไม่มีป๊อด';
+                }else{
+                    $text = 'ศิษย์ใครดูด้วย สะกดไม่เป็นนะคำนี้อ่ะ';
+                }
+                $case = 1;
+            }
+            
             if (strpos($textinput, 'ติดบาย') !== false || strpos($textinput, 'ติดbuy') !== false || strpos($textinput, 'ติดไม้buy') !== false || strpos($textinput, 'ติดไม้ buy') !== false  ) {
                 $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง buy limit ไว้';
                 $case = 1;
@@ -816,7 +856,16 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
             if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false || strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false ) {
-                $text = 'สัดไรละครับ';
+                $rand = rand(0,3);
+                if($rand == 0){
+                    $text = 'สัดกับใครวะ';
+                }elseif($rand == 1) {
+                    $text = 'เพื่อนเล่นมึงหรอ';
+                }elseif($rand == 2) {
+                    $text = 'ทำไมละสัด';
+                }else{
+                    $text = 'ด่ากู ? เดี๋ยวจะโดนไม่ใช่น้อย';
+                }
                 $case = 1;
             }
 
@@ -833,9 +882,9 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 }elseif($rand == 1) {
                     $text = 'จะขำอะไรกันนักหนา';
                 }elseif($rand == 2) {
-                    $text = '55555';
+                    $text = 'พอได้ละมั้ง';
                 }elseif($rand == 3) {
-                    $text = '555+';
+                    $text = 'พอๆๆ น้ำหูน้ำตาไหลหมดละ';
                 }else{
                     $text = 'ขำท้องแข็งละ';
                     $case = 1;
