@@ -260,6 +260,56 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'ป้าเย') !== false || strpos($textinput, 'เยเลน') !== false) {
+                $rand = rand(0, 4);
+                if($rand == 0){
+                    $text = 'คุณป้ามหาภัย มาทีไรบรรลัยทุกที';
+                }elseif($rand == 1){
+                    $text = 'จะทุบมั๊ยรอบนี้';
+                }elseif($rand == 2){
+                    $text = 'พาไปทัวแกนโลกหน่อยนะ';
+                }elseif($rand == 3){
+                    $text = 'มันจะลงอีก ... ไม่ใช่ทองนะ หมายถึง UJ 555';
+                }else{
+                    $img = 'http://static1.businessinsider.com/image/570ae4675124c950578b4567-506-253/obama-to-meet-fed-chair-yellen-on-monday.jpg';
+                    $case = 2;
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ทรัม') !== false || strpos($textinput, 'trump') !== false) {
+                $rand = rand(0, 4);
+                if($rand == 0){
+                    $text = 'คุณลุงผู้ที่รักความสงบ 55';
+                }elseif($rand == 1){
+                    $text = 'ได้ยินชื่อนี้แล้วเหมือนจะได้สัมผัสอากาศข้างบน';
+                }elseif($rand == 2){
+                    $text = 'พาไปทัวสวรรค์หน่อยคุณลุง';
+                }elseif($rand == 3){
+                    $text = 'ลุงจะพาไปบินซักกี่จุดดีรอบนี้';
+                }else{
+                    $img = 'http://static6.businessinsider.com/image/5755b5ed91058436008c7150-1190-625/janet-yellen-had-the-perfect-response-to-a-question-about-donald-trump-causing-a-global-economic-crisis.jpg';
+                    $case = 2;
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'คิดถึง') !== false ) {
+                $rand = rand(0, 4);
+                if($rand == 0){
+                    $text = 'คิดถึงใครกันนะ';
+                }elseif($rand == 1){
+                    $text = 'พูดงี้เขินเลยยย';
+                }elseif($rand == 2){
+                    $text = 'มีใครคิดถึง MOD บ้างมั๊ยนะ';
+                }elseif($rand == 3){
+                    $text = 'คิดถึงก็โทรมา ^^';
+                }else{
+                    $text = 'คิดถึงเหมือนกันแหละ จุ๊บๆ';
+                }
+                $case = 1;
+            }
+
             if (strpos($textinput, 'รวย') !== false || strpos($textinput, 'rich') !== false) {
                 $rand = rand(0, 4);
                 if($rand == 0){
@@ -321,7 +371,7 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 2){
                     $text = 'เขาเรียกปัญญาประดิษฐ์ ไม่ได้รู้เรื่องเล๊ย';
                 }elseif($rand == 3){
-                    $text = 'I am Artificial Intelligence.';
+                    $text = 'I am Artificial Intelligence. แปลออกมั๊ย ดูจากหน้าตาแล้วไม่น่าจะเข้าใจ';
                 }else{
                     $text = 'ห้องนี้ไม่มีบอทนะ';
                 }
@@ -393,7 +443,7 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'muay') !== false || strpos($textinput, 'muaey') !== false || strpos($textinput, 'หมวย') !== false ) {
+            if ( strpos($textinput, 'อ.หมวย') !== false || strpos($textinput, 'อาจารย์หมวย') !== false  ) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = 'อ.หมวย UJ รู้จักป่าว';
@@ -417,7 +467,7 @@ if (!is_null($events['events'])) {
 
             }
 
-            if (strpos($textinput, 'bo') !== false || strpos($textinput, 'โบ') !== false || strpos($textinput, 'โบว') !== false ) {
+            if ( strpos($textinput, 'อ.หมวย') !== false || strpos($textinput, 'อาจารย์โบ') !== false ) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'อ.โบ สายซิ่งใช่มั๊ย';
@@ -510,7 +560,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ทอง') !== false || strpos($textinput, 'uj') !== false || strpos($textinput, 'ยูเจ') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false ) {
+            if ( strpos($textinput, 'uj') !== false || strpos($textinput, 'ทอง') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false ) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'buy หรือ sell ดีละ';
@@ -613,7 +663,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ฝันดี') !== false || strpos($textinput, 'หลับ') !== false || strpos($textinput, 'นอน') !== false || strpos($textinput, 'night') !== false  || strpos($textinput, 'gn') !== false ) {
+            if (strpos($textinput, 'ฝันดี') !== false ) {
                 $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'ฝันดีนะครับ';
@@ -634,7 +684,7 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 1){
                     $text = 'เซ็งอะไร';
                 }else{
-                    $text = 'คืนนี้จัดไปให้หายเซ็ง';
+                    $text = 'คืนนี้ไปไหนว่ามา จะจัดให้หายเซ็ง';
                 }
                 $case = 1;
             }
@@ -729,7 +779,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ปัญญา') !== false ) {
+            /*if (strpos($textinput, 'ปัญญา') !== false ) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'ปัญญาที่จัดรายการปริศนาฟ้าแลปอะหรอ';
@@ -739,7 +789,7 @@ if (!is_null($events['events'])) {
                     $text = 'ว่าตัวเองทำไมครับ';
                 }
                 $case = 1;
-            }
+            }*/
 
             if (strpos($textinput, 'แดก') !== false ) {
                 $rand = rand(0,2);
@@ -778,13 +828,15 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false  || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false) {
-                $rand = rand(0,3);
+                $rand = rand(0,4);
                 if($rand == 0){
                     $text = 'ว่าตัวเองทำไมอ่ะ';
                 }elseif($rand == 1) {
                     $text = 'มึงอะกาก';
                 }elseif($rand == 2) {
                     $text = 'กากพ่อง';
+                }elseif($rand == 3) {
+                    $text = 'หนักหัวมึงไง๊';
                 }else{
                     $text = 'ว่าตัวเองซะงั้น';
                 }
@@ -828,6 +880,20 @@ http://www.tradersociety.org/finviz/';
                 $case = 1;
             }
 
+            if (strpos($textinput, 'ยืนยันตน') !== false || strpos($textinput, 'verify') !== false ) {
+                $text = 'วิธีการ Verify เอกสาร
+
+https://www.youtube.com/watch?v=c1aJdZBIWO0';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'copytrade') !== false ) {
+                $text = 'วิธีการ CopyTrade
+
+https://www.youtube.com/watch?v=f6MjuI4A1bw';
+                $case = 1;
+            }
+
             if (strpos($textinput, 'ฝากเงิน') !== false ) {
                 $text = 'วิธีฝากเงินผ่านหน้าเว็บ
 
@@ -847,7 +913,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
             if (strpos($textinput, 'วิเคราะห์') !== false || strpos($textinput, 'วิเคราะ') !== false ) {
-                $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ http://www.tradersociety.org หรือ add line id @tradersociety ครับ ';
+                $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ http://www.tradersociety.org หรือ add line id @tradersociety ครับ มีการวิเคราะห์ข่าวทุกเช้า ';
                 $case = 1;
             }
 
@@ -870,7 +936,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 $case = 1;
             }
 
-            if (strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false || strpos($textinput, 'ฮ่า') !== false || strpos($textinput, 'ฮ่าๆ') !== false || strpos($textinput, 'ขำ') !== false ) {
+            if (strpos($textinput, 'ฮ่าๆๆ') !== false ) {
                 $rand = rand(0,5);
                 if($rand == 0){
                     $array = [
@@ -889,7 +955,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 }elseif($rand == 3) {
                     $text = '5555';
                 }else{
-                    $text = 'ขำท้องแข็งละ';
+                    $text = 'ขำจนท้องแข็งละ';
                 }
                 $case = 1;
             }
