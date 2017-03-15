@@ -691,15 +691,16 @@ if (!is_null($events['events'])) {
             }
 
 
-            if (strpos($textinput, 'เหล้า') !== false || strpos($textinput, 'เบีย') !== false || strpos($textinput, 'เมา') !== false || strpos($textinput, 'ปาตี้') !== false || strpos($textinput, 'ปาร์ตี้') !== false || strpos($textinput, 'party') !== false  ) {
-                $rand = rand(0,2);
+            if (strpos($textinput, 'เหล้า') !== false || strpos($textinput, 'เบียร์') !== false || strpos($textinput, 'เมา') !== false || strpos($textinput, 'ปาร์ตี้') !== false || strpos($textinput, 'party') !== false  || strpos($textinput, 'Party') !== false || strpos($textinput, 'pub') !== false || strpos($textinput, 'Pub') !== false ) {
+                $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'จัดไปอย่าให้เสีย ที่ไหนว่ามา the pimp ดีมั๊ย';
                 }elseif($rand == 1){
                     $text = '3 วัน 2 คืน ไปชิลๆ';
+                }elseif($rand == 2){
+                    $text = 'ทองหล่อไป อย่างเด็ด';
                 }else{
-                    $img = 'https://www.bartendermixed.com/wp-content/uploads/2011/06/alcohol-bottles.jpg';
-                    $case = 2;
+                    $text = 'ร้านนั่งเล่น ทองหล่อปะละ เอาเงินไปละลายหน่อย';
                 }
                 $case = 1;
             }
