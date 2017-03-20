@@ -461,17 +461,17 @@ if (!is_null($events['events'])) {
                 } elseif
                 ($rand == 5){
                     //สปาเก็ตตี้
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/13938350_1258330927519265_5654713759923322084_n.jpg?oh=fb864e38777280c2b01070e1e6c6f749&oe=5933A236';
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14517345_1305286309490393_1566793180198975792_n.jpg?_nc_eui2=v1%3AAeFlAZAPrMwylhuHzPFjSTOQuPq76vO5jQq0bTjFfD-SAsXwk5LSTacFvUMkmGNyNmtdce_SX2kdbnutLNCLvskIy8UomRpKDa5Fat6XnlQo5BLRUX_msOBFAAZlQXzQwGk&oh=f5598c6bfe72250d1a2439d1ab512b2c&oe=59617591';
                     $case = 2;
                 } elseif
                 ($rand == 6){
                     //พิซซ่า
-                    $img = 'http://www.dekguide.com/wp-content/uploads/2015/10/Moom-Pak-มุมพัก-ร้านอาหารฮาลาล-02.jpg';
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14495234_1305286336157057_8736988554956258994_n.jpg?_nc_eui2=v1%3AAeFvpaRfaQWpjdsbN1-9L9Vk1RgpI-1reHRqm1mvG3Jg30_5dVoHs9OH71AcBll2d4PNiD8Kdv9VcIb8fRNLte4guz1uaIZWuY33Lg9QPWrKDtbX0n7mobZrXrRtwG7KkSc&oh=a3a2178bf090801ca8d14531ea4e3f56&oe=5925D590';
                     $case = 2;
                 } elseif
                 ($rand == 7){
-                    //ปู
-                    $img = 'http://ed.files-media.com/ud/images/1/140/418637/0409/La_Mer_Restaurant2.jpg';
+                    //ส้มตำปู
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/15283911_1361427370542953_7761482730005432833_n.jpg?_nc_eui2=v1%3AAeG04oMKnr0W2psGRE1Ikf4UJLaf410XsMhUVRR5q0-9QYMbGaljmN2DJpe2CXVe7CnzssgV9adesms8eiWPsniFd3ILYv4LpoOkRLBWGkdC0-laJd38nzCaDWLCJ9WYC28&oh=b30aa391507571c1bedef57b15ccf637&oe=5963960B';
                     $case = 2;
                 } elseif
                 ($rand == 8){
@@ -481,32 +481,32 @@ if (!is_null($events['events'])) {
                 } elseif
                 ($rand == 9){
                     //กุ้งเผา
-                    $img = 'http://img.painaidii.com/images/20140603_3_1401788620_741367.jpg';
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/15037097_1342648472420843_5223539816342288929_n.jpg?_nc_eui2=v1%3AAeHOwYti5iVuowj-c7cOevqsJ0jf-9ha_uPlIxTf8K8S8d9xlGxmCmlpaX4okhuhqZb1hdOszbcpcr8kc-9aoQ6fDZdlYMn6auIZmrc7fqaD58HGAuhJiB9C0oDKYtmxhGQ&oh=d57c162254c4a9f405b1ba26b1b00a27&oe=59693763';
                     $case = 2;
                 } elseif
                 ($rand == 10){
-                    //คอหมูย่าง
-                    $img = 'http://p3.isanook.com/bl/0/wo/up/2014/07/Food3.jpg';
+                    //ไก่ป๊อป
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/16681712_1451438271541862_6825978108435665747_n.jpg?_nc_eui2=v1%3AAeFF_EqcZj5d4zF17chNdlKrAE07gS-8I37k3WTEEEsMoEh3rm7OulxBJA5tBtP-5Kx-WvUiaDcd_kzN5jVoc5FM-9Wk88YxT6DEaUpuX1XYl23v9eoSHuYUFKDGQzEWupo&oh=232d9f34ace74412039ed58534ea03e8&oe=59570945';
                     $case = 2;
                 } elseif
                 ($rand == 11){
-                    //ต้มยำกุ้ง
-                    $img = 'http://www.engtest.net/UserFiles/Image/111111111111111/648592f99.jpeg';
+                    //น้ำแข็งใส
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/15747600_1393550303997326_9089658969736741474_n.jpg?_nc_eui2=v1%3AAeGy-OD_V7UrJJYgfDpLFcE2siCxQGEitNcXt9dftS0X97sRyBpxQs__BP-uy0Ic3IpMfyDsW_3fghvGh_Cq8rj4s1hutIT3_VgD5opfsNdEromZxgnAnrseJPA8APDV8TE&oh=3a9007c7ac5def2a346d586814cef4c0&oe=5961BD8A';
                     $case = 2;
                 } elseif
                 ($rand == 12){
-                    //กุ้งชุบแป้งทอด
-                    $img = 'http://f.ptcdn.info/775/010/000/1381418104-DSC1788res-o.jpg';
+                    //สเต๊ก
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14064244_1259240684094956_5699750533993144686_n.jpg?_nc_eui2=v1%3AAeG40yQP3cTY-FDLAqMY_b9mFRMjVZHZgxBGE-D9KYnaG7CAeQLdTNvX-IbzpN6g0fE2dehYi70wa0AJJ_k90s4oXdGueAILFggT5dqsTutTikx71LVIlMm0mbEWIYy7Yxw&oh=7985de19572878f86f5c12ef7228b569&oe=595F94B4';
                     $case = 2;
                 } elseif
                 ($rand == 13){
-                    //ผัดผงกระหรี่
-                    $img = 'http://2.bp.blogspot.com/-STYu9HhNwI4/Tgm0PoIckzI/AAAAAAAAAys/G2h4-NrE4Bc/w1200-h630-p-k-no-nu/%25E0%25B8%2597%25E0%25B8%25B0%25E0%25B9%2580%25E0%25B8%25A5%25E0%25B8%259C%25E0%25B8%25B1%25E0%25B8%2594%25E0%25B8%259C%25E0%25B8%2587%25E0%25B8%2581%25E0%25B8%25B0%25E0%25B8%25AB%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B9%2588.jpg';
+                    //หมูซีอิ๊ว
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/13692523_1238803829471975_3260471915492857128_n.jpg?_nc_eui2=v1%3AAeHNoU5fI4ArJnIOdmAagk0J8kIelEyjpb_9MTiA18DKSHWmQ5jr1w8nFdRAyqWDlcB6KrwqIFeQYML7gwyf9XxsctMTAw2NbA8pwz7DpLdyKp8bP2APKMmAt2uWtSWV5zg&oh=777292fbb415865af77c1937c0bf984d&oe=5972EC44';
                     $case = 2;
                 } elseif
                 ($rand == 14){
-                    //ข้าวเหนียวมะม่วง
-                    $img = 'http://millionaire-academy.com/wp-content/uploads/2013/01/ข้าวเหนียวมะม่วง.jpg';
+                    //แพนเค้ก
+                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14980612_1341613305857693_8945739289078424763_n.jpg?_nc_eui2=v1%3AAeFUF3mXBczyX9d4YUa4iX-0AEh1jrlgn99qc6Y_l5fpRLhEtRPzhWUOpo0JoUnuz1yrUUCepLhsrPDb0qalIbyxczFbrmZgyWUAZdk0WaQjWtRoibigLuY642IrDA9eVwY&oh=446a57ba44b65c144a8a869ce2faceb3&oe=59283395';
                     $case = 2;
                 }else {
                     $text = 'กินอะไรกันดีละ';
