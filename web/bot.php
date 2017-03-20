@@ -104,7 +104,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'สาว') !== false || strpos($textinput, 'นม') !== false) {
+            if (strpos($textinput, 'สาว') !== false ) {
                 $rand = rand(1, 29);
                 switch ($rand) {
                     case 1:
