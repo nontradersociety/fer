@@ -227,6 +227,43 @@ if (!is_null($events['events'])) {
 
             }
 
+            if(strpos($textinput, 'new') !== false ){
+                $message = '
+';
+                $html = file_get_contents('https://www.forexfactory.com/calendar.php?day=today');
+                /*** a new dom object ***/
+                $dom = new domDocument;
+
+                /*** load the html into the object ***/
+                $dom->loadHTML($html);
+
+                /*** discard white space ***/
+                $dom->preserveWhiteSpace = false;
+
+                /*** the table by its tag name ***/
+
+                $tables=getElementsByClass($dom, 'div', 'scoreBox');
+
+
+                /*** get all rows from the table ***/
+//$rows = $tables->item(0)->getElementsByTagName('tr');
+
+                /*** loop over the table rows ***/
+                foreach ($tables as $key => $row) {
+
+                    $div = $row->getElementsByTagName('div');
+                    $message .= '----- ' . $div->item(0)->nodeValue . ' -----
+';
+                    foreach ($row->getElementsByTagName('tr') as $data) {
+                        $message .= $data->nodeValue.'
+';
+                    }
+                }
+                $message = strip_tags($message);
+                $text = $message;
+                $case = 1;
+            }
+
             if (strpos($textinput, 'fuck') !== false ) {
                 $rand = rand(0, 4);
                 if($rand == 0){
@@ -357,7 +394,7 @@ if (!is_null($events['events'])) {
                 $rand = rand(0, 1);
                 if ($rand == 0) {
                     $text = 'พูดตีนกับใคร';
-                } else {
+                }else {
                     $text = 'ใครจะกินตีน ?';
                 }
                 $case = 1;
@@ -375,21 +412,21 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false) {
+            if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false || strpos($textinput, 'Bot') !== false) {
 
                 $rand = rand(0, 5);
                 if($rand == 0){
-                    $text = 'ใครบอท บ้าป่าว';
+                    $text = 'ใครบอท บ้าหรือป่าว';
                 }elseif($rand == 1){
-                    $text = 'AI ไม่ใช่ bot';
+                    $text = 'เรียกจังเลยบอท เดี๋ยวขมับซักทีดีมั้ง';
                 }elseif($rand == 2){
-                    $text = 'เขาเรียกปัญญาประดิษฐ์ ไม่ได้รู้เรื่องเล๊ย';
+                    $text = 'บอทอะไร ไหนใครบอท';
                 }elseif($rand == 3){
                     $text = 'I am Artificial Intelligence. แปลออกมั๊ย ดูจากหน้าตาแล้วไม่น่าจะเข้าใจ';
                 }elseif($rand == 4){
-                    $text = 'ก็บอกอยู่่ว่าไม่ใช่บอท';
+                    $text = 'ก็บอกอยู่่ว่าไม่ใช่บอท ชักหัวร้อนละนะ';
                 }else{
-                    $text = 'ห้องนี้ไม่มีบอทนะ';
+                    $text = 'ก็บอกอยู่ห้องนี้ไม่มีบอท ฟังภาษาคนไม่รู้เรื่องไง๊';
                 }
                 $case = 1;
             }
@@ -403,7 +440,7 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 2){
                     $text = 'อย่าใช้ภาษาพ่อขุนรามกูไม่ชอบ';
                 }else{
-                    $text = 'มึงจะใช้้ภาษาพ่อขุนรามใช่ป่ะ';
+                    $text = 'มึงจะใช้ภาษาพ่อขุนรามใช่ป่ะ';
                 }
                 $case = 1;
             }
@@ -540,7 +577,7 @@ if (!is_null($events['events'])) {
 
             }
 
-            if ( strpos($textinput, 'อ.หมวย') !== false || strpos($textinput, 'อาจารย์หมวย') !== false  ) {
+            if ( strpos($textinput, 'อาจารย์หมวย') !== false  ) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = 'อ.หมวย UJ รู้จักป่าว';
@@ -564,7 +601,7 @@ if (!is_null($events['events'])) {
 
             }
 
-            if ( strpos($textinput, 'อ.โบ') !== false || strpos($textinput, 'อาจารย์โบ') !== false ) {
+            if ( strpos($textinput, 'อาจารย์โบ') !== false ) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'อ.โบ สายซิ่งใช่มั๊ย';
@@ -648,7 +685,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'บิน') !== false ) {
-                $rand = rand(0,4);
+                $rand = rand(0,5);
                 if($rand == 0){
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
                     $case = 1;
@@ -658,17 +695,20 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 2){
                     $text = 'panic หรือป่าว';
                     $case = 1;
-                } elseif($rand == 3){
+                }elseif($rand == 3){
                     $text = 'สงสัยจะไปดาวนาแม๊ก';
                     $case = 1;
-                } else{
+                }elseif($rand == 4){
+                    $text = 'ต้านต่อไปราคาเท่าไหร่ Sell สวนเลยดีมั้ง 555';
+                    $case = 1;
+                }else{
                     $img = 'https://i.ytimg.com/vi/DUnO7weCfdM/maxresdefault.jpg';
                     $case = 2;
                 }
             }
 
             if (strpos($textinput, 'ทุบ') !== false ) {
-                $rand = rand(0,4);
+                $rand = rand(0,5);
                 if($rand == 0){
                     $text = 'สงสัยจะไปแกนโลก';
                     $case = 1;
@@ -681,18 +721,45 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 3){
                     $text = 'ทุบหนักๆ';
                     $case = 1;
+                }elseif($rand == 5){
+                    $text = 'แนวรับต่อไปราคาเท่าไหร่ Buy สวนเลยดีมั้ย';
+                    $case = 1;
                 }else{
                     $img = 'http://files.gamebanana.com/img/ico/sprays/mario_with_hammer_preview.png';
                     $case = 2;
                 }
             }
 
-            if ( strpos($textinput, 'uj') !== false || strpos($textinput, 'ทอง') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false ) {
-                $rand = rand(0,2);
+            if ( strpos($textinput, 'ทอง') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false ) {
+                $rand = rand(0,5);
                 if($rand == 0){
                     $text = 'buy หรือ sell ดีละ';
                 }elseif($rand == 1){
-                    $text = 'ผันผวนมั๊ยช่วงนี้';
+                    $text = 'ช่วงนี้เหมือนจะผันผวนมั๊ย';
+                }elseif($rand == 2){
+                    $text = 'วันนี้ SPDR เทขายหรือเข้าซื้ออ่ะ';
+                }elseif($rand == 3){
+                    $text = 'ราคามันจะไปทางไหนของมันเนี่ย';
+                }elseif($rand == 4){
+                    $text = 'วันนี้มีข่าวอะไรส่งผลกระทบกับมันมั๊ย';
+                }else{
+                    $text = 'ตอนนี้เล่นหน้าไหนกัน';
+                }
+                $case = 1;
+            }
+
+            if ( strpos($textinput, 'uj') !== false || strpos($textinput, 'UJ') !== false || strpos($textinput, 'Uj') !== false ) {
+                $rand = rand(0,5);
+                if($rand == 0){
+                    $text = 'buy หรือ sell ดีละ';
+                }elseif($rand == 1){
+                    $text = 'ช่วงนี้เหมือนจะผันผวนมั๊ย';
+                }elseif($rand == 2){
+                    $text = 'วันนี้ usdx เป็นไงบ้าง';
+                }elseif($rand == 3){
+                    $text = 'เหมือนจะเล่นยากจังช่วงนี้';
+                }elseif($rand == 4){
+                    $text = 'วันนี้ไม่มีออเดอร์เลยอ่ะ เข้าช่วงราคาเท่าไหร่ดี';
                 }else{
                     $text = 'ตอนนี้เล่นหน้าไหนกัน';
                 }
@@ -700,13 +767,17 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'buy') !== false || strpos($textinput, 'sell') !== false ) {
-                $rand = rand(0,3);
+                $rand = rand(0,5);
                 if($rand == 0){
                     $text = 'กี่ lot ดี';
                 }elseif($rand == 1){
                     $text = '100 Lot เลยดีมั๊ย';
                 }elseif($rand == 2){
                     $text = 'เทสตลาดซัก 1 Lot';
+                }elseif($rand == 3){
+                    $text = 'เทส High หรือ Low ดีละ';
+                }elseif($rand == 4){
+                    $text = 'กดซักเท่าไหร่ว่ามา';
                 }else{
                     $text = 'อยากจะกดแต่ใจไม่กล้า 55';
                 }
