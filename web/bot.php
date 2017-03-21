@@ -377,7 +377,7 @@ if (!is_null($events['events'])) {
 
             if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false) {
 
-                $rand = rand(0, 4);
+                $rand = rand(0, 5);
                 if($rand == 0){
                     $text = 'ใครบอท บ้าป่าว';
                 }elseif($rand == 1){
@@ -386,6 +386,8 @@ if (!is_null($events['events'])) {
                     $text = 'เขาเรียกปัญญาประดิษฐ์ ไม่ได้รู้เรื่องเล๊ย';
                 }elseif($rand == 3){
                     $text = 'I am Artificial Intelligence. แปลออกมั๊ย ดูจากหน้าตาแล้วไม่น่าจะเข้าใจ';
+                }elseif($rand == 4){
+                    $text = 'ก็บอกอยู่่ว่าไม่ใช่บอท';
                 }else{
                     $text = 'ห้องนี้ไม่มีบอทนะ';
                 }
@@ -512,6 +514,30 @@ if (!is_null($events['events'])) {
                     $text = 'กินอะไรกันดีละ';
                     $case = 1;
                 }
+            }
+
+            if ( strpos($textinput, 'เตี๋ยว') !== false ) {
+                $rand = rand(0, 5);
+                if ($rand == 0) {
+                    $text = 'ก๋วยเตี๋ยวหมูน้ำตกใส่ไข่ร้านพี่นนจัดไป';
+                    $case = 1;
+                }elseif($rand == 1){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/13920658_519863781555401_3026708436745190096_n.jpg?oh=dc77891f0b78bb6dbaa70c5e1fcd8ee7&oe=592530B4';
+                    $case = 2;
+                }elseif($rand == 2){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17425058_1483414298344259_1931199174478394490_n.jpg?oh=5f853590f4d61f195b57c5c7ec43682a&oe=59537948';
+                    $case = 2;
+                }elseif($rand == 3){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17201333_611002365774875_1925728978534279915_n.jpg?oh=81eca42ced60b813cc3bcaafccbd9627&oe=59537445';
+                    $case = 2;
+                }elseif($rand == 4){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16998688_606368339571611_7856330434991689198_n.jpg?oh=deb0fe2948a91cce67bd3158d867fa6d&oe=596F6E85';
+                    $case = 2;
+                }else {
+                    $text = 'ไปเลยร้านพี่นนที่สุพรรณบุรี อย่างเด็ด';
+                    $case = 1;
+                }
+
             }
 
             if ( strpos($textinput, 'อ.หมวย') !== false || strpos($textinput, 'อาจารย์หมวย') !== false  ) {
@@ -649,7 +675,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'buy') !== false || strpos($textinput, 'sell') !== false || strpos($textinput, 'บาย') !== false || strpos($textinput, 'เซล') !== false ) {
+            if (strpos($textinput, 'buy') !== false || strpos($textinput, 'sell') !== false ) {
                 $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'กี่ lot ดี';
@@ -717,6 +743,18 @@ if (!is_null($events['events'])) {
                     $text = 'เพลียกราฟหรือเพลียอะไร';
                 }else{
                     $text = 'ไม่หลับไม่นอนก็เป็นงี้แหละ';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ง่วง') !== false ) {
+                $rand = rand(0,2);
+                if($rand == 0){
+                    $text = 'ง่วงก็ไปนอนสิ';
+                }elseif($rand == 1){
+                    $text = 'ทำอะไรไม่หลับไม่นอน เฝ้ากราฟ ?';
+                }else{
+                    $text = 'พักบ้างอะไรบ้าง ไม่ต้องเฝ้ามากหรอกกราฟอ่ะ';
                 }
                 $case = 1;
             }
@@ -915,7 +953,7 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 3) {
                     $text = 'หนักหัวมึงไง๊';
                 }else{
-                    $text = 'ว่าตัวเองซะงั้น';
+                    $text = 'เอ้า ... ว่าตัวเองซะงั้น';
                 }
                 $case = 1;
             }
@@ -951,9 +989,23 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ตะกร้า') !== false || strpos($textinput, 'ตระกร้า') !== false || strpos($textinput, 'finviz') !== false   ) {
-                $text = 'เช็คอันดับค่าเงินได้ที่นี่
+                $text = 'เช็คอันดับค่าเงินได้ที่นี่ ( Refresh every 1 min )
 
 http://www.tradersociety.org/finviz/';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'Volumn') !== false ) {
+                $text = 'Volumn คืออะไร ???
+
+http://www.tradersociety.org/volumn-คืออะไร/';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'Fibo') !== false || strpos($textinput, 'fibo') !== false ) {
+                $text = 'การใช้งาน Fibo Retractment
+
+http://www.tradersociety.org/การใช้-fibonacci-retracement/';
                 $case = 1;
             }
 
