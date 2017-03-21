@@ -227,7 +227,7 @@ if (!is_null($events['events'])) {
 
             }
 
-            if(strpos($textinput, 'new') !== false ){
+            if(strpos($textinput, 'news') !== false ){
                 $message = '
 ';
                 $html = file_get_contents('https://www.forexfactory.com/calendar.php?day=today');
@@ -241,22 +241,29 @@ if (!is_null($events['events'])) {
                 $dom->preserveWhiteSpace = false;
 
                 /*** the table by its tag name ***/
-
-                $tables=getElementsByClass($dom, 'div', 'scoreBox');
-
+                $tables = $dom->getElementsByTagName('table');
 
                 /*** get all rows from the table ***/
 //$rows = $tables->item(0)->getElementsByTagName('tr');
 
                 /*** loop over the table rows ***/
                 foreach ($tables as $key => $row) {
+                    if($key >= 1) {
+                        $cols = $row->getElementsByTagName('tr');
+                        foreach ($cols as $key2 => $cols) {
+                            $td = $cols->getElementsByTagName('td');
+                            if ($key2 == 0) {
 
-                    $div = $row->getElementsByTagName('div');
-                    $message .= '----- ' . $div->item(0)->nodeValue . ' -----
+                            }elseif($key2 == 1){
+                                $message .=  '----- '.$cols->nodeValue . ' -----
 ';
-                    foreach ($row->getElementsByTagName('tr') as $data) {
-                        $message .= $data->nodeValue.'
-';
+                            }else{
+                                $message .=  $td->item(0)->nodeValue. ' | ' ;
+                                $message .=  $td->item(1)->nodeValue. ' | ' ;
+                                $message .=  $td->item(2)->nodeValue. '
+' ;
+                            }
+                        }
                     }
                 }
                 $message = strip_tags($message);
