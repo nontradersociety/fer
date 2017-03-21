@@ -226,51 +226,7 @@ if (!is_null($events['events'])) {
                 }
 
             }
-
-            if(strpos($textinput, 'news') !== false ){
-                $message = '
-';
-                $html = file_get_contents('https://www.forexfactory.com/calendar.php?day=today');
-                /*** a new dom object ***/
-                $dom = new domDocument;
-
-                /*** load the html into the object ***/
-                $dom->loadHTML($html);
-
-                /*** discard white space ***/
-                $dom->preserveWhiteSpace = false;
-
-                /*** the table by its tag name ***/
-                $tables = $dom->getElementsByTagName('table');
-
-                /*** get all rows from the table ***/
-//$rows = $tables->item(0)->getElementsByTagName('tr');
-
-                /*** loop over the table rows ***/
-                foreach ($tables as $key => $row) {
-                    if($key >= 1) {
-                        $cols = $row->getElementsByTagName('tr');
-                        foreach ($cols as $key2 => $cols) {
-                            $td = $cols->getElementsByTagName('td');
-                            if ($key2 == 0) {
-
-                            }elseif($key2 == 1){
-                                $message .=  '----- '.$cols->nodeValue . ' -----
-';
-                            }else{
-                                $message .=  $td->item(0)->nodeValue. ' | ' ;
-                                $message .=  $td->item(1)->nodeValue. ' | ' ;
-                                $message .=  $td->item(2)->nodeValue. '
-' ;
-                            }
-                        }
-                    }
-                }
-                $message = strip_tags($message);
-                $text = $message;
-                $case = 1;
-            }
-
+            
             if (strpos($textinput, 'fuck') !== false ) {
                 $rand = rand(0, 4);
                 if($rand == 0){
