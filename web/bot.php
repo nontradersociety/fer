@@ -609,6 +609,30 @@ if (!is_null($events['events'])) {
 
             }
 
+            if (strpos($textinput, 'อาจารย์เดียร์') !== false ) {
+                $rand = rand(0, 5);
+                if ($rand == 0) {
+                    $text = 'หมายถึง คุณศราวุฒิ ม่วงชู ใช่มั๊ย';
+                    $case = 1;
+                }elseif($rand == 1){
+                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/15621963_10154794339812354_8344217722931743911_n.jpg?oh=0de51450e09782eecd5fd5fd9f582445&oe=596A4906';
+                    $case = 2;
+                }elseif($rand == 2){
+                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/13508878_10154262811077354_2697326683941775815_n.jpg?oh=a452a37395ee17cb3ec4425567bc6b97&oe=596306A4';
+                    $case = 2;
+                }elseif($rand == 3){
+                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/13226652_10154185379792354_2113191577035189210_n.jpg?oh=85c81c1d629f7a23b1dadd201d692e1c&oe=5953C587';
+                    $case = 2;
+                }elseif($rand == 4){
+                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/7670_10153932320632354_5658525607111014161_n.jpg?oh=6945b0f5de5943fff1709a09c7c65743&oe=5960E3A0';
+                    $case = 2;
+                } else {
+                    $text = 'เป็นอาจารย์ที่เก่งมากในการวิเคราะห์ตลาดทองคำ ใครอยากได้ความรู้อะไรสอบถามได้เลย';
+                    $case = 1;
+                }
+
+            }
+
             if (strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false ) {
                 $rand = rand(0,3);
                 if($rand == 0) {
@@ -894,7 +918,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            /*if (strpos($textinput, 'ปัญญา') !== false ) {
+            if (strpos($textinput, 'ปัญญาอ่อน') !== false ) {
                 $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'ปัญญาที่จัดรายการปริศนาฟ้าแลปอะหรอ';
@@ -904,7 +928,7 @@ if (!is_null($events['events'])) {
                     $text = 'ว่าตัวเองทำไมครับ';
                 }
                 $case = 1;
-            }*/
+            }
 
             if (strpos($textinput, 'แดก') !== false ) {
                 $rand = rand(0,2);
@@ -942,7 +966,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false  || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false) {
+            if (strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false  || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false  || strpos($textinput, 'Kak') !== false || strpos($textinput, 'KAK') !== false) {
                 $rand = rand(0,4);
                 if($rand == 0){
                     $text = 'ว่าตัวเองทำไมอ่ะ';
@@ -995,7 +1019,7 @@ http://www.tradersociety.org/finviz/';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'Volumn') !== false ) {
+            if (strpos($textinput, 'Volumn') !== false || strpos($textinput, 'volumn') !== false ) {
                 $text = 'Volumn คืออะไร ???
 
 http://www.tradersociety.org/volumn-คืออะไร/';
@@ -1028,7 +1052,7 @@ https://www.youtube.com/watch?v=f6MjuI4A1bw';
 
 https://www.youtube.com/watch?v=913IcRuVdu0
 
-หรือหากต้องการฝากกับแอดมิน add line id : trader society ได้เลยครับ';
+หรือหากต้องการฝากกับแอดมิน add line id : tradersociety ได้เลยครับ';
                 $case = 1;
             }
 
@@ -1037,7 +1061,7 @@ https://www.youtube.com/watch?v=913IcRuVdu0
 
 https://www.youtube.com/watch?v=uJqwt9Cd3k4
 
-หรือหากต้องการถอนกับแอดมิน add line id : trader society ได้เลยครับ';
+หรือหากต้องการถอนกับแอดมิน add line id : tradersociety ได้เลยครับ';
                 $case = 1;
             }
 
@@ -1061,6 +1085,18 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                     $text = 'ทำไมละสัด';
                 }else{
                     $text = 'ด่ากู ? เดี๋ยวจะโดนไม่ใช่น้อย';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false ) {
+                $rand = rand(0,3);
+                if($rand == 0){
+                    $text = 'จะสาดน้ำไง๊';
+                }elseif($rand == 1) {
+                    $text = 'แสรดดดดดด';
+                }else{
+                    $text = 'ทำไมละสาดดด';
                 }
                 $case = 1;
             }
