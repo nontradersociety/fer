@@ -226,7 +226,7 @@ if (!is_null($events['events'])) {
                 }
 
             }
-
+            
             if (strpos($textinput, 'fuck') !== false ) {
                 $rand = rand(0, 4);
                 if($rand == 0){
