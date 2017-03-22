@@ -375,7 +375,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false || strpos($textinput, 'Bot') !== false) {
+            /*if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false || strpos($textinput, 'Bot') !== false) {
 
                 $rand = rand(0, 7);
                 if($rand == 0){
@@ -396,9 +396,9 @@ if (!is_null($events['events'])) {
                     $text = 'ก็บอกอยู่ห้องนี้ไม่มีบอท ฟังภาษาคนไม่รู้เรื่องไง๊';
                 }
                 $case = 1;
-            }
+            }*/
 
-            if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'มรึง') !== false ) {
+            if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'มรึง') !== false || strpos($textinput, 'เมิง') !== false || strpos($textinput, 'เมริง') !== false ) {
                 $rand = rand(0, 3);
                 if($rand == 0){
                     $text = 'พูดจาให้มันเพราะๆหน่อยเป็นป่ะ';
@@ -437,82 +437,87 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'หิว') !== false) {
-                $rand = rand(0, 15);
+                $rand = rand(0, 20);
                 if ($rand == 0)
                 {
                     //กุ้งกระเบื้อง
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/17265124_1476049672414055_204896673358791325_n.jpg?_nc_eui2=v1%3AAeGFpSQSTxiNRxpb4ZPXS3graB4ZL0RMPZWyscr7mpebsGOV1TD_ZVENIrtA8cO_yilMC5MXRqFhsCPFxrwP4RICSJGA9tO59u_sMqbSbqwSqrtzsinoe36W6wyEPgoTEG8&oh=0e742fe0278b25ba697e2495c965253d&oe=595A56C3';
                     $case = 2;
-                }
-                elseif
-                ($rand == 1){
+                }elseif ($rand == 1){
                     //จิ้มจุ่ม
                     $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16649137_1440526189299737_6370977755028050295_n.jpg?oh=59c1598edb3563d937c068e41e971dd2&oe=592F3F59';
                     $case = 2;
-                }elseif
-                ($rand == 2){
-                    //กุ้งแช่น้ำปลา
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/15337641_1378610962157927_684873402047496640_n.jpg?oh=06bb4d1811ef0a43293b216e3a8fd13b&oe=5960A6F6';
+                }elseif ($rand == 2){
+                    //ปลาช่อน
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17156104_1470691309616558_7660918045911158451_n.jpg?oh=b9d6f5a7373a77ee1a4d0638457e591e&oe=5971EECA';
                     $case = 2;
-                } elseif
-                ($rand == 3){
+                }elseif ($rand == 3){
                     //หมูย่าง
                     $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/15094377_1341612985857725_8235767697960646784_n.jpg?oh=10c0d7a9dbd08f6ce33bab6f98e074fd&oe=596BBBD4';
                     $case = 2;
-                } elseif
-                ($rand == 4){
+                }elseif ($rand == 4){
                     //ข้าวไข่ข้น
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/17103490_1463560273662995_7810622859375386342_n.jpg?_nc_eui2=v1%3AAeHCvLqU3mSYvgO5JDIVuUkLe9EzUCtNLra7T31RrSLeSODed-6nFS84Sq90oGgjHDCDCWc-gHWUb_Xn8X_ye_SToRHjHfnDApAEdMI5LiW_5QuMssshw62nN5zHNeV7VmA&oh=f795c56e4969c8214aa004c28d99679e&oe=59548047';
                     $case = 2;
-                } elseif
-                ($rand == 5){
-                    //สปาเก็ตตี้
-                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14517345_1305286309490393_1566793180198975792_n.jpg?_nc_eui2=v1%3AAeFlAZAPrMwylhuHzPFjSTOQuPq76vO5jQq0bTjFfD-SAsXwk5LSTacFvUMkmGNyNmtdce_SX2kdbnutLNCLvskIy8UomRpKDa5Fat6XnlQo5BLRUX_msOBFAAZlQXzQwGk&oh=f5598c6bfe72250d1a2439d1ab512b2c&oe=59617591';
+                }elseif ($rand == 5){
+                    //ต้มยำกุ้ง
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17424960_1485227591496263_9094034156353889153_n.jpg?oh=f866cc9b359195a632c86459a5373520&oe=5972284C';
                     $case = 2;
-                } elseif
-                ($rand == 6){
+                }elseif ($rand == 6){
                     //พิซซ่า
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14495234_1305286336157057_8736988554956258994_n.jpg?_nc_eui2=v1%3AAeFvpaRfaQWpjdsbN1-9L9Vk1RgpI-1reHRqm1mvG3Jg30_5dVoHs9OH71AcBll2d4PNiD8Kdv9VcIb8fRNLte4guz1uaIZWuY33Lg9QPWrKDtbX0n7mobZrXrRtwG7KkSc&oh=a3a2178bf090801ca8d14531ea4e3f56&oe=5925D590';
                     $case = 2;
-                } elseif
-                ($rand == 7){
+                }elseif ($rand == 7){
                     //ส้มตำปู
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/15283911_1361427370542953_7761482730005432833_n.jpg?_nc_eui2=v1%3AAeG04oMKnr0W2psGRE1Ikf4UJLaf410XsMhUVRR5q0-9QYMbGaljmN2DJpe2CXVe7CnzssgV9adesms8eiWPsniFd3ILYv4LpoOkRLBWGkdC0-laJd38nzCaDWLCJ9WYC28&oh=b30aa391507571c1bedef57b15ccf637&oe=5963960B';
                     $case = 2;
-                } elseif
-                ($rand == 8){
+                }elseif ($rand == 8){
                     //ปีกไก่ทอด
                     $img = 'https://3.bp.blogspot.com/-u9QmBob0h3o/VtkSVOTRUvI/AAAAAAAAAmM/AouDAlu0bR8/s400/%25E0%25B8%259B%25E0%25B8%25B5%25E0%25B8%2581%25E0%25B9%2584%25E0%25B8%2581%25E0%25B9%2588%25E0%25B8%2597%25E0%25B8%25AD%25E0%25B8%2594%25E0%25B8%2599%25E0%25B9%2589%25E0%25B8%25B3%25E0%25B8%259B%25E0%25B8%25A5%25E0%25B8%25B2_Fried%2Bchicken%2Bwing%2Bsauce.jpg';
                     $case = 2;
-                } elseif
-                ($rand == 9){
+                }elseif ($rand == 9){
                     //กุ้งเผา
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/15037097_1342648472420843_5223539816342288929_n.jpg?_nc_eui2=v1%3AAeHOwYti5iVuowj-c7cOevqsJ0jf-9ha_uPlIxTf8K8S8d9xlGxmCmlpaX4okhuhqZb1hdOszbcpcr8kc-9aoQ6fDZdlYMn6auIZmrc7fqaD58HGAuhJiB9C0oDKYtmxhGQ&oh=d57c162254c4a9f405b1ba26b1b00a27&oe=59693763';
                     $case = 2;
-                } elseif
-                ($rand == 10){
+                }elseif ($rand == 10){
                     //ไก่ป๊อป
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/16681712_1451438271541862_6825978108435665747_n.jpg?_nc_eui2=v1%3AAeFF_EqcZj5d4zF17chNdlKrAE07gS-8I37k3WTEEEsMoEh3rm7OulxBJA5tBtP-5Kx-WvUiaDcd_kzN5jVoc5FM-9Wk88YxT6DEaUpuX1XYl23v9eoSHuYUFKDGQzEWupo&oh=232d9f34ace74412039ed58534ea03e8&oe=59570945';
                     $case = 2;
-                } elseif
-                ($rand == 11){
+                }elseif ($rand == 11){
                     //น้ำแข็งใส
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/15747600_1393550303997326_9089658969736741474_n.jpg?_nc_eui2=v1%3AAeGy-OD_V7UrJJYgfDpLFcE2siCxQGEitNcXt9dftS0X97sRyBpxQs__BP-uy0Ic3IpMfyDsW_3fghvGh_Cq8rj4s1hutIT3_VgD5opfsNdEromZxgnAnrseJPA8APDV8TE&oh=3a9007c7ac5def2a346d586814cef4c0&oe=5961BD8A';
                     $case = 2;
-                } elseif
-                ($rand == 12){
-                    //สเต๊ก
-                    $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14064244_1259240684094956_5699750533993144686_n.jpg?_nc_eui2=v1%3AAeG40yQP3cTY-FDLAqMY_b9mFRMjVZHZgxBGE-D9KYnaG7CAeQLdTNvX-IbzpN6g0fE2dehYi70wa0AJJ_k90s4oXdGueAILFggT5dqsTutTikx71LVIlMm0mbEWIYy7Yxw&oh=7985de19572878f86f5c12ef7228b569&oe=595F94B4';
+                }elseif ($rand == 12){
+                    //ไข่กระทะ
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17264695_1474786209207068_4295172918554949738_n.jpg?oh=241f3969a6e8a4e29fb41f34c0eba878&oe=5964F26F';
                     $case = 2;
-                } elseif
-                ($rand == 13){
+                }elseif ($rand == 13){
                     //หมูซีอิ๊ว
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/13692523_1238803829471975_3260471915492857128_n.jpg?_nc_eui2=v1%3AAeHNoU5fI4ArJnIOdmAagk0J8kIelEyjpb_9MTiA18DKSHWmQ5jr1w8nFdRAyqWDlcB6KrwqIFeQYML7gwyf9XxsctMTAw2NbA8pwz7DpLdyKp8bP2APKMmAt2uWtSWV5zg&oh=777292fbb415865af77c1937c0bf984d&oe=5972EC44';
                     $case = 2;
-                } elseif
-                ($rand == 14){
+                }elseif ($rand == 14){
                     //แพนเค้ก
                     $img = 'https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/14980612_1341613305857693_8945739289078424763_n.jpg?_nc_eui2=v1%3AAeFUF3mXBczyX9d4YUa4iX-0AEh1jrlgn99qc6Y_l5fpRLhEtRPzhWUOpo0JoUnuz1yrUUCepLhsrPDb0qalIbyxczFbrmZgyWUAZdk0WaQjWtRoibigLuY642IrDA9eVwY&oh=446a57ba44b65c144a8a869ce2faceb3&oe=59283395';
+                    $case = 2;
+                }elseif ($rand == 15){
+                    //ชุดอาหารเช้า
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17021898_1463560270329662_4250689607678676065_n.jpg?oh=afc180bc30089eaf5ff040ccfbc875e7&oe=5966F552';
+                    $case = 2;
+                }elseif ($rand == 16){
+                    //ยำวุ้นเส้น
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16105742_1413775201974836_575481321260019986_n.jpg?oh=afce246cbb7dbaadf91b5f5945aec74e&oe=5950D630';
+                    $case = 2;
+                }elseif ($rand == 17){
+                    //ข้าวมันไก่
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/15822830_1398785470140476_4077958426210198193_n.jpg?oh=91dff053b4da292708bb4632ed5c933a&oe=5950984C';
+                    $case = 2;
+                }elseif ($rand == 18){
+                    //กุ้งมังกร
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/15253486_1361426980542992_5388301921217323842_n.jpg?oh=a9bc05b7fecdb719b05fba65c6702b86&oe=5953025E';
+                    $case = 2;
+                }elseif ($rand == 19){
+                    //หอยเชลล์
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/14368762_1292834917402199_2041695389417822745_n.jpg?oh=aa60e07e76689db14f0a9c75c8f258b5&oe=596C2FEF';
                     $case = 2;
                 }else {
                     $text = 'กินอะไรกันดีละ';
@@ -541,7 +546,6 @@ if (!is_null($events['events'])) {
                     $text = 'ไปเลยร้านพี่นนที่สุพรรณบุรี อย่างเด็ด';
                     $case = 1;
                 }
-
             }
 
             if ( strpos($textinput, 'อาจารย์หมวย') !== false  ) {
@@ -558,18 +562,51 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 3){
                     $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/13417416_134726200281141_1649590718476967130_n.jpg?oh=4c154ad20970958bbc5dd73d5ba2ca59&oe=592E665E';
                     $case = 2;
-                } elseif($rand == 4) {
+                }elseif($rand == 4) {
                     $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/13419055_138052733281821_9046111837315737418_n.jpg?oh=50ac80d0994d8ad04b3d69e643a3e96d&oe=5964C9F6';
                     $case = 2;
-                }else {
+                }else{
                     $text = 'ที่ชอบกินหมูกระทะอะนะ';
                     $case = 1;
                 }
-
             }
 
+            if ( strpos($textinput, 'อาจารย์หยก') !== false  ) {
+                $rand = rand(0, 3);
+                if($rand == 0){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/10171191_756253384394684_4411628768631656336_n.jpg?oh=c1c5d0afa38a95cf4d06024b6c52e94a&oe=596CF484';
+                    $case = 2;
+                }elseif($rand == 1){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/10628506_840056136014408_8923413406145159611_n.jpg?oh=d0db63559726241b08af34ea8b8eab79&oe=595C374D';
+                    $case = 2;
+                }elseif($rand == 2){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16996532_1408804965806186_2277513094450733648_n.jpg?oh=6e0819aaf5d3c9ee9f31f00325ccca47&oe=5950CC44';
+                    $case = 2;
+                }else {
+                    $text = 'หารูปยากหน่อยนะ เป็นคนไม่ยอมเปิดเผยตัวตน 555';
+                    $case = 1;
+                }
+            }
+
+            /*if ( strpos($textinput, 'อาจารย์นน') !== false ) {
+                $rand = rand(0, 5);
+                if($rand == 0){
+                    $text = 'ถนัดใช้ fibo + หลักจิตวิทยาเศรษฐศาสตร์ ใครสนใจไปสอบถามได้';
+                    $case = 1;
+                }elseif($rand == 1){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16682017_1442764355742587_3708055595342157983_n.jpg?oh=8971bd4d3cc3b67a54ee5c17d5fcc902&oe=595657D9';
+                    $case = 2;
+                }elseif($rand == 2){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/1917063_103156016370101_5458952_n.jpg?oh=1f51bbc443d6a4daa0ddbe91c921eabc&oe=5969CE8C';
+                    $case = 2;
+                }else {
+                    $text = 'ชวนไปซ้อมดนตรีดีกว่า 55';
+                    $case = 1;
+                }
+            }*/
+
             if ( strpos($textinput, 'อาจารย์โบ') !== false ) {
-                $rand = rand(0, 4);
+                $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'อ.โบ สายซิ่งใช่มั๊ย';
                     $case = 1;
@@ -582,11 +619,16 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 3){
                     $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/181392_407913152563579_517848466_n.jpg?oh=49ce38b5ff3052219fcfdf8aafe501fd&oe=5966D8C0';
                     $case = 2;
-                } else {
+                }elseif($rand == 4){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/1530602_681132338574991_614543285_n.jpg?oh=8e54b3f457f7140dbd4274d7ac0cf708&oe=596F6849';
+                    $case = 2;
+                }elseif($rand == 5){
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/181873_501457559875804_2057874305_n.jpg?oh=405c1d5e5e1e96fb3ea8ac53e81f299b&oe=5950B230';
+                    $case = 2;
+                }else {
                     $text = 'หน้าตาดีนะ อ.โบ อ่ะ';
                     $case = 1;
                 }
-
             }
 
             if (strpos($textinput, 'แอ็ค') !== false || strpos($textinput, 'แอค') !== false || strpos($textinput, 'acme') !== false ) {
@@ -652,7 +694,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'บิน') !== false ) {
-                $rand = rand(0,5);
+                $rand = rand(0,7);
                 if($rand == 0){
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
                     $case = 1;
@@ -668,6 +710,12 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 4){
                     $text = 'ต้านต่อไปราคาเท่าไหร่ Sell สวนเลยดีมั้ง 555';
                     $case = 1;
+                }elseif($rand == 5){
+                    $text = 'บินซักกี่จุดดีละ';
+                    $case = 1;
+                }elseif($rand == 6){
+                    $text = 'กินเต็มแท่งมั๊ยนั่น';
+                    $case = 1;
                 }else{
                     $img = 'https://i.ytimg.com/vi/DUnO7weCfdM/maxresdefault.jpg';
                     $case = 2;
@@ -675,7 +723,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ทุบ') !== false ) {
-                $rand = rand(0,5);
+                $rand = rand(0,7);
                 if($rand == 0){
                     $text = 'สงสัยจะไปแกนโลก';
                     $case = 1;
@@ -688,8 +736,14 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 3){
                     $text = 'ทุบหนักๆ';
                     $case = 1;
-                }elseif($rand == 5){
+                }elseif($rand == 4){
                     $text = 'แนวรับต่อไปราคาเท่าไหร่ Buy สวนเลยดีมั้ย';
+                    $case = 1;
+                }elseif($rand == 5){
+                    $text = 'เอาให้มิด 555';
+                    $case = 1;
+                }elseif($rand == 6){
+                    $text = 'กินเต็มแท่งมั๊ยละนั่น';
                     $case = 1;
                 }else{
                     $img = 'http://files.gamebanana.com/img/ico/sprays/mario_with_hammer_preview.png';
@@ -697,8 +751,8 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if ( strpos($textinput, 'ทอง') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false ) {
-                $rand = rand(0,5);
+            if ( strpos($textinput, 'ทองคำ') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false ) {
+                $rand = rand(0,6);
                 if($rand == 0){
                     $text = 'buy หรือ sell ดีละ';
                 }elseif($rand == 1){
@@ -708,7 +762,9 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 3){
                     $text = 'ราคามันจะไปทางไหนของมันเนี่ย';
                 }elseif($rand == 4){
-                    $text = 'วันนี้มีข่าวอะไรส่งผลกระทบกับมันมั๊ย';
+                    $text = 'วันนี้มีข่าวอะไรส่งผลกระทบกับมันบ้าง เช็คหน่อย';
+                }elseif($rand == 5){
+                    $text = 'พักทองไปเล่นคู่เงินกันบ้างมั๊ย';
                 }else{
                     $text = 'ตอนนี้เล่นหน้าไหนกัน';
                 }
@@ -726,7 +782,7 @@ if (!is_null($events['events'])) {
                 }elseif($rand == 3){
                     $text = 'เหมือนจะเล่นยากจังช่วงนี้';
                 }elseif($rand == 4){
-                    $text = 'วันนี้ไม่มีออเดอร์เลยอ่ะ เข้าช่วงราคาเท่าไหร่ดี';
+                    $text = 'วันนี้ไม่มีออเดอร์เลยอ่ะ';
                 }else{
                     $text = 'ตอนนี้เล่นหน้าไหนกัน';
                 }
@@ -734,7 +790,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'buy') !== false || strpos($textinput, 'sell') !== false ) {
-                $rand = rand(0,6);
+                $rand = rand(0,7);
                 if($rand == 0){
                     $text = 'กี่ lot ดี';
                 }elseif($rand == 1){
@@ -747,6 +803,8 @@ if (!is_null($events['events'])) {
                     $text = 'กดซักเท่าไหร่ว่ามา';
                 }elseif($rand == 5){
                     $text = 'พักกันบ้างก็ได้ จะเข้าออเดอร์กันทั้งวันเลยหรือไง';
+                }elseif($rand == 6){
+                    $text = 'วิเคราะห์แปปว่าจะ buy หรือ sell ดี';
                 }else{
                     $text = 'อยากจะกดแต่ใจไม่กล้า 55';
                 }
@@ -763,6 +821,20 @@ if (!is_null($events['events'])) {
                     $text = 'ดูเลเวลด้วย รุ่นนี้ไม่มีป๊อด';
                 }else{
                     $text = 'ศิษย์ใครดูด้วย สะกดไม่เป็นนะคำนี้อ่ะ';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'นอน') !== false ) {
+                $rand = rand(0,3);
+                if($rand == 0){
+                    $text = 'พึ่งกี่โมงเอง จะรีบนอนไปไหน';
+                }elseif($rand == 1){
+                    $text = 'ง่วงก็ไปนอนไป';
+                }elseif($rand == 2){
+                    $text = 'นอนแล้วหรอ อ้าว ... ใครยืนอยู่ปลายเตียงอ่ะ';
+                }else{
+                    $text = 'ไม่เคยนอนไง๊';
                 }
                 $case = 1;
             }
@@ -868,15 +940,24 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-
             if (strpos($textinput, 'เงียบ') !== false ) {
-                $rand = rand(0,3);
+                $rand = rand(0,8);
                 if($rand == 0){
                     $text = 'ให้พักบ้างเถอะ ซัด m-150 ไป 2 ลังละ';
                 }elseif($rand == 1){
                     $text = 'จะให้พูดอะไรมากมาย เหนื่อยเป็นเข้าใจป่ะ';
                 }elseif($rand == 2){
                     $text = 'พอใจอ่ะ มีปัญหา ?';
+                }elseif($rand == 3){
+                    $text = 'กลัวรำคาญไงก็เงียบบ้างอะไรบ้าง';
+                }elseif($rand == 4){
+                    $text = 'ฟังเพลงเพราะของ อ.แอ็คดีกว่า https://www.youtube.com/watch?v=gpisNZ7QuoE';
+                }elseif($rand == 5){
+                    $text = 'จัดให้ 1 single https://www.youtube.com/watch?v=5MXzaw5Xe9w';
+                }elseif($rand == 6){
+                    $text = 'หนักหัวใคร ?';
+                }elseif($rand == 7){
+                    $text = 'ไม่ได้เงียบซักหน่อย ดูพวกคุณคุยกันอยู่';
                 }else{
                     $text = 'เดี๋ยวเปิดเพลงให้ปะจะได้ไม่เงียบ';
                 }
@@ -1013,7 +1094,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false  || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false  || strpos($textinput, 'Kak') !== false || strpos($textinput, 'KAK') !== false) {
-                $rand = rand(0,4);
+                $rand = rand(0,5);
                 if($rand == 0){
                     $text = 'ว่าตัวเองทำไมอ่ะ';
                 }elseif($rand == 1) {
@@ -1022,6 +1103,8 @@ if (!is_null($events['events'])) {
                     $text = 'กากพ่อง';
                 }elseif($rand == 3) {
                     $text = 'หนักหัวมึงไง๊';
+                }elseif($rand == 4) {
+                    $text = 'แล้วไง';
                 }else{
                     $text = 'เอ้า ... ว่าตัวเองซะงั้น';
                 }
@@ -1043,8 +1126,24 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ไซยา') !== false || strpos($textinput, 'นาแมก') !== false || strpos($textinput, 'นาแมค') !== false ) {
-                $text = 'ดูการ์ตูนมากไปป่าว';
+            if (strpos($textinput, 'กฎระเบียบ') !== false ) {
+                $text = '⚠️ กฎระเบียบของห้อง ⚠️
+
+❌ เนื้อหาที่ละเมิดต่อ สถาบันชาติ ศาสนา พระมหากษัตริย์ และพระบรมวงศานุวงศ์
+
+❌ เนื้อหาที่เกี่ยวกับการเมือง อันจะก่อให้เกิดการแบ่งฝักฝ่าย และการโต้เถียงและแตกแยกกันในหมู่สมาชิก
+
+❌ เนื้อหาที่ว่ากล่าวให้ร้าย แก่สมาชิกผู้อื่นหรือที่เป็นการยุยงให้ผู้อื่นเกิดความขัดแย้งซึ่งกันและกัน
+
+❌ เนื้อหาที่เกี่ยวกับธุรกิจลูกโซ่ MLM
+
+❌ Invite สมาชิกท่านอื่นเข้ามา
+
+❌ เนื้อหาหรือข้อความใดๆออกไปเผยแพร่ภายนอก
+
+⚠️ ก่อนโพสข้อความหรือเนื้อหาใดๆ ควรตรวจสอบให้เรียบร้อย ซึ่งเมื่อโพสต์ไปแล้วหากผิดระเบียบข้อบังคับ ผู้โพสต์ต้องรับผลที่เกิดขึ้น ⚠️
+
+💥 Admin มีสิทธิ์ที่จะ Ban สมาชิกที่ทำผิดกฎหรือที่พิจารณาแล้วว่าไม่เหมาะสมได้ทันที ซึ่งหากเกิดข้อพิพาท ทาง Admin จะปรึกษากันและทำตามคะแนนเสียงส่วนใหญ่ 💥';
                 $case = 1;
             }
 
@@ -1053,8 +1152,15 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ข่าว') !== false ) {
-                $text = 'เช็คได้ที่ investing.com หรือ forexfactory.com';
+            if (strpos($textinput, 'ปฏิทิน') !== false ) {
+                $text = 'เช็คได้ที่ https://www.investing.com/economic-calendar/ หรือ https://www.forexfactory.com/calendar.php?day=today';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'แก้ไม้') !== false ) {
+                $text = 'วิธีการแก้ไม้แบบปิดรวบ
+
+http://www.tradersociety.org/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%89/';
                 $case = 1;
             }
 
@@ -1121,7 +1227,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 $case = 1;
             }
 
-            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false || strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false ) {
+            if (strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false || strpos($textinput, 'สั ส') !== false || strpos($textinput, 'สั ด') !== false ) {
                 $rand = rand(0,3);
                 if($rand == 0){
                     $text = 'สัดกับใครวะ';
