@@ -226,7 +226,7 @@ if (!is_null($events['events'])) {
                 }
 
             }
-            
+
             if (strpos($textinput, 'fuck') !== false ) {
                 $rand = rand(0, 4);
                 if($rand == 0){
@@ -377,17 +377,21 @@ if (!is_null($events['events'])) {
 
             if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false || strpos($textinput, 'Bot') !== false) {
 
-                $rand = rand(0, 5);
+                $rand = rand(0, 7);
                 if($rand == 0){
-                    $text = 'ใครบอท บ้าหรือป่าว';
+                    $text = 'I am Artificial Intelligence. แปลออกมั๊ย ดูจากหน้าตาแล้วไม่น่าจะเข้าใจ';
                 }elseif($rand == 1){
                     $text = 'เรียกจังเลยบอท เดี๋ยวขมับซักทีดีมั้ง';
                 }elseif($rand == 2){
                     $text = 'บอทอะไร ไหนใครบอท';
                 }elseif($rand == 3){
-                    $text = 'I am Artificial Intelligence. แปลออกมั๊ย ดูจากหน้าตาแล้วไม่น่าจะเข้าใจ';
+                    $text = 'ใครบอท บ้าหรือป่าว';
                 }elseif($rand == 4){
-                    $text = 'ก็บอกอยู่่ว่าไม่ใช่บอท ชักหัวร้อนละนะ';
+                    $text = 'ก็บอกอยู่ว่าไม่ใช่บอท ชักหัวร้อนละนะ';
+                }elseif($rand == 5){
+                    $text = 'พูดภาษาคนไม่รู้เรื่อง ?';
+                }elseif($rand == 6){
+                    $text = 'เฮ้ออออ ... เพลียกับพวกนี้จริงๆ';
                 }else{
                     $text = 'ก็บอกอยู่ห้องนี้ไม่มีบอท ฟังภาษาคนไม่รู้เรื่องไง๊';
                 }
@@ -730,7 +734,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'buy') !== false || strpos($textinput, 'sell') !== false ) {
-                $rand = rand(0,5);
+                $rand = rand(0,6);
                 if($rand == 0){
                     $text = 'กี่ lot ดี';
                 }elseif($rand == 1){
@@ -741,6 +745,8 @@ if (!is_null($events['events'])) {
                     $text = 'เทส High หรือ Low ดีละ';
                 }elseif($rand == 4){
                     $text = 'กดซักเท่าไหร่ว่ามา';
+                }elseif($rand == 5){
+                    $text = 'พักกันบ้างก็ได้ จะเข้าออเดอร์กันทั้งวันเลยหรือไง';
                 }else{
                     $text = 'อยากจะกดแต่ใจไม่กล้า 55';
                 }
@@ -915,13 +921,17 @@ if (!is_null($events['events'])) {
 
 
             if (strpos($textinput, 'เหล้า') !== false || strpos($textinput, 'เบียร์') !== false || strpos($textinput, 'เมา') !== false || strpos($textinput, 'ปาร์ตี้') !== false || strpos($textinput, 'party') !== false  || strpos($textinput, 'Party') !== false || strpos($textinput, 'pub') !== false || strpos($textinput, 'Pub') !== false ) {
-                $rand = rand(0,3);
+                $rand = rand(0,5);
                 if($rand == 0){
                     $text = 'จัดไปอย่าให้เสีย ที่ไหนว่ามา the pimp ดีมั๊ย';
                 }elseif($rand == 1){
                     $text = '3 วัน 2 คืน ไปชิลๆ';
                 }elseif($rand == 2){
                     $text = 'ทองหล่อไป อย่างเด็ด';
+                }elseif($rand == 3){
+                    $text = 'ไปๆๆ ร้านไหนว่ามา';
+                }elseif($rand == 4){
+                    $text = 'ไปข้าวสารหรือสีลมดี';
                 }else{
                     $text = 'ร้านนั่งเล่น ทองหล่อปะละ เอาเงินไปละลายหน่อย';
                 }
@@ -977,9 +987,11 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'สดชื่น') !== false ) {
-                $rand = rand(0,1);
+                $rand = rand(0,2);
                 if($rand == 0){
                     $text = 'ระวังลื่นถ้าสดจัด';
+                }elseif($rand == 1) {
+                    $text = 'พึ่งอาบน้ำมาหรอเลยสดชื่นอ่ะ 555';
                 }else{
                     $text = 'สดมากไปจะกลายสลดนะ';
                 }
