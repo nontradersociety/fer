@@ -914,7 +914,7 @@ if (!is_null($events['events'])) {
                         $text = 'สังเกตุกราฟด้วยนะว่ามาชนแล้วเด้งหรือแค่มาจ่อ';
                     } else {
                         $img = 'https://img.in.th/images/4f495cb2b586e6bbcf68ba057a8e2c4a.jpg';
-                        $text = 2;
+                        $case = 2;
                     }
                     $case = 1;
                 }
@@ -925,7 +925,7 @@ if (!is_null($events['events'])) {
                         $text = 'แนวต้านจริง คือ เนื้อเทียน';
                     } else {
                         $img = 'https://img.in.th/image/CPKf';
-                        $text = 2;
+                        $case = 2;
                     }
                     $case = 1;
                 }
@@ -936,7 +936,7 @@ if (!is_null($events['events'])) {
                         $text = 'แนวต้านหลอก คือ ไส้เทียน';
                     } else {
                         $img = 'https://img.in.th/image/CPKf';
-                        $text = 2;
+                        $case = 2;
                     }
                     $case = 1;
                 }
