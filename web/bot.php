@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
             $case = 0;
             // Build message to reply back
 
-            if (strpos($textinput, ‘comeheremod’) !== false ) {
+            if (strpos($textinput, 'comeheremod') !== false ) {
                 $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                 $txt = "1";
                 fwrite($myfile, $txt);
