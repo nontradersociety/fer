@@ -293,7 +293,7 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
 
-                if (strpos($textinput, 'ป้าเย') !== false || strpos($textinput, 'เยเลน') !== false || strpos($textinput, 'เยลเลน') !== false) {
+                if (strpos($textinput, 'ป้าเย') !== false || strpos($textinput, 'เยเลน') !== false || strpos($textinput, 'เยลเลน') !== false || strpos($textinput, 'yellen') !== false ) {
                     $rand = rand(0, 5);
                     if ($rand == 0) {
                         $img = 'https://si.wsj.net/public/resources/images/BN-NM716_0412_4_P_20160411185052.jpg';
@@ -316,7 +316,7 @@ if (!is_null($events['events'])) {
                     }
                 }
 
-                if (strpos($textinput, 'ทรัม') !== false || strpos($textinput, 'trump') !== false) {
+                if (strpos($textinput, 'ทรัม') !== false || strpos($textinput, 'trump') !== false  || strpos($textinput, 'ทรั้ม') !== false) {
                     $rand = rand(0, 4);
                     if ($rand == 0) {
                         $text = 'คุณลุงผู้ที่รักความสงบ 55';
@@ -331,7 +331,7 @@ if (!is_null($events['events'])) {
                         $text = 'ลุงจะพาไปบินซักกี่จุดดีรอบนี้';
                         $case = 1;
                     } else {
-                        $img = 'http://static6.businessinsider.com/image/5755b5ed91058436008c7150-1190-625/janet-yellen-had-the-perfect-response-to-a-question-about-donald-trump-causing-a-global-economic-crisis.jpg';
+                        $img = 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO5I7lwKP0KPUnNjVQzn3DmFqTyYDY01HTzyNLxrttnwoG6lIR';
                         $case = 2;
                     }
                 }
@@ -359,7 +359,7 @@ if (!is_null($events['events'])) {
                     } elseif ($rand == 1) {
                         $text = 'รักเค้าหรอตัวเอง';
                     } elseif ($rand == 2) {
-                        $text = 'มีใครคิดถึง MOD บ้างมั๊ยนะ';
+                        $text = 'บอกรักกันงี้เลยหรอ เขินนะ คนเยอะแยะ';
                     } elseif ($rand == 3) {
                         $text = 'รักใคร ?? Mod ใช้มั๊ย';
                     } else {
@@ -380,7 +380,7 @@ if (!is_null($events['events'])) {
                         $text = 'รวยจริงป่าว';
                         $case = 1;
                     } elseif ($rand == 3) {
-                        $img = 'http://www.komando.com/wp-content/uploads/2014/04/moneyh.jpg';
+                        $img = 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh862u6VgxFLw_TwAdB0C3FxORXZPyLKB1DBsrdkYmkTUDjpMyDw';
                         $case = 2;
                     } else {
                         $text = 'เอามาเติมพอร์ตหน่อยดิ๊';
@@ -460,13 +460,13 @@ if (!is_null($events['events'])) {
                 if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'มรึง') !== false || strpos($textinput, 'เมิง') !== false || strpos($textinput, 'เมริง') !== false) {
                     $rand = rand(0, 3);
                     if ($rand == 0) {
-                        $text = 'พูดจาให้มันเพราะๆหน่อยเป็นป่ะ';
+                        $text = 'พูดจาให้มันเพราะๆหน่อยเป็นมั๊ย';
                     } elseif ($rand == 1) {
                         $text = 'มึง-กู กับใคร สนิทกับกูไง๊';
                     } elseif ($rand == 2) {
                         $text = 'อย่าใช้ภาษาพ่อขุนรามกูไม่ชอบ';
                     } else {
-                        $text = 'มึงจะใช้ภาษาพ่อขุนรามใช่ป่ะ';
+                        $text = 'มึงจะใช้ภาษาพ่อขุนรามกับกูใช่ป่ะ';
                     }
                     $case = 1;
                 }
@@ -792,7 +792,7 @@ if (!is_null($events['events'])) {
                         $text = 'กินเต็มแท่งมั๊ยละนั่น';
                         $case = 1;
                     } else {
-                        $img = 'http://files.gamebanana.com/img/ico/sprays/mario_with_hammer_preview.png';
+                        $img = 'https://s-media-cache-ak0.pinimg.com/originals/67/ff/5b/67ff5b84711240eb6361bc4e4094a890.jpg';
                         $case = 2;
                     }
                 }
@@ -937,7 +937,7 @@ if (!is_null($events['events'])) {
                     if ($rand == 0) {
                         $text = 'แนวต้านจริง คือ เนื้อเทียน';
                     } else {
-                        $img = 'https://img.in.th/image/CPKf';
+                        $img = 'https://img.in.th/images/4f495cb2b586e6bbcf68ba057a8e2c4a.jpg';
                         $case = 2;
                     }
                     $case = 1;
@@ -948,7 +948,7 @@ if (!is_null($events['events'])) {
                     if ($rand == 0) {
                         $text = 'แนวต้านหลอก คือ ไส้เทียน';
                     } else {
-                        $img = 'https://img.in.th/image/CPKf';
+                        $img = 'https://img.in.th/images/4f495cb2b586e6bbcf68ba057a8e2c4a.jpg';
                         $case = 2;
                     }
                     $case = 1;
@@ -969,6 +969,36 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
 
+                if (strpos($textinput, 'adp') !== false || strpos($textinput, 'Adp') !== false || strpos($textinput, 'ADP') !== false ) {
+                    $text = 'ADP-Nonfarm คือ รายงานการจ้างงานแห่งชาติเอดีพี จะวัดค่าการเปลี่ยนแปลงรายเดือนเพื่อทราบถึงการจ้างงานภาคเอกชนที่ไม่ใช่เกษตรกรรมซึ่งได้ยึดตามข้อมูลการคิดเงินเดือนที่ได้ข้อมูลจากกิจการธุรกิจต่างๆ ประมาณ 400,000 แห่งทั่วทั้งสหรัฐอเมริกาน';
+                    $text = 'ถ้าตัวเลขออกมา "มากกว่า" ตัวเลขคาดการณ์ จะส่งผล "ลบ" ต่อทองคำ';
+                    $case = 1;
+                }
+
+                if (strpos($textinput, 'Farm') !== false || strpos($textinput, 'farm') !== false || strpos($textinput, 'nfp') !== false || strpos($textinput, 'NFP') !== false  ) {
+                    $text = 'Non-farm payroll คือ รายงานตัวเลขการจ้างงานนอกภาคการเกษตร จะวัดค่าการเปลี่ยนแปลงในจำนวนของผู้ที่มีงานทำในระหว่างช่วงเดือนก่อนหน้านี้โดยไม่รวมอุตสาหกรรมภาคการเกษตร การสร้างงานนั้นเป็นดัชนีที่สำคัญที่บ่งชี้ถึงการใช้จ่ายของผู้บริโภคซึ่งถือเป็นส่วนที่มากที่สุดของกิจกรรมทางเศรษฐกิจ';
+                    $text = 'ถ้าตัวเลขออกมา "มากกว่า" ตัวเลขคาดการณ์ จะส่งผล "ลบ" ต่อทองคำ';
+                    $case = 1;
+                }
+
+                if (strpos($textinput, 'สลับไม้') !== false) {
+                    $text = 'การสลับไม้เล่น คือ การที่เราออกออเดอร์ไปแล้ว 1 ออเดอร์ แล้วกราฟเกิดวิ่งสวนทางทำให้เราต้องไปออกออเดอร์เพิ่มอีก 1 ออเดอร์ เมื่อกราฟได้วิ่งกลับลงมาที่ออเดอร์แรกอีกครั้ง เราจะทำการปิดออเดอร์นั้นทันที ซึ่งจะเหลือออเดอร์ที่ 2 ซึ่งราคาจะดีกว่า';
+                    $case = 1;
+                }
+
+                if (strpos($textinput, 'xlot') !== false || strpos($textinput, 'x-lot') !== false) {
+                    $text = 'X-lot เป็นวิธีที่ใช้ในการหาไม้ราคาดีที่สุดทั้งในกรณีถูกทางและผิดทาง
+                    
+วิธีการออกออเดอร์ตามทฤษฎี x-lot
+                    
+ไม้ที่ 1 size lot = x
+ไม้ที่ 2 size lot = x
+ไม้ที่ 3 size lot = x/2
+ไม้ที่ 4 size lot = x/2
+ไม้ที่ 5 size lot = x
+ไม้ที่ 6 size lot = x';
+                    $case = 1;
+                }
 
                 if (strpos($textinput, 'เพลีย') !== false) {
                     $rand = rand(0, 3);
@@ -977,7 +1007,7 @@ if (!is_null($events['events'])) {
                     } elseif ($rand == 1) {
                         $text = 'เพลียกราฟหรือเพลียอะไร';
                     } elseif ($rand == 2) {
-                        $text = 'M-150 ซัก 2 ขวดมั๊ย';
+                        $text = 'เบียร์ซักป๋องมั๊ยเลือดจะได้สูบฉีด';
                     } else {
                         $text = 'ไม่หลับไม่นอนก็เป็นงี้แหละ';
                     }
@@ -996,20 +1026,30 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
 
+                if (strpos($textinput, 'บายหรือเซล') !== false || strpos($textinput, 'บาย หรือ เซล') !== false || strpos($textinput, 'เซล หรือ บาย') !== false || strpos($textinput, 'เซลหรือบาย') !== false  ) {
+                    $text = 'เช็คเหตุผลในการเข้าออเดอร์สิ
+
+1.เช็คข่าวต่างๆที่มีผลต่อสกุลเงิน usd
+2.เช็คข่าวใน forexfactory เทียบดัวเลขคาดการณ์และครั้งก่อนว่าดีขึ้นหรือแย่่ลง
+3.เช็ค USDX ว่าแข็งค่าหรืออ่อนค่า
+4.หาจุดกลับตัวที่ใกล้ที่สุดและเข้าออเดอร์ตามที่วิเคราะห์ไว้';
+                    $case = 1;
+                }
+
                 if (strpos($textinput, 'คัน') !== false) {
                     $text = 'ใจเย็นๆ รอสัญญาณก่อน รีบเข้าเจ็บตัวได้นะ';
                     $case = 1;
                 }
 
                 if (strpos($textinput, 'ตลาดเปิด') !== false) {
-                    $text = 'ช่วงเวลาตลาดเปิด ( เวลาปกติไม่ใช่ DST ) 
-                    
-                   05:00 ตลาดออสเตเรีย AUD
-                   07:00 ตลาดญี่ปุ่น JPY
-                   08:20 ตลาดจีน CNY
-                   13:00 ตลาดยุโรป EUR
-                   14:00 ตลาดอังกฤษ GBP
-                   19:20 ตลาดโคเมก USD';
+                    $text = 'ช่วงเวลาตลาดเปิด ( เวลาปกติไม่ใช่ DST )
+                
+05:00 ตลาดออสเตเรีย AUD
+07:00 ตลาดญี่ปุ่น JPY
+08:20 ตลาดจีน CNY
+13:00 ตลาดยุโรป EUR
+14:00 ตลาดอังกฤษ GBP
+19:20 ตลาดโคเมก USD';
                     $case = 1;
                 }
 
@@ -1209,7 +1249,7 @@ if (!is_null($events['events'])) {
                 if (strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false || strpos($textinput, 'ก า ก') !== false || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false || strpos($textinput, 'Kak') !== false || strpos($textinput, 'KAK') !== false) {
                     $rand = rand(0, 6);
                     if ($rand == 0) {
-                        $text = 'ว่าตัวเองทำไมอ่ะ';
+                        $text = 'ไม่สนิทอย่าติดตลก';
                     } elseif ($rand == 1) {
                         $text = 'มึงอะกาก';
                     } elseif ($rand == 2) {
@@ -1337,7 +1377,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 }
 
                 if (strpos($textinput, 'เงินไม่เข้า') !== false || strpos($textinput, 'เงินยังไม่เข้า') !== false) {
-                    $text = 'หลังจากทำตามขั้นตอนของระบบแล้ว รอ 1-3 วันทำการ ถ้ายังไม่เข้า success รบกวนส่งหลักฐานไปที่ finance@168fx.com และ support@168fx.com ครับ';
+                    $text = 'หลังจากทำตามขั้นตอนของระบบแล้ว รอ 1-3 วันทำการ ถ้ายังไม่เข้า รบกวนส่งหลักฐานไปที่ finance@168fx.com และ support@168fx.com ครับ';
                     $case = 1;
                 }
 
