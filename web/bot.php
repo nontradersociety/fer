@@ -32,6 +32,7 @@ if (!is_null($events['events'])) {
                     $text = 'เตะออกแล้วเชิญเข้ามาทำไม น้อยใจ !!';
                 }
             }
+            
             if(strpos($textinput, 'ไปไกลๆสัด') !== false){
                 $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                 $txt = "2";
@@ -421,6 +422,18 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
 
+                if (strpos($textinput, 'kickmod') !== false || $textinput, 'Kickmod') !== false) {
+                    $rand = rand(0, 2);
+                    if ($rand == 0) {
+                        $text = 'เดี๋ยวจะ kick คนพิมพ์ก่อนเลย';
+                    } elseif ($rand == 1) {
+                        $text = 'ไม่ใช่บอสไม่มีปัญหา kick หรอก';
+                    } else {
+                        $text = 'ทำไรอ่ะ อยากโดน free kick ว่างั้น';
+                    }
+                    $case = 1;
+                }
+                
                 /*if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false || strpos($textinput, 'Bot') !== false) {
 
                     $rand = rand(0, 7);
