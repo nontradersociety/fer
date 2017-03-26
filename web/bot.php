@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
                     $text = 'เตะออกแล้วเชิญเข้ามาทำไม น้อยใจ !!';
                 }
             }
-            if(strpos($textinput, 'kickmod') !== false){
+            if(strpos($textinput, ‘ไปไกลๆเลยสัด’) !== false){
                 $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                 $txt = "2";
                 fwrite($myfile, $txt);
@@ -985,6 +985,11 @@ if (!is_null($events['events'])) {
 
                 if (strpos($textinput, 'คัน') !== false) {
                     $text = 'ใจเย็นๆ รอสัญญาณก่อน รีบเข้าเจ็บตัวได้นะ';
+                    $case = 1;
+                }
+
+                if (strpos($textinput, ‘ตลาดเปิด’) !== false) {
+                    $text = ‘ช่วงเวลาตลาดเปิด ’;
                     $case = 1;
                 }
 
