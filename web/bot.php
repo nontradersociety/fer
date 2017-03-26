@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
             $case = 0;
             // Build message to reply back
 
-            if (strpos($textinput, 'invitemod') !== false ) {
+            if (strpos($textinput, ‘comeheremod’) !== false ) {
                 $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                 $txt = "1";
                 fwrite($myfile, $txt);
@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
                     $text = 'เตะออกแล้วเชิญเข้ามาทำไม น้อยใจ !!';
                 }
             }
-            if(strpos($textinput, ‘ไปไกลๆเลยสัด’) !== false){
+            if(strpos($textinput, 'ไปไกลๆสัด') !== false){
                 $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                 $txt = "2";
                 fwrite($myfile, $txt);
@@ -988,8 +988,15 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
 
-                if (strpos($textinput, ‘ตลาดเปิด’) !== false) {
-                    $text = ‘ช่วงเวลาตลาดเปิด ’;
+                if (strpos($textinput, 'ตลาดเปิด') !== false) {
+                    $text = 'ช่วงเวลาตลาดเปิด ( เวลาปกติไม่ใช่ DST ) 
+                    
+                   05:00 ตลาดออสเตเรีย AUD
+                   07:00 ตลาดญี่ปุ่น JPY
+                   08:20 ตลาดจีน CNY
+                   13:00 ตลาดยุโรป EUR
+                   14:00 ตลาดอังกฤษ GBP
+                   19:20 ตลาดโคเมก USD';
                     $case = 1;
                 }
 
