@@ -1299,7 +1299,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'สวัสดี') !== false) {
+            if (strpos($textinput, 'สวัสดีบอท') !== false || strpos($textinput, 'สวัสดีครับบอท') !== false || strpos($textinput, 'สวัสดีคับบอท') !== false || strpos($textinput, 'สวัสดีค่ะบอท') !== false || strpos($textinput, 'สวัสดีค่าบอท') !== false) {
                 $text = 'สวัสดีครับ';
                 $case = 1;
             }
@@ -1393,7 +1393,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 $case = 1;
             }
 
-            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false) {
+            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false  || strpos($textinput, 'ส า ส') !== false || strpos($textinput, 'ส า ด') !== false ) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'จะสาดน้ำไง๊';
