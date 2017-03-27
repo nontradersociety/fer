@@ -756,7 +756,7 @@ if (!is_null($events['events'])) {
                     $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/1917188_1245936980824_1411898_n.jpg?oh=f820612f698220532eb342fd3858887f&oe=594E7C1D';
                     $case = 2;
                 } elseif ($rand == 4) {
-                    $img = '';
+                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/16142550_10210594984963108_1211239256004129371_n.jpg?oh=372de61dec066ab7fd55adca70fee5c2&oe=5951EF77';
                     $case = 2;
                 } else {
                     $text = 'หมายถึง ร.ต.ดร.อภิธัช เสาะการ ใช่ป่ะ';
