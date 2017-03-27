@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
             $replyToken = $event['replyToken'];
             $case = 0;
             // Build message to reply back
-
+/*
             if (strpos($textinput, 'comeheremod') !== false ) {
                 $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                 $txt = "1";
@@ -33,7 +33,7 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if(strpos($textinput, 'ไปไกลๆสัด') !== false){
+            if(strpos($textinput, 'ไปไกลๆเลยสัด') !== false){
                 $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                 $txt = "2";
                 fwrite($myfile, $txt);
@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 
             $myfile = fopen("data.txt", "r") or die("Unable to open file!");
             $data = fread($myfile,filesize("data.txt"));
-            if($data == "1") {
+            if($data == "1") {*/
 
                 if (strpos($textinput, 'บอล') !== false) {
                     $message = '
@@ -1563,7 +1563,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
         }
-    }
+    //} openbot
 }
 function getElementsByClass(&$parentNode, $tagName, $className) {
     $nodes=array();
