@@ -410,7 +410,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'เก๋า') !== false) {
+            if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false  ) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'ลองซักตั้งมั๊ย';
@@ -1211,6 +1211,30 @@ if (!is_null($events['events'])) {
                     $text = 'เดี๋ยวมึงจะเกรียม';
                 } else {
                     $text = 'ไม่เกรียนแค่สกินเฮด';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ร้อน') !== false) {
+                $rand = rand(0, 2);
+                if ($rand == 0) {
+                    $text = 'หัวร้อนไง๊';
+                } elseif ($rand == 1) {
+                    $text = 'ไปนอนในถังน้ำแข็งไปจะได้หายร้อน';
+                }else {
+                    $text = 'ซักป๋องมั๊ยจะได้หายร้อน';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ไม่อยากรู้') !== false) {
+                $rand = rand(0, 2);
+                if ($rand == 0) {
+                    $text = 'ก็ไม่ต้องยุ่งดิ';
+                } elseif ($rand == 1) {
+                    $text = 'ไปไหนก็ไป เดี๋ยวหงายหลังหรอก';
+                }else {
+                    $text = 'บอกให้คนอื่นฟัง';
                 }
                 $case = 1;
             }
