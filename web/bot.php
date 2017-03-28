@@ -410,6 +410,29 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'กวนติง') !== false || strpos($textinput, 'เชี้ย') !== false) {
+                $rand = rand(0, 1);
+                if ($rand == 0) {
+                    $text = 'แหนะๆ จะด่าก็มาเลย ไม่ต้องทำเป็นเนียน';
+                } else {
+                    $text = 'รู้นะว่าด่าอ่ะ เก๋าหรอ ??';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'เสียดาย') !== false) {
+                $rand = rand(0, 1);
+                if ($rand == 0) {
+                    $text = 'เสียดายดีกว่าเสียใจ';
+                } elseif ($rand == 1) {
+                    $text = 'ความสำเร็จต้องทำซ้ำได้ ไม่ต้องไปเสียดายนะ';
+                    $case = 1;
+                } else {
+                    $text = 'ไม่ต้องซี เริ่มต้นใหม่ไป';
+                }
+                $case = 1;
+            }
+
             if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false  ) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
@@ -486,7 +509,7 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 2) {
                     $text = 'อย่าใช้ภาษาพ่อขุนรามกูไม่ชอบ';
                 } else {
-                    $text = 'มึงจะใช้ภาษาพ่อขุนรามกับกูใช่ป่ะ';
+                    $text = 'มึงจะใช้ภาษาพ่อขุนรามกับกูใช่ป่ะ ชักหัวร้อนละนะ';
                 }
                 $case = 1;
             }
@@ -949,12 +972,12 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ติดบาย') !== false || strpos($textinput, 'ติดbuy') !== false || strpos($textinput, 'ติดไม้buy') !== false || strpos($textinput, 'ติดไม้ buy') !== false) {
+            if (strpos($textinput, 'ติดบาย') !== false || strpos($textinput, 'ติดไม้บาย') !== false || strpos($textinput, 'ติดbuy') !== false || strpos($textinput, 'ติดไม้buy') !== false || strpos($textinput, 'ติดไม้ buy') !== false) {
                 $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง buy limit ไว้';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ติดเซล') !== false || strpos($textinput, 'ติดsell') !== false || strpos($textinput, 'ติดไม้sell') !== false || strpos($textinput, 'ติดไม้ sell') !== false) {
+            if (strpos($textinput, 'ติดเซล') !== false || strpos($textinput, 'ติดไม้เซล') !== false || strpos($textinput, 'ติดsell') !== false || strpos($textinput, 'ติดไม้sell') !== false || strpos($textinput, 'ติดไม้ sell') !== false) {
                 $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง sell limit ไว้';
                 $case = 1;
             }
@@ -981,7 +1004,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'กลับตัว') !== false) {
+            if (strpos($textinput, 'จุดกลับตัว') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
                     $text = 'จุดกลับตัว คือ จุดที่เมื่อราคาได้วิ่งมาชนแล้ว มี "แนวโน้ม" ที่จะกลับตัว';
@@ -1273,9 +1296,9 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'หี') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
-                    $text = 'แม่งมึงอะดิ';
+                    $text = 'ว่าตัวเองทำไม บ้าป่าว';
                 } elseif ($rand == 1) {
-                    $text = 'ทำไม คันหรอ';
+                    $text = 'ชักจะเอือมกับคำพูดคำจามึงละนะ';
                 } else {
                     $text = 'พูดจาดีๆหน่อยสัส';
                 }
