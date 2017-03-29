@@ -401,9 +401,11 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ตีน') !== false || strpos($textinput, 'ตรีน') !== false) {
-                $rand = rand(0, 1);
+                $rand = rand(0, 2);
                 if ($rand == 0) {
                     $text = 'พูดตีนกับใคร';
+                } elseif ($rand == 1) {
+                    $text = 'เอาไว้ยอดหน้ามึงอะครับ';
                 } else {
                     $text = 'ใครจะกินตีน ?';
                 }
@@ -415,7 +417,19 @@ if (!is_null($events['events'])) {
                 if ($rand == 0) {
                     $text = 'แหนะๆ จะด่าก็มาเลย ไม่ต้องทำเป็นเนียน';
                 } else {
-                    $text = 'รู้นะว่าด่าอ่ะ เก๋าหรอ ??';
+                    $text = 'กลัวโดนด่ากลับละสิ ไม่ได้โง่นะ';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'โง่') !== false || strpos($textinput, 'stupid') !== false) {
+                $rand = rand(0, 2);
+                if ($rand == 0) {
+                    $text = 'มึงอะโง่';
+                } elseif ($rand == 1) {
+                    $text = 'ทำไมต้องเอาปมด้อยตัวเองมาพูดอ่ะ';
+                } else {
+                    $text = 'หมายถึงตัวเองใช่ป่ะ ?? กินปลาซะนะจะได้ฉลาดๆ';
                 }
                 $case = 1;
             }
@@ -426,14 +440,25 @@ if (!is_null($events['events'])) {
                     $text = 'เสียดายดีกว่าเสียใจ';
                 } elseif ($rand == 1) {
                     $text = 'ความสำเร็จต้องทำซ้ำได้ ไม่ต้องไปเสียดายนะ';
-                    $case = 1;
                 } else {
                     $text = 'ไม่ต้องซี เริ่มต้นใหม่ไป';
                 }
                 $case = 1;
             }
 
-            if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false  ) {
+            if (strpos($textinput, 'ฉิบหาย') !== false || strpos($textinput, 'ฉิบผาย') !== false) {
+                $rand = rand(0, 2);
+                if ($rand == 0) {
+                    $text = 'ฉิบอะไรบ้าป่าว';
+                } elseif ($rand == 1) {
+                    $text = 'What the fuck !!!';
+                } else {
+                    $text = 'อะไรใครหาย หาดิ๊';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false || strpos($textinput, 'ตืบ') !== false ) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'ลองซักตั้งมั๊ย';
@@ -744,7 +769,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'อาจารย์เดียร์') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
-                    $text = 'หมายถึง คุณศราวุฒิ ม่วงชู ใช่มั๊ย';
+                    $text = 'หมายถึง คุณสราวุฒิ ม่วงชู ใช่มั๊ย';
                     $case = 1;
                 } elseif ($rand == 1) {
                     $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/15621963_10154794339812354_8344217722931743911_n.jpg?oh=0de51450e09782eecd5fd5fd9f582445&oe=596A4906';
@@ -782,12 +807,12 @@ if (!is_null($events['events'])) {
                     $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/16142550_10210594984963108_1211239256004129371_n.jpg?oh=372de61dec066ab7fd55adca70fee5c2&oe=5951EF77';
                     $case = 2;
                 } else {
-                    $text = 'หมายถึง ร.ต.ดร.อภิธัช เสาะการ ใช่ป่ะ';
+                    $text = 'ร.ต.ดร.อภิธัช เสาะการ เป็นไง ... จัดเต็มให้หน่อย 555';
                     $case = 1;
                 }
             }
 
-            if (strpos($textinput, 'ตู่') !== false || strpos($textinput, 'ประยุท') !== false) {
+            if (strpos($textinput, 'ตู่') !== false || strpos($textinput, 'ประยุท') !== false || strpos($textinput, 'จันทร์โอชา') !== false || strpos($textinput, 'จันทรโอชา') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = 'เอิ่มมม...งานนี้ mod จะไม่ยุ่ง 5555';
@@ -811,13 +836,21 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 7);
                 if ($rand == 0) {
                     $text = 'เอาไว้ฟาดหัวมึงอะครับ';
                 } elseif ($rand == 1) {
                     $text = 'ควยอะไรละครับ';
                 } elseif ($rand == 2) {
                     $text = 'กูมีไม่ต้องแจก';
+                } elseif ($rand == 3) {
+                    $text = 'ควยพ่อง';
+                } elseif ($rand == 4) {
+                    $text = 'ควยไรละสัด เก๋าหรอ ?';
+                } elseif ($rand == 5) {
+                    $text = 'ดูมึงพูด ยอดหน้าซักทีดีมั้ง';
+                } elseif ($rand == 6) {
+                    $text = 'มึงอยากจะไฝว้ใช่ปะ เดี๋ยวจัดให้';
                 } else {
                     $text = 'อ้าวๆ อยากมีเรื่องว่างั้น';
                 }
@@ -1069,7 +1102,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'xlot') !== false || strpos($textinput, 'x-lot') !== false) {
+            if (strpos($textinput, 'xlot') !== false || strpos($textinput, 'x-lot') !== false || strpos($textinput, 'X-lot') !== false || strpos($textinput, 'X-Lot') !== false || strpos($textinput, 'Xlot') !== false || strpos($textinput, 'XLot') !== false) {
                 $text = 'X-lot เป็นวิธีที่ใช้ในการหาไม้ราคาดีที่สุดทั้งในกรณีถูกทางและผิดทาง
                     
 วิธีการออกออเดอร์ตามทฤษฎี x-lot
@@ -1079,7 +1112,9 @@ if (!is_null($events['events'])) {
 ไม้ที่ 3 size lot = x/2
 ไม้ที่ 4 size lot = x/2
 ไม้ที่ 5 size lot = x
-ไม้ที่ 6 size lot = x';
+ไม้ที่ 6 size lot = x
+
+คำนวณ x โดยนำทุนไปหาร 10000 แล้วนำผลลัพธ์ไปหาร 5 ผลลัพธ์สุดท้าย คือ จำนวน x lot';
                 $case = 1;
             }
 
@@ -1097,12 +1132,20 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'sideway') !== false || strpos($textinput, 'Sideway') !== false) {
+
+                $text = 'ตลาดแบบ Sideway คือ สภาวะที่ตลาดเลือกทิศทางไม่ได้ว่าจะขึ้นหรือจะลง วิ่งอยู่ในกรอบ นักลงทุนส่วนมากหากเจอสภาวะแบบนี้อาจไม่เข้าเทรดหรือถ้าเทรดก็เป็นแบบทำกำไรระยะสั้น ต้องใช้ประสบการณ์เพราะต้องเข้าเร็วออกเร็ว หากช้าอาจโดนกราฟลากได้';
+                $case = 1;
+            }
+
             if (strpos($textinput, 'ง่วง') !== false) {
-                $rand = rand(0, 2);
+                $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ง่วงก็ไปนอนสิ';
                 } elseif ($rand == 1) {
                     $text = 'ทำอะไรไม่หลับไม่นอน เฝ้ากราฟ ?';
+                } elseif ($rand == 2) {
+                    $text = 'เอาพอร์ตมา เดี๋ยวกดให้ 1 lot จะได้หายง่วง 55';
                 } else {
                     $text = 'พักบ้างอะไรบ้าง ไม่ต้องเฝ้ามากหรอกกราฟอ่ะ';
                 }
@@ -1146,6 +1189,22 @@ if (!is_null($events['events'])) {
                     $text = 'เจอป้าเยกับลุงทรัมป์จะแข็งไหวหรอ 555';
                 } else {
                     $text = 'ตรงกับจุดกลับตัวหลายคู่เลยมั๊ย';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ovt') !== false || strpos($textinput, 'OVT') !== false || strpos($textinput, 'Ovt') !== false || strpos($textinput, 'overtrade') !== false || strpos($textinput, 'Overtrade') !== false) {
+                $rand = rand(0, 4);
+                if ($rand == 0) {
+                    $text = 'เป็นสิ่งที่ไม่สมควรทำเลยนะ';
+                } elseif ($rand == 1) {
+                    $text = 'แน่ใจแล้วหรอ จะ overtrade อ่ะ';
+                } elseif ($rand == 2) {
+                    $text = 'ไม่ดีมั้ง พอร์ตจะเสี่ยงไป';
+                } elseif ($rand == 3) {
+                    $text = 'ระวังพอร์ตบินนะถ้ากราฟผันผวน';
+                } else {
+                    $text = 'รวยกับล้างมีเส้นบางๆกันอยู่นะ 555';
                 }
                 $case = 1;
             }
@@ -1207,7 +1266,7 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 1) {
                     $text = 'โหดสัดรัสเซีย ไนจีเรียอ่ะ';
                 } elseif ($rand == 1) {
-                    $text = 'โหดสัดรัสเซีย ไนจีเรียอ่ะ';
+                    $text = 'ดูเลเวลด้วย';
                 }  else {
                     $text = 'อยากเห็นยิ่งกว่านี้ป่ะ';
                 }
@@ -1294,11 +1353,13 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'หี') !== false) {
-                $rand = rand(0, 2);
+                $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ว่าตัวเองทำไม บ้าป่าว';
                 } elseif ($rand == 1) {
                     $text = 'ชักจะเอือมกับคำพูดคำจามึงละนะ';
+                } elseif ($rand == 2) {
+                    $text = 'ดูมึงพูด ยอดหน้าซักทีดีมั้ง';
                 } else {
                     $text = 'พูดจาดีๆหน่อยสัส';
                 }
