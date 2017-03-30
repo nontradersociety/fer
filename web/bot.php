@@ -353,7 +353,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'รัก') !== false || strpos($textinput, 'love') !== false) {
-                $rand = rand(0, 4);
+                $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = '1 2 3 4 5 I love You <3';
                 } elseif ($rand == 1) {
@@ -526,15 +526,21 @@ if (!is_null($events['events'])) {
             }*/
 
             if (strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'มรึง') !== false || strpos($textinput, 'เมิง') !== false || strpos($textinput, 'เมริง') !== false) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 5);
                 if ($rand == 0) {
-                    $text = 'พูดจาให้มันเพราะๆหน่อยเป็นมั๊ย';
+                    $text = 'เห้ย !! พูดจาให้มันเพราะๆหน่อย';
                 } elseif ($rand == 1) {
                     $text = 'มึง-กู กับใคร สนิทกับกูไง๊';
                 } elseif ($rand == 2) {
                     $text = 'อย่าใช้ภาษาพ่อขุนรามกูไม่ชอบ';
-                } else {
+                } elseif ($rand == 3) {
                     $text = 'มึงจะใช้ภาษาพ่อขุนรามกับกูใช่ป่ะ ชักหัวร้อนละนะ';
+                } elseif ($rand == 4) {
+                    $text = 'กูบอกกี่ครั้งละว่่าให้พูดจาดีๆ สงสัยคุยภาษาคนไม่รู้เรื่อง';
+                } elseif ($rand == 5) {
+                    $text = 'อะไรมึง';
+                } elseif ($rand == 6) {
+                    $text = 'มึงจะกู-มึงทำไมวะ';
                 }
                 $case = 1;
             }
@@ -1284,13 +1290,15 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เกรียน') !== false || strpos($textinput, 'เกียน') !== false) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'ว่าใครเกรียนเดี๋ยวโดนเตะออกจากห้อง';
                 } elseif ($rand == 1) {
                     $text = 'มึงอะเกรียน';
                 } elseif ($rand == 2) {
                     $text = 'เดี๋ยวมึงจะเกรียม';
+                } elseif ($rand == 3) {
+                    $text = 'เกรียนพ่อง';
                 } else {
                     $text = 'ไม่เกรียนแค่สกินเฮด';
                 }
@@ -1298,11 +1306,13 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ร้อน') !== false) {
-                $rand = rand(0, 2);
+                $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'หัวร้อนไง๊';
                 } elseif ($rand == 1) {
                     $text = 'ไปนอนในถังน้ำแข็งไปจะได้หายร้อน';
+                } elseif ($rand == 2) {
+                    $text = 'ที่นี่ประเทศไทยไง เลยร้อน 555';
                 }else {
                     $text = 'ซักป๋องมั๊ยจะได้หายร้อน';
                 }
@@ -1352,7 +1362,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'หี') !== false) {
+            if (strpos($textinput, 'หี') !== false || strpos($textinput, 'จิ๋ม') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ว่าตัวเองทำไม บ้าป่าว';
