@@ -252,7 +252,112 @@ if (!is_null($events['events'])) {
                         $case = 2;
                         break;
                 }
+            }
 
+            if (strpos($textinput, 'ขอเพลง') !== false) {
+                $rand = rand(1, 29);
+                switch ($rand) {
+                    case 1: //pull me under non
+                        $text = 'https://www.facebook.com/naiinon/videos/vb.100000271105382/1440978912587798/?type=3&theater';
+                        $case = 1;
+                        break;
+                    case 2: //คิดถึง silly fools non
+                        $text = 'https://www.facebook.com/naiinon/videos/vb.100000271105382/1110728128946213/?type=3&theater';
+                        $case = 1;
+                        break;
+                    case 3: //elevate non
+                        $text = 'https://www.facebook.com/naiinon/videos/vb.100000271105382/1052510024768024/?type=3&theater';
+                        $case = 1;
+                        break;
+                    case 4: //olivia bossanova 2
+                        $text = 'https://www.youtube.com/watch?v=5tZfAK2JUdU';
+                        $case = 1;
+                        break;
+                    case 5: //50 Cent - P.I.M.P.
+                        $text = 'https://www.youtube.com/watch?v=UDApZhXTpH8';
+                        $case = 1;
+                        break;
+                    case 6: //Eminem - Lose Yourself
+                        $text = 'https://www.youtube.com/watch?v=_Yhyp-_hX2s';
+                        $case = 1;
+                        break;
+                    case 7: //Eminem - Not Afraid
+                        $text = 'https://www.youtube.com/watch?v=j5-yKhDd64s';
+                        $case = 1;
+                        break;
+                    case 8: //LMFAO - Party Rock
+                        $text = 'https://www.youtube.com/watch?v=KQ6zr6kCPj8';
+                        $case = 1;
+                        break;
+                    case 9: //REDFOO - New Thang
+                        $text = 'https://www.youtube.com/watch?v=c_3xZgvy6fo';
+                        $case = 1;
+                        break;
+                    case 10: //Redfoo - Let's Get Ridiculous
+                        $text = 'https://www.youtube.com/watch?v=CdLhdrNgGu4';
+                        $case = 1;
+                        break;
+                    case 11: //Flo Rida - GDFR
+                        $text = 'https://www.youtube.com/watch?v=F8Cg572dafQ';
+                        $case = 1;
+                        break;
+                    case 12: // เรือเล็กควรออกจากฝั่ง non
+                        $text = 'https://www.facebook.com/naiinon/videos/vb.100000271105382/805809092771453/?type=3&theater';
+                        $case = 1;
+                        break;
+                    case 13: //Pitbull, Ne-Yo
+                        $text = 'https://www.youtube.com/watch?v=bTXJQ5ql5Fw';
+                        $case = 1;
+                        break;
+                    case 14: //Pitbull - Give Me Everything
+                        $text = 'https://www.youtube.com/watch?v=EPo5wWmKEaI';
+                        $case = 1;
+                        break;
+                    case 15: //Jennifer Lopez - On The Floor
+                        $text = 'https://www.youtube.com/watch?v=t4H_Zoh7G5A';
+                        $case = 1;
+                        break;
+                    case 16: //Shakira - Waka Wak
+                        $text = 'https://www.youtube.com/watch?v=pRpeEdMmmQ0';
+                        $case = 1;
+                        break;
+                    case 17: //Katy Perry - Roar
+                        $text = 'https://www.youtube.com/watch?v=CevxZvSJLk8';
+                        $case = 1;
+                        break;
+                    case 18: //Lady Gaga - Bad Romance
+                        $text = 'https://www.youtube.com/watch?v=qrO4YZeyl0I';
+                        $case = 1;
+                        break;
+                    case 19: //Lady Gaga - Telephone
+                        $text = 'https://www.youtube.com/watch?v=GQ95z6ywcBY';
+                        $case = 1;
+                        break;
+                    case 20: //Britney Spears - Toxic
+                        $text = 'https://www.youtube.com/watch?v=LOZuxwVk7TU';
+                        $case = 1;
+                        break;
+                }
+            }
+
+            if (strpos($textinput, 'epic') !== false || strpos($textinput, 'Epic') !== false || strpos($textinput, 'EPIC') !== false) {
+                $rand = rand(0, 4);
+                if ($rand == 0) {
+                    $text = 'https://www.youtube.com/watch?v=gpisNZ7QuoE'; //อยากรู้หัวใจตัวเอง
+                    $case = 1;
+                } elseif ($rand == 1) {
+                    $text = 'https://www.youtube.com/watch?v=9XA6ngcwkVw'; //ไม่เปลี่ยนใจ
+                    $case = 1;
+                } elseif ($rand == 2) {
+                    $text = 'https://www.youtube.com/watch?v=5MXzaw5Xe9w'; //ฝันไปเถอะ
+                    $case = 1;
+                } elseif ($rand == 3) {
+                    $text = 'https://www.youtube.com/watch?v=FLsLaU3Abc4'; //การรอคอย
+                    $case = 1;
+                } else {
+                    $text = 'https://www.youtube.com/watch?v=VX3oo0WPZug'; //เหงายิ่งกว่าเหงา
+                    $case = 1;
+                }
             }
 
             if (strpos($textinput, 'fuck') !== false) {
@@ -272,6 +377,32 @@ if (!is_null($events['events'])) {
                 } else {
                     $text = 'นี่มึงอยากมีเรื่องใช่่ป่ะ';
                     $case = 1;
+                }
+            }
+
+            if (strpos($textinput, 'กะเทย') !== false || strpos($textinput, 'กระเทย') !== false) {
+                $rand = rand(0, 6);
+                if ($rand == 0) { //กระเทยไม่สวย
+                    $img = 'https://scontent-fbkk5-7.us-fbcdn.net/v1/t.1-48/1426l78O9684I4108ZPH0J4S8_842023153_K1DlXQOI5DHP/dskvvc.qpjhg.xmwo/w/data/941/941285-img.rnda2g.2.jpg';
+                    $case = 2;
+                } elseif ($rand == 1) {
+                    $img = 'https://scontent-fbkk5-7.us-fbcdn.net/v1/t.1-48/1426l78O9684I4108ZPH0J4S8_842023153_K1DlXQOI5DHP/dskvvc.qpjhg.xmwo/p/data/263/263989-535f8dd40ec2a.jpg';
+                    $case = 2;
+                } elseif ($rand == 2) {
+                    $img = 'https://pbs.twimg.com/media/BrUGtjbCAAAaOae.jpg';
+                    $case = 2;
+                } elseif ($rand == 3) {
+                    $img = 'https://pbs.twimg.com/media/CBo6hveUsAAqZCL.jpg';
+                    $case = 2;
+                } elseif ($rand == 4) { //โยชิ
+                    $img = 'https://image.dek-d.com/27/0331/9080/118067941';
+                    $case = 2;
+                } elseif ($rand == 5) { //เฟรม
+                    $img = 'https://1.bp.blogspot.com/-yJTg4mWLNIA/V4tREp20TsI/AAAAAAAAFUo/cUi9vOmT-9QV8WGiRMJpVmMQ1e2cfoFLgCLcB/s640/2016-07-17_16-05-07.png';
+                    $case = 2;
+                } else { //เฟรม
+                    $img = 'https://f2.jarm.com/news/00/1c/rx/1470709798_20.jpg';
+                    $case = 2;
                 }
             }
 
@@ -364,6 +495,66 @@ if (!is_null($events['events'])) {
                     $text = 'รักใคร ?? Mod ใช้มั๊ย';
                 } else {
                     $text = 'รักเหมือนกันแหละ';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ไม่รักบอท') !== false) {
+                $rand = rand(0, 5);
+                if ($rand == 0) {
+                    $text = 'ไม่รักก็ไม่ต้องรัก';
+                } elseif ($rand == 1) {
+                    $text = 'ทำไมพูดแบบนี้ละ';
+                } elseif ($rand == 2) {
+                    $text = 'แน่ใจว่าไม่รัก ???';
+                } elseif ($rand == 3) {
+                    $text = 'ไม่ได้ทำอะไรผิดซักหน่อย';
+                } else {
+                    $text = 'ก็ไม่ได้อยากรักเหมือนกัน :p';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'เกลียดบอท') !== false) {
+                $rand = rand(0, 5);
+                if ($rand == 0) {
+                    $text = 'อยากเกลียดก็เกลียดไป';
+                } elseif ($rand == 1) {
+                    $text = 'ทำไมพูดแบบนี้ละ';
+                } elseif ($rand == 2) {
+                    $text = 'แน่ใจว่าเกลียด ???';
+                } elseif ($rand == 3) {
+                    $text = 'ไม่ได้ทำอะไรผิดซักหน่อย';
+                } else {
+                    $text = 'เกลียดเหมือนกันแหละ 555';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'อีบอท') !== false) {
+                $rand = rand(0, 3);
+                if ($rand == 0) {
+                    $text = 'พูดให้มันดีๆหน่อย';
+                } elseif ($rand == 1) {
+                    $text = 'พูดอีกับใคร';
+                } elseif ($rand == 2) {
+                    $text = 'พูดเพราะเป็นมั๊ย';
+                } elseif ($rand == 3) {
+                    $text = 'เป็นใครมาจากไหนถึงใช้คำว่า อี อยากโดน ??';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ไอ้บอท') !== false || strpos($textinput, 'ไอบอท') !== false) {
+                $rand = rand(0, 3);
+                if ($rand == 0) {
+                    $text = 'พูดให้มันดีๆหน่อย';
+                } elseif ($rand == 1) {
+                    $text = 'พูดไอ้กับใคร';
+                } elseif ($rand == 2) {
+                    $text = 'พูดเพราะเป็นมั๊ย';
+                } elseif ($rand == 3) {
+                    $text = 'เป็นใครมาจากไหนถึงใช้คำว่า ไอ้ อยากโดน ??';
                 }
                 $case = 1;
             }
@@ -1308,19 +1499,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
-            if (strpos($textinput, 'ไม่อยากรู้') !== false) {
-                $rand = rand(0, 2);
-                if ($rand == 0) {
-                    $text = 'ก็ไม่ต้องยุ่งดิ';
-                } elseif ($rand == 1) {
-                    $text = 'ไปไหนก็ไป เดี๋ยวหงายหลังหรอก';
-                }else {
-                    $text = 'บอกให้คนอื่นฟัง';
-                }
-                $case = 1;
-            }
-
 
             if (strpos($textinput, 'เหล้า') !== false || strpos($textinput, 'เบียร์') !== false || strpos($textinput, 'เมา') !== false || strpos($textinput, 'ปาร์ตี้') !== false || strpos($textinput, 'ปาตี้') !== false || strpos($textinput, 'party') !== false || strpos($textinput, 'Party') !== false || strpos($textinput, 'pub') !== false || strpos($textinput, 'Pub') !== false) {
                 $rand = rand(0, 6);
