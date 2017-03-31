@@ -336,7 +336,7 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'คิดถึง') !== false || strpos($textinput, 'miss') !== false || strpos($textinput, 'miz') !== false) {
+            if (strpos($textinput, 'คิดถึงบอท') !== false || strpos($textinput, 'miss') !== false || strpos($textinput, 'miz') !== false) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'คิดถึงใครกันนะ';
@@ -345,17 +345,17 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 2) {
                     $text = 'มีใครคิดถึง MOD บ้างมั๊ยนะ';
                 } elseif ($rand == 3) {
-                    $text = 'คิดถึงก็โทรมา ^^';
+                    $text = 'คิดถึงก็โทรมา หรือจะแอดไลน์ดี';
                 } else {
                     $text = 'คิดถึงเหมือนกันแหละ จุ๊บๆ';
                 }
                 $case = 1;
             }
 
-            if (strpos($textinput, 'รัก') !== false || strpos($textinput, 'love') !== false) {
+            if (strpos($textinput, 'รักบอท') !== false || strpos($textinput, 'love') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
-                    $text = '1 2 3 4 5 I love You <3';
+                    $text = 'บอกกันแบบนี้ คืนนี้ที่ไหนกันดี';
                 } elseif ($rand == 1) {
                     $text = 'รักเค้าหรอตัวเอง';
                 } elseif ($rand == 2) {
@@ -412,7 +412,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'กวนติง') !== false || strpos($textinput, 'เชี้ย') !== false) {
+            if (strpos($textinput, 'กวนติง') !== false || strpos($textinput, 'เชี้ย') !== false  || strpos($textinput, 'กลาก') !== false) {
                 $rand = rand(0, 1);
                 if ($rand == 0) {
                     $text = 'แหนะๆ จะด่าก็มาเลย ไม่ต้องทำเป็นเนียน';
@@ -981,12 +981,12 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ปอด') !== false || strpos($textinput, 'ป็อด') !== false) {
+            if (strpos($textinput, 'ปอด') !== false || strpos($textinput, 'ป็อด') !== false || strpos($textinput, 'ป๊อด') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ไม่ได้ป็อดหว่ะ';
                 } elseif ($rand == 1) {
-                    $text = 'ตลาดมันผันผวนไม่อยากเข้าไปเสี่ยง';
+                    $text = 'ว่าใครป๊อด ซักตั้งมั๊ย';
                 } elseif ($rand == 2) {
                     $text = 'ดูเลเวลด้วย รุ่นนี้ไม่มีป๊อด';
                 } else {
@@ -995,18 +995,20 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'นอน') !== false) {
-                $rand = rand(0, 4);
+            if (strpos($textinput, 'ง่วง') !== false) {
+                $rand = rand(0, 5);
                 if ($rand == 0) {
-                    $text = 'พึ่งกี่โมงเอง จะรีบนอนไปไหน';
+                    $text = 'ง่วงก็ไปนอนสิ';
                 } elseif ($rand == 1) {
-                    $text = 'ง่วงก็ไปนอนไป';
+                    $text = 'ทำอะไรไม่หลับไม่นอน เฝ้ากราฟ ?';
                 } elseif ($rand == 2) {
-                    $text = 'นอนแล้วหรอ อ้าว ... ใครยืนอยู่ปลายเตียงอ่ะ';
+                    $text = 'เอาพอร์ตมา เดี๋ยวกดให้ 1 lot จะได้หายง่วง 55';
                 } elseif ($rand == 3) {
                     $text = 'ไม่เคยนอนไง๊';
+                } elseif ($rand == 4) {
+                    $text = 'จะรีบนอนไปไหน';
                 } else {
-                    $text = 'อยู่เป็นเพื่อนกันก่อนเซ่ ทิ้งกันเฉยเลย';
+                    $text = 'พักบ้างอะไรบ้าง ไม่ต้องเฝ้ามากหรอกกราฟอ่ะ';
                 }
                 $case = 1;
             }
@@ -1093,12 +1095,12 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'adp') !== false || strpos($textinput, 'Adp') !== false || strpos($textinput, 'ADP') !== false ) {
+            if (strpos($textinput, 'adp-nonfarm') !== false || strpos($textinput, 'Adp-Nonfarm') !== false || strpos($textinput, 'ADP-Nonfarm') !== false ) {
                 $text = 'ADP-Nonfarm คือ รายงานการจ้างงานแห่งชาติเอดีพี จะวัดค่าการเปลี่ยนแปลงรายเดือนเพื่อทราบถึงการจ้างงานภาคเอกชนที่ไม่ใช่เกษตรกรรมซึ่งได้ยึดตามข้อมูลการคิดเงินเดือนที่ได้ข้อมูลจากกิจการธุรกิจต่างๆ ประมาณ 400,000 แห่งทั่วทั้งสหรัฐอเมริกา';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'Farm') !== false || strpos($textinput, 'farm') !== false || strpos($textinput, 'nfp') !== false || strpos($textinput, 'NFP') !== false  ) {
+            if (strpos($textinput, 'nonfarm') !== false || strpos($textinput, 'non-farm') !== false || strpos($textinput, 'Non-Farm') !== false || strpos($textinput, 'Non-farm') !== false  ) {
                 $text = 'Non-farm payroll คือ รายงานตัวเลขการจ้างงานนอกภาคการเกษตร จะวัดค่าการเปลี่ยนแปลงในจำนวนของผู้ที่มีงานทำในระหว่างช่วงเดือนก่อนหน้านี้โดยไม่รวมอุตสาหกรรมภาคการเกษตร การสร้างงานนั้นเป็นดัชนีที่สำคัญที่บ่งชี้ถึงการใช้จ่ายของผู้บริโภคซึ่งถือเป็นส่วนที่มากที่สุดของกิจกรรมทางเศรษฐกิจ';
                 $case = 1;
             }
@@ -1144,20 +1146,6 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ง่วง') !== false) {
-                $rand = rand(0, 3);
-                if ($rand == 0) {
-                    $text = 'ง่วงก็ไปนอนสิ';
-                } elseif ($rand == 1) {
-                    $text = 'ทำอะไรไม่หลับไม่นอน เฝ้ากราฟ ?';
-                } elseif ($rand == 2) {
-                    $text = 'เอาพอร์ตมา เดี๋ยวกดให้ 1 lot จะได้หายง่วง 55';
-                } else {
-                    $text = 'พักบ้างอะไรบ้าง ไม่ต้องเฝ้ามากหรอกกราฟอ่ะ';
-                }
-                $case = 1;
-            }
-
             if (strpos($textinput, 'บายหรือเซล') !== false || strpos($textinput, 'บาย หรือ เซล') !== false || strpos($textinput, 'เซล หรือ บาย') !== false || strpos($textinput, 'เซลหรือบาย') !== false  ) {
                 $text = 'เช็คเหตุผลในการเข้าออเดอร์สิ
 
@@ -1194,7 +1182,7 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 2) {
                     $text = 'เจอป้าเยกับลุงทรัมป์จะแข็งไหวหรอ 555';
                 } else {
-                    $text = 'ตรงกับจุดกลับตัวหลายคู่เลยมั๊ย';
+                    $text = 'ตรงกับจุดกลับตัวหลายคู่เลยมั๊ยนั่น';
                 }
                 $case = 1;
             }
@@ -1216,13 +1204,15 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ฝันดี') !== false) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'ฝันดีนะครับ';
                 } elseif ($rand == 1) {
                     $text = 'Good Night.';
                 } elseif ($rand == 2) {
                     $text = 'Sweet Dream ครับ';
+                } elseif ($rand == 3) {
+                    $text = 'นอนแล้วหรอ อ้าว ... ใครยืนอยู่ปลายเตียงอ่ะ';
                 } else {
                     $text = 'Good Night ครับ ถ้ามีออเดอร์ตั้ง SL กำไรไว้ด้วยนะ';
                 }
@@ -1265,7 +1255,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'โหด') !== false) {
+            if (strpos($textinput, 'บอทโหด') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ธรรมด๊า';
@@ -1305,14 +1295,14 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ร้อน') !== false) {
+            if (strpos($textinput, 'หัวร้อน') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
-                    $text = 'หัวร้อนไง๊';
+                    $text = 'หัวร้อนใคร ?? ถ้ากับ mod แนะนำว่าอย่าเสี่ยง';
                 } elseif ($rand == 1) {
                     $text = 'ไปนอนในถังน้ำแข็งไปจะได้หายร้อน';
                 } elseif ($rand == 2) {
-                    $text = 'ที่นี่ประเทศไทยไง เลยร้อน 555';
+                    $text = 'ก็ที่นี่ประเทศไทยไง เลยร้อน 555';
                 }else {
                     $text = 'ซักป๋องมั๊ยจะได้หายร้อน';
                 }
@@ -1333,7 +1323,7 @@ if (!is_null($events['events'])) {
 
 
             if (strpos($textinput, 'เหล้า') !== false || strpos($textinput, 'เบียร์') !== false || strpos($textinput, 'เมา') !== false || strpos($textinput, 'ปาร์ตี้') !== false || strpos($textinput, 'ปาตี้') !== false || strpos($textinput, 'party') !== false || strpos($textinput, 'Party') !== false || strpos($textinput, 'pub') !== false || strpos($textinput, 'Pub') !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'จัดไปอย่าให้เสีย ที่ไหนว่ามา the pimp ดีมั๊ย';
                 } elseif ($rand == 1) {
@@ -1344,6 +1334,8 @@ if (!is_null($events['events'])) {
                     $text = 'ไปๆๆ ร้านไหนว่ามา';
                 } elseif ($rand == 4) {
                     $text = 'ไปข้าวสารหรือสีลมดี';
+                } elseif ($rand == 5) {
+                    $text = 'Route66 ไป';
                 } else {
                     $text = 'ร้านนั่งเล่น ทองหล่อปะละ เอาเงินไปละลายหน่อย';
                 }
