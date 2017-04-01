@@ -1362,6 +1362,11 @@ if (!is_null($events['events'])) {
 14:00 ตลาดอังกฤษ GBP
 19:20 ตลาดโคเมก USD';
                 $case = 1;
+            }https://www.investing.com/quotes/us-dollar-index
+
+            if (strpos($textinput, 'usdx') !== false || strpos($textinput, 'Usdx') !== false  || strpos($textinput, 'USDX') !== false || strpos($textinput, 'ดอลล่าดิบ') !== false || strpos($textinput, 'ดอลลาดิบ') !== false) {
+                $text = 'เช็ค usdx ได้ที่ https://www.investing.com/quotes/us-dollar-index';
+                $case = 1;
             }
 
             if (strpos($textinput, 'แข็ง') !== false) {
@@ -1486,6 +1491,22 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'พ่อง') !== false) {
+                $rand = rand(0, 4);
+                if ($rand == 0) {
+                    $text = 'พ่องมึงอ่ะ';
+                } elseif ($rand == 1) {
+                    $text = 'เรื่องของพ่อง';
+                } elseif ($rand == 2) {
+                    $text = 'หนักหัวมึงหรอ';
+                } elseif ($rand == 3) {
+                    $text = 'ปากมึงนี่น่ามีสีนะ';
+                } else {
+                    $text = 'เดี๋ยวก็หงายหลังหรอกสัด';
+                }
+                $case = 1;
+            }
+
             if (strpos($textinput, 'หัวร้อน') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
@@ -1561,7 +1582,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'แดก') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
-                    $text = 'ต้องพูดว่ารับประทาน';
+                    $text = 'แดกไรกัน แดกด้วย';
                 } elseif ($rand == 1) {
                     $text = 'จะแดกอะไรละ';
                 } else {
@@ -1630,7 +1651,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'กฎระเบียบ') !== false || strpos($textinput, 'กฎ') !== false) {
+            if (strpos($textinput, 'กฎระเบียบ') !== false) {
                 $text = '⚠️ กฎระเบียบของห้อง ⚠️
 
 ❌ เนื้อหาที่ละเมิดต่อ สถาบันชาติ ศาสนา พระมหากษัตริย์ และพระบรมวงศานุวงศ์
@@ -1675,14 +1696,14 @@ http://www.tradersociety.org/finviz/';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'Volumn') !== false || strpos($textinput, 'volumn') !== false) {
+            if (strpos($textinput, 'Volumn') !== false) {
                 $text = 'Volumn คืออะไร ???
 
 http://www.tradersociety.org/volumn-คืออะไร/';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'Fibo') !== false || strpos($textinput, 'fibo') !== false) {
+            if (strpos($textinput, 'Fibo') !== false) {
                 $text = 'การใช้งาน Fibo Retractment
 
 http://www.tradersociety.org/การใช้-fibonacci-retracement/';
@@ -1739,6 +1760,8 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                     $text = 'เพื่อนเล่นมึงหรอ';
                 } elseif ($rand == 2) {
                     $text = 'ทำไมละสัด';
+                } elseif ($rand == 3) {
+                    $text = 'พูดแบบนี้ คืออยากชนใช่ป่ะ';
                 } else {
                     $text = 'ด่ากู ? เดี๋ยวจะโดนไม่ใช่น้อย';
                 }
@@ -1773,7 +1796,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                     $text = 'พอได้ละมั้ง';
                 } elseif ($rand == 3) {
                     $text = 'พอๆๆ น้ำหูน้ำตาไหลหมดละ';
-                } elseif ($rand == 3) {
+                } elseif ($rand == 4) {
                     $text = '5555';
                 } else {
                     $text = 'ขำจนท้องแข็งละ';
