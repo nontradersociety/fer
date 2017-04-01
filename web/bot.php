@@ -1362,10 +1362,30 @@ if (!is_null($events['events'])) {
 14:00 ตลาดอังกฤษ GBP
 19:20 ตลาดโคเมก USD';
                 $case = 1;
-            }https://www.investing.com/quotes/us-dollar-index
+            }
 
             if (strpos($textinput, 'usdx') !== false || strpos($textinput, 'Usdx') !== false  || strpos($textinput, 'USDX') !== false || strpos($textinput, 'ดอลล่าดิบ') !== false || strpos($textinput, 'ดอลลาดิบ') !== false) {
                 $text = 'เช็ค usdx ได้ที่ https://www.investing.com/quotes/us-dollar-index';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ดัชนีหลัก') !== false || strpos($textinput, 'major-indices') !== false) {
+                $text = 'เช็คดัชนีหลัก ได้ที่ https://th.investing.com/indices/major-indices';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ดัชนีโลก') !== false || strpos($textinput, 'world-indices') !== false) {
+                $text = 'เช็คดัชนีโลก ได้ที่ https://th.investing.com/indices/world-indices';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ดัชนีกองทุน') !== false || strpos($textinput, 'cfds') !== false || strpos($textinput, 'CFDs') !== false || strpos($textinput, 'CFDS') !== false) {
+                $text = 'เช็คดัชนีกองทุน ได้ที่ https://th.investing.com/indices/indices-cfds';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ดัชนีหุ้นทั่วโลก') !== false || strpos($textinput, 'global-indices') !== false) {
+                $text = 'เช็คดัชนีหุ้นทั่วโลก ได้ที่ https://th.investing.com/indices/global-indices';
                 $case = 1;
             }
 
