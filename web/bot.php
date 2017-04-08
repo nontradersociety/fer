@@ -603,7 +603,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'กวนติง') !== false || strpos($textinput, 'เชี้ย') !== false  || strpos($textinput, 'กลาก') !== false) {
+            if (strpos($textinput, 'กวนติง') !== false || strpos($textinput, 'เชี้ย') !== false  || strpos($textinput, 'กลาก') !== false || strpos($textinput, 'กราก') !== false) {
                 $rand = rand(0, 1);
                 if ($rand == 0) {
                     $text = 'แหนะๆ จะด่าก็มาเลย ไม่ต้องทำเป็นเนียน';
@@ -613,7 +613,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'โง่') !== false || strpos($textinput, 'stupid') !== false) {
+            if (strpos($textinput, 'โง่') !== false || strpos($textinput, 'stupid') !== false || strpos($textinput, 'Stupid') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
                     $text = 'มึงอะโง่';
@@ -649,7 +649,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false || strpos($textinput, 'ตืบ') !== false ) {
+            if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false ) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'ลองซักตั้งมั๊ย';
@@ -731,7 +731,7 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 5) {
                     $text = 'อะไรมึง';
                 } elseif ($rand == 6) {
-                    $text = 'มึงจะกู-มึงทำไมวะ';
+                    $text = 'มึงจะพูดกู-มึงทำไมวะ';
                 }
                 $case = 1;
             }
@@ -1132,7 +1132,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'uj') !== false || strpos($textinput, 'UJ') !== false || strpos($textinput, 'Uj') !== false) {
+            if ( strpos($textinput, 'UJ') !== false ) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = 'buy หรือ sell ดีละ';
@@ -1150,7 +1150,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'buy') !== false || strpos($textinput, 'sell') !== false || strpos($textinput, 'Sell') !== false || strpos($textinput, 'Buy') !== false) {
+            if (strpos($textinput, 'Sell') !== false || strpos($textinput, 'Buy') !== false) {
                 $rand = rand(0, 7);
                 if ($rand == 0) {
                     $text = 'กี่ lot ดี';
@@ -1348,7 +1348,16 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'คัน') !== false) {
-                $text = 'ใจเย็นๆ รอสัญญาณก่อน รีบเข้าเจ็บตัวได้นะ';
+                $rand = rand(0, 3);
+                if ($rand == 0) {
+                    $text = 'คันมือหรอ ?? จัดขำๆไป 5 lot ไป';
+                } elseif ($rand == 1) {
+                    $text = 'คันมากมั๊ย';
+                } elseif ($rand == 2) {
+                    $text = 'คันไร อย่าบอกนะว่าคัน ... 5555';
+                } else {
+                    $text = 'ใจเย็นๆ รอสัญญาณก่อน รีบเข้าเจ็บตัวได้นะ';
+                }
                 $case = 1;
             }
 
@@ -1389,7 +1398,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'แข็ง') !== false) {
+            if (strpos($textinput, 'ต้านแข็ง') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ถ้าโดนกระแทกบ่อยๆก็อาจจะทะลุได้นะ ระวังกันด้วย';
@@ -1414,7 +1423,7 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 3) {
                     $text = 'ระวังพอร์ตบินนะถ้ากราฟผันผวน';
                 } else {
-                    $text = 'รวยกับล้างมีเส้นบางๆกันอยู่นะ 555';
+                    $text = 'ovt ?? รวยกับล้างมีเส้นบางๆกันอยู่นะ 555';
                 }
                 $case = 1;
             }
@@ -1479,7 +1488,7 @@ if (!is_null($events['events'])) {
                     $text = 'โหดสัดรัสเซีย ไนจีเรียอ่ะ';
                 } elseif ($rand == 1) {
                     $text = 'ดูเลเวลด้วย';
-                }  else {
+                } else {
                     $text = 'อยากเห็นยิ่งกว่านี้ป่ะ';
                 }
                 $case = 1;
@@ -1535,7 +1544,7 @@ if (!is_null($events['events'])) {
                     $text = 'ไปนอนในถังน้ำแข็งไปจะได้หายร้อน';
                 } elseif ($rand == 2) {
                     $text = 'ก็ที่นี่ประเทศไทยไง เลยร้อน 555';
-                }else {
+                } else {
                     $text = 'ซักป๋องมั๊ยจะได้หายร้อน';
                 }
                 $case = 1;
@@ -1561,12 +1570,16 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ล้าง') !== false || strpos($textinput, 'คัท') !== false || strpos($textinput, 'คัด') !== false || strpos($textinput, 'cut') !== false) {
-                $rand = rand(0, 2);
+            if (strpos($textinput, 'ล้างพอท') !== false || strpos($textinput, 'ล้างพอร์ต') !== false || strpos($textinput, 'ล้างพอต') !== false || strpos($textinput, 'ล้างพอร์ท') !== false) {
+                $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'จงเชื่อในการสร้างใหม่';
                 } elseif ($rand == 1) {
                     $text = 'ไม่ต้องเสียใจนะ สู้ๆ';
+                } elseif ($rand == 2) {
+                    $text = 'ล้างเพราะอะไรอ่ะ ovt หรอ';
+                } elseif ($rand == 3) {
+                    $text = 'ออกออเดอร์ถี่เกินไปหรือป่าว เวลาโดนลากพอร์ตเลยรับไม่ไหว';
                 } else {
                     $text = 'ใจเย็นๆนะ เป็นกำลังใจให้';
                 }
@@ -1623,14 +1636,18 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'กะทะ') !== false || strpos($textinput, 'กระทะ') !== false) {
-                $rand = rand(0, 3);
+            if (strpos($textinput, 'หมูกะทะ') !== false || strpos($textinput, 'หมูกระทะ') !== false) {
+                $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = 'หมูกระทะจะเยียวยาทุกสิ่ง';
                 } elseif ($rand == 1) {
                     $text = 'ไม่เบื่อไง๊ กินกันบ่อยเกิน';
                 } elseif ($rand == 2) {
                     $text = 'หมูกระทะอีกแล้วหรอ';
+                } elseif ($rand == 3) {
+                    $text = 'ร้านไหนจัดว่าเด็ดว่ามา';
+                } elseif ($rand == 4) {
+                    $text = 'เปลี่ยนเป็นทะเลกระทะดีมั๊ย';
                 } else {
                     $text = 'กินกันบ่อยๆระวังอ้วน';
                 }
@@ -1638,7 +1655,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false || strpos($textinput, 'ก า ก') !== false || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false || strpos($textinput, 'Kak') !== false || strpos($textinput, 'KAK') !== false) {
-                $rand = rand(0, 6);
+                $rand = rand(0, 8);
                 if ($rand == 0) {
                     $text = 'ไม่สนิทอย่าติดตลก';
                 } elseif ($rand == 1) {
@@ -1651,6 +1668,10 @@ if (!is_null($events['events'])) {
                     $text = 'แล้วไง';
                 } elseif ($rand == 5) {
                     $text = 'ก็มึงไงกากอ่ะ';
+                } elseif ($rand == 6) {
+                    $text = 'มึงนั่นแหละที่กาก';
+                } elseif ($rand == 7) {
+                    $text = 'อ้าวเป็นขี้กลากหรอ น่าสงสารจัง';
                 } else {
                     $text = 'เอ้า ... ว่าตัวเองซะงั้น';
                 }
@@ -1773,7 +1794,7 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
             }
 
             if (strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false || strpos($textinput, 'สั ส') !== false || strpos($textinput, 'สั ด') !== false) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'สัดกับใครวะ';
                 } elseif ($rand == 1) {
@@ -1782,6 +1803,10 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                     $text = 'ทำไมละสัด';
                 } elseif ($rand == 3) {
                     $text = 'พูดแบบนี้ คืออยากชนใช่ป่ะ';
+                } elseif ($rand == 4) {
+                    $text = 'อยากจะไฝว้ใช่ป่ะสัด';
+                } elseif ($rand == 5) {
+                    $text = 'มึงเก๋าหรอสัด';
                 } else {
                     $text = 'ด่ากู ? เดี๋ยวจะโดนไม่ใช่น้อย';
                 }
