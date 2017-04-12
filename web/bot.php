@@ -837,7 +837,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เตี๋ยว') !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'ก๋วยเตี๋ยวหมูน้ำตกใส่ไข่ร้านพี่นนจัดไป';
                     $case = 1;
@@ -852,6 +852,21 @@ if (!is_null($events['events'])) {
                     $case = 2;
                 } elseif ($rand == 4) {
                     $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16998688_606368339571611_7856330434991689198_n.jpg?oh=deb0fe2948a91cce67bd3158d867fa6d&oe=596F6E85';
+                    $case = 2;
+                } elseif ($rand == 5) {
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/17759933_622215077986937_7561433539968645256_n.jpg?oh=bf322fa4cb01123ddc698257cbbb5dad&oe=594CD153';
+                    $case = 2;
+                } elseif ($rand == 6) {
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/17798986_621653594709752_8635109469633504184_n.jpg?oh=f770a552924938b27dc3108f6844d8ed&oe=598BF9D8';
+                    $case = 2;
+                } elseif ($rand == 7) {
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/11898908_418731475001966_2588502630232562855_n.jpg?oh=ea83cd0ad13178e693584851c572182e&oe=59948544';
+                    $case = 2;
+                } elseif ($rand == 8) {
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/11742744_411079522433828_3773402163855213812_n.jpg?oh=76c7818be7a735889abcd8edef6e2cff&oe=595960A3';
+                    $case = 2;
+                } elseif ($rand == 9) {
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/11742885_407643872777393_8517759854010791076_n.jpg?oh=9f9f3b7a13263a56ad1d56e5af8cde4d&oe=5989877F';
                     $case = 2;
                 } else {
                     $text = 'ไปเลยร้านพี่นนที่สุพรรณบุรี อย่างเด็ด';
@@ -1030,28 +1045,6 @@ if (!is_null($events['events'])) {
                     $text = 'ระวังบินนะ 55';
                     $case = 1;
                 }
-            }
-
-            if (strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false) {
-                $rand = rand(0, 7);
-                if ($rand == 0) {
-                    $text = 'เอาไว้ฟาดหัวมึงอะครับ';
-                } elseif ($rand == 1) {
-                    $text = 'ควยอะไรละครับ';
-                } elseif ($rand == 2) {
-                    $text = 'กูมีไม่ต้องแจก';
-                } elseif ($rand == 3) {
-                    $text = 'ควยพ่อง';
-                } elseif ($rand == 4) {
-                    $text = 'ควยไรละสัด เก๋าหรอ ?';
-                } elseif ($rand == 5) {
-                    $text = 'ดูมึงพูด ยอดหน้าซักทีดีมั้ง';
-                } elseif ($rand == 6) {
-                    $text = 'มึงอยากจะไฝว้ใช่ปะ เดี๋ยวจัดให้';
-                } else {
-                    $text = 'อ้าวๆ อยากมีเรื่องว่างั้น';
-                }
-                $case = 1;
             }
 
             if (strpos($textinput, 'บิน') !== false) {
@@ -1520,6 +1513,50 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'ลูกกะหรี่') !== false || strpos($textinput, 'ลูกกระหรี่') !== false || strpos($textinput, 'ลูกกระหลี่') !== false || strpos($textinput, 'ลูกกะหลี่') !== false) {
+                $rand = rand(0, 4);
+                if ($rand == 0) {
+                    $text = 'มึงอะสิลูกกะหรี่';
+                } elseif ($rand == 1) {
+                    $text = 'มึงอะหรอ น่าสงสารจัง';
+                } elseif ($rand == 2) {
+                    $text = 'อยากปากแตกมั๊ยสัด';
+                } elseif ($rand == 3) {
+                    $text = 'ทำไมชีวิตมึงน่าสงสารจัง ไม่ต้องคิดมากนะ';
+                } else {
+                    $text = 'แม่มมึงอ่ะดิ';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false) {
+                $rand = rand(0, 10);
+                if ($rand == 0) {
+                    $text = 'เอาไว้ฟาดหัวมึงอะครับ';
+                } elseif ($rand == 1) {
+                    $text = 'ควยอะไรละครับ';
+                } elseif ($rand == 2) {
+                    $text = 'กูมีไม่ต้องแจก';
+                } elseif ($rand == 3) {
+                    $text = 'ควยพ่อง';
+                } elseif ($rand == 4) {
+                    $text = 'ควยไรละสัด เก๋าหรอ ?';
+                } elseif ($rand == 5) {
+                    $text = 'ดูมึงพูด ยอดหน้าซักทีดีมั้ง';
+                } elseif ($rand == 6) {
+                    $text = 'มึงอยากจะไฝว้ใช่ปะ เดี๋ยวจัดให้';
+                } elseif ($rand == 7) {
+                    $text = 'แล้วมึงเป็นควยอะไรละ';
+                } elseif ($rand == 8) {
+                    $text = 'ควยไรสัด';
+                } elseif ($rand == 9) {
+                    $text = 'ไม่ใหญ่ไม่ต้องทำมาโชว์สัด';
+                } else {
+                    $text = 'อ้าวๆ อยากมีเรื่องว่างั้น';
+                }
+                $case = 1;
+            }
+
             if (strpos($textinput, 'พ่อง') !== false) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
@@ -1586,7 +1623,61 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'หี') !== false || strpos($textinput, 'จิ๋ม') !== false) {
+            if (strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false || strpos($textinput, 'สั ส') !== false || strpos($textinput, 'สั ด') !== false) {
+                $rand = rand(0, 7);
+                if ($rand == 0) {
+                    $text = 'สัดกับใครวะ';
+                } elseif ($rand == 1) {
+                    $text = 'เพื่อนเล่นมึงหรอ';
+                } elseif ($rand == 2) {
+                    $text = 'ทำไมละสัด';
+                } elseif ($rand == 3) {
+                    $text = 'พูดแบบนี้ คืออยากชนใช่ป่ะ';
+                } elseif ($rand == 4) {
+                    $text = 'อยากจะไฝว้ใช่ป่ะสัด';
+                } elseif ($rand == 5) {
+                    $text = 'มึงเก๋าหรอสัด';
+                } elseif ($rand == 6) {
+                    $text = 'เดี๋ยวมึงจะโดนสัด';
+                } else {
+                    $text = 'ด่ากู ? เดี๋ยวจะโดนไม่ใช่น้อย';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'เหี้ย') !== false) {
+                $rand = rand(0, 6);
+                if ($rand == 0) {
+                    $text = 'มึงอะดิเหี้ย';
+                } elseif ($rand == 1) {
+                    $text = 'ชักจะเอือมกับคำพูดคำจามึงละนะ';
+                } elseif ($rand == 2) {
+                    $text = 'ดูมึงพูด ยอดหน้าซักทีดีมั้ง';
+                } elseif ($rand == 3) {
+                    $text = 'มึงเป็นเหี้ยอะไร';
+                } elseif ($rand == 4) {
+                    $text = 'ทำไมพูดเหี้ยๆแบบนี้ละ';
+                } elseif ($rand == 5) {
+                    $text = 'ยอดหน้าซักทีดีมั้ง';
+                } else {
+                    $text = 'พูดจาดีๆหน่อยสัส';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false  || strpos($textinput, 'ส า ส') !== false || strpos($textinput, 'ส า ด') !== false ) {
+                $rand = rand(0, 3);
+                if ($rand == 0) {
+                    $text = 'จะสาดน้ำไง๊';
+                } elseif ($rand == 1) {
+                    $text = 'แสรดดดดดด';
+                } else {
+                    $text = 'ทำไมละสาดดด';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'หน้าหี') !== false || strpos($textinput, 'จิ๋ม') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ว่าตัวเองทำไม บ้าป่าว';
@@ -1790,38 +1881,6 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
 
             if (strpos($textinput, 'เงินไม่เข้า') !== false || strpos($textinput, 'เงินยังไม่เข้า') !== false) {
                 $text = 'หลังจากทำตามขั้นตอนของระบบแล้ว รอ 1-3 วันทำการ ถ้ายังไม่เข้า รบกวนส่งหลักฐานไปที่ finance@168fx.com และ support@168fx.com ครับ';
-                $case = 1;
-            }
-
-            if (strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false || strpos($textinput, 'สั ส') !== false || strpos($textinput, 'สั ด') !== false) {
-                $rand = rand(0, 6);
-                if ($rand == 0) {
-                    $text = 'สัดกับใครวะ';
-                } elseif ($rand == 1) {
-                    $text = 'เพื่อนเล่นมึงหรอ';
-                } elseif ($rand == 2) {
-                    $text = 'ทำไมละสัด';
-                } elseif ($rand == 3) {
-                    $text = 'พูดแบบนี้ คืออยากชนใช่ป่ะ';
-                } elseif ($rand == 4) {
-                    $text = 'อยากจะไฝว้ใช่ป่ะสัด';
-                } elseif ($rand == 5) {
-                    $text = 'มึงเก๋าหรอสัด';
-                } else {
-                    $text = 'ด่ากู ? เดี๋ยวจะโดนไม่ใช่น้อย';
-                }
-                $case = 1;
-            }
-
-            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false  || strpos($textinput, 'ส า ส') !== false || strpos($textinput, 'ส า ด') !== false ) {
-                $rand = rand(0, 3);
-                if ($rand == 0) {
-                    $text = 'จะสาดน้ำไง๊';
-                } elseif ($rand == 1) {
-                    $text = 'แสรดดดดดด';
-                } else {
-                    $text = 'ทำไมละสาดดด';
-                }
                 $case = 1;
             }
 
