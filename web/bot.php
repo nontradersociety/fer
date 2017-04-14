@@ -874,29 +874,6 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'อาจารย์หมวย') !== false) {
-                $rand = rand(0, 5);
-                if ($rand == 0) {
-                    $text = 'อ.หมวย UJ รู้จักป่าว';
-                    $case = 1;
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/14642422_210542886032805_7675869105965990138_n.jpg?oh=6fd3badac2b44bd95d2a9a7ac77ba754&oe=59617CEB';
-                    $case = 2;
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/13244813_110020342751727_3817456280435157227_n.jpg?oh=a3ec4a960ad9889a9461851337e48185&oe=59711188';
-                    $case = 2;
-                } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/13417416_134726200281141_1649590718476967130_n.jpg?oh=4c154ad20970958bbc5dd73d5ba2ca59&oe=592E665E';
-                    $case = 2;
-                } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/13419055_138052733281821_9046111837315737418_n.jpg?oh=50ac80d0994d8ad04b3d69e643a3e96d&oe=5964C9F6';
-                    $case = 2;
-                } else {
-                    $text = 'ที่ชอบกินหมูกระทะอะนะ';
-                    $case = 1;
-                }
-            }
-
             if (strpos($textinput, 'อาจารย์หยก') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
@@ -930,29 +907,6 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }*/
-
-            if (strpos($textinput, 'อาจารย์โบ') !== false) {
-                $rand = rand(0, 5);
-                if ($rand == 0) {
-                    $text = 'ซิ่งไปกับ อ. กันดีกว่า';
-                    $case = 1;
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/16807681_1386867288001489_422059173499568390_n.jpg?oh=dcabe39e3467d710ff447a1480ec03a4&oe=596CCE92';
-                    $case = 2;
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/16708277_1378869288801289_570203938737589629_n.jpg?oh=feba672fba2ebe3c6c849b9ab6df3aa4&oe=592C2E07';
-                    $case = 2;
-                } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/181392_407913152563579_517848466_n.jpg?oh=49ce38b5ff3052219fcfdf8aafe501fd&oe=5966D8C0';
-                    $case = 2;
-                } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/1530602_681132338574991_614543285_n.jpg?oh=8e54b3f457f7140dbd4274d7ac0cf708&oe=596F6849';
-                    $case = 2;
-                } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/181873_501457559875804_2057874305_n.jpg?oh=405c1d5e5e1e96fb3ea8ac53e81f299b&oe=5950B230';
-                    $case = 2;
-                }
-            }
 
             if (strpos($textinput, 'แอ็ค') !== false || strpos($textinput, 'แอค') !== false || strpos($textinput, 'acme') !== false) {
                 $rand = rand(0, 5);
@@ -1723,24 +1677,6 @@ if (!is_null($events['events'])) {
                     $text = 'พึ่งอาบน้ำมาหรอเลยสดชื่นอ่ะ 555';
                 } else {
                     $text = 'สดมากไปจะกลายสลดนะ';
-                }
-                $case = 1;
-            }
-
-            if (strpos($textinput, 'หมูกะทะ') !== false || strpos($textinput, 'หมูกระทะ') !== false) {
-                $rand = rand(0, 5);
-                if ($rand == 0) {
-                    $text = 'หมูกระทะจะเยียวยาทุกสิ่ง';
-                } elseif ($rand == 1) {
-                    $text = 'ไม่เบื่อไง๊ กินกันบ่อยเกิน';
-                } elseif ($rand == 2) {
-                    $text = 'หมูกระทะอีกแล้วหรอ';
-                } elseif ($rand == 3) {
-                    $text = 'ร้านไหนจัดว่าเด็ดว่ามา';
-                } elseif ($rand == 4) {
-                    $text = 'เปลี่ยนเป็นทะเลกระทะดีมั๊ย';
-                } else {
-                    $text = 'กินกันบ่อยๆระวังอ้วน';
                 }
                 $case = 1;
             }
