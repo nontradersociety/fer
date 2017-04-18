@@ -603,7 +603,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'กวนติง') !== false || strpos($textinput, 'เชี้ย') !== false  || strpos($textinput, 'กลาก') !== false || strpos($textinput, 'กราก') !== false) {
+            if (strpos($textinput, 'กวนติง') !== false || strpos($textinput, 'สึด') !== false || strpos($textinput, 'เควี้ย') !== false || strpos($textinput, 'เชี้ย') !== false || strpos($textinput, 'กลาก') !== false || strpos($textinput, 'กราก') !== false) {
                 $rand = rand(0, 1);
                 if ($rand == 0) {
                     $text = 'แหนะๆ จะด่าก็มาเลย ไม่ต้องทำเป็นเนียน';
@@ -626,11 +626,13 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เสียดาย') !== false) {
-                $rand = rand(0, 1);
+                $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'เสียดายดีกว่าเสียใจ';
                 } elseif ($rand == 1) {
                     $text = 'ความสำเร็จต้องทำซ้ำได้ ไม่ต้องไปเสียดายนะ';
+                } elseif ($rand == 2) {
+                    $text = 'เสียดายทำไม มีเวลาให้ทำกำไรในตลาดตั้งเยอะแยะ';
                 } else {
                     $text = 'ไม่ต้องซี เริ่มต้นใหม่ไป';
                 }
@@ -842,31 +844,31 @@ if (!is_null($events['events'])) {
                     $text = 'ก๋วยเตี๋ยวหมูน้ำตกใส่ไข่ร้านพี่นนจัดไป';
                     $case = 1;
                 } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/13920658_519863781555401_3026708436745190096_n.jpg?oh=dc77891f0b78bb6dbaa70c5e1fcd8ee7&oe=592530B4';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/13920658_519863781555401_3026708436745190096_n.jpg?oh=765e230908c1d0acbfae65c6ce7035ce&oe=594CBDB4';
                     $case = 2;
                 } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17425058_1483414298344259_1931199174478394490_n.jpg?oh=5f853590f4d61f195b57c5c7ec43682a&oe=59537948';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/17759933_622215077986937_7561433539968645256_n.jpg?oh=bf322fa4cb01123ddc698257cbbb5dad&oe=594CD153';
                     $case = 2;
                 } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17201333_611002365774875_1925728978534279915_n.jpg?oh=81eca42ced60b813cc3bcaafccbd9627&oe=59537445';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/17798986_621653594709752_8635109469633504184_n.jpg?oh=f770a552924938b27dc3108f6844d8ed&oe=598BF9D8';
                     $case = 2;
                 } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16998688_606368339571611_7856330434991689198_n.jpg?oh=deb0fe2948a91cce67bd3158d867fa6d&oe=596F6E85';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/15672541_577039999171112_837219844315576863_n.jpg?oh=038ec78495578506a59e58a7a79725bf&oe=5980E59C';
                     $case = 2;
                 } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/17759933_622215077986937_7561433539968645256_n.jpg?oh=bf322fa4cb01123ddc698257cbbb5dad&oe=594CD153';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/14732122_557620264446419_3272377450182637742_n.jpg?oh=5de6019353dd10b4433c06e661af8c20&oe=598F3162';
                     $case = 2;
                 } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/17798986_621653594709752_8635109469633504184_n.jpg?oh=f770a552924938b27dc3108f6844d8ed&oe=598BF9D8';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/14690900_550455421829570_544487863322192769_n.jpg?oh=dd1e9b5ee24376025ecefcd7085b7528&oe=5992B101';
                     $case = 2;
                 } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/11898908_418731475001966_2588502630232562855_n.jpg?oh=ea83cd0ad13178e693584851c572182e&oe=59948544';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/13082615_488131831395263_4384544117165089775_n.jpg?oh=d073762ba76400f9b667590b420a3742&oe=59926597';
                     $case = 2;
                 } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/11742744_411079522433828_3773402163855213812_n.jpg?oh=76c7818be7a735889abcd8edef6e2cff&oe=595960A3';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t31.0-8/12363150_443535975854849_1520666602729577864_o.jpg?oh=06811f3288255e51fa9135cb4d4ee65c&oe=5994C51F';
                     $case = 2;
                 } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/11742885_407643872777393_8517759854010791076_n.jpg?oh=9f9f3b7a13263a56ad1d56e5af8cde4d&oe=5989877F';
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/11898908_418731475001966_2588502630232562855_n.jpg?oh=ea83cd0ad13178e693584851c572182e&oe=59948544';
                     $case = 2;
                 } else {
                     $text = 'ไปเลยร้านพี่นนที่สุพรรณบุรี อย่างเด็ด';
@@ -909,7 +911,7 @@ if (!is_null($events['events'])) {
             }*/
 
             if (strpos($textinput, 'แอ็ค') !== false || strpos($textinput, 'แอค') !== false || strpos($textinput, 'acme') !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'หมายถึง คุณวรวัฒน์ นาคแนวดี ใช่มั๊ย';
                     $case = 1;
@@ -925,6 +927,21 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 4) {
                     $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/15400548_1264708023572325_6454274480658165148_n.jpg?oh=b527678259fabd966451ebf047640b87&oe=59693A0E';
                     $case = 2;
+                } elseif ($rand == 5) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/12661835_1036387546404375_2097545346374459893_n.jpg?oh=db3c4574a6f77caa6095c715d0e59451&oe=598DF52E';
+                    $case = 2;
+                } elseif ($rand == 6) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/11236424_941302239246240_6919555524224363128_n.jpg?oh=7df20b53c33f7c83377017d74e4b4348&oe=597EF86B';
+                    $case = 2;
+                } elseif ($rand == 7) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t31.0-8/s960x960/1075597_578427552200379_1553780447_o.jpg?oh=a997005c57b8a4396a2298bdff5959e1&oe=5986E89F';
+                    $case = 2;
+                } elseif ($rand == 8) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/17634434_1377398558969937_3946440824920587815_n.jpg?oh=b9764007a591e619305f3d61731b9f6c&oe=5991B451';
+                    $case = 2;
+                } elseif ($rand == 9) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/15542245_1275607242482403_2429329037166609924_n.jpg?oh=16406b42cececdfab03a87afe978d7e5&oe=59897FB6';
+                    $case = 2;
                 } else {
                     $text = 'เป็นอาจารย์ที่พวกเราเคารพนับถือ';
                     $case = 1;
@@ -933,7 +950,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'อาจารย์เดียร์') !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'หมายถึง คุณสราวุฒิ ม่วงชู ใช่มั๊ย';
                     $case = 1;
@@ -948,6 +965,21 @@ if (!is_null($events['events'])) {
                     $case = 2;
                 } elseif ($rand == 4) {
                     $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/7670_10153932320632354_5658525607111014161_n.jpg?oh=6945b0f5de5943fff1709a09c7c65743&oe=5960E3A0';
+                    $case = 2;
+                } elseif ($rand == 5) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/17342477_10155104394162354_4121161709451174937_n.jpg?oh=112aa881a53252a1552e684aaac8cce3&oe=59925150';
+                    $case = 2;
+                } elseif ($rand == 6) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/14045967_10154430753372354_8639906337455271343_n.jpg?oh=8827379d3f7f1ab182037a5c79e86c91&oe=59981F92';
+                    $case = 2;
+                } elseif ($rand == 7) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/13263910_10154190861142354_8397028858465081773_n.jpg?oh=ee29370dc645945dc84350b2ed79b0c7&oe=59519E42';
+                    $case = 2;
+                } elseif ($rand == 8) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/13226652_10154185379792354_2113191577035189210_n.jpg?oh=c9644011228d684df10056ae7d364afc&oe=597B5287';
+                    $case = 2;
+                } elseif ($rand == 9) {
+                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/12923135_10154100189882354_7011759519418963010_n.jpg?oh=6de08123ece2d4dd49a04f4f8bfce755&oe=597C0F43';
                     $case = 2;
                 } else {
                     $text = 'เป็นอาจารย์ที่เก่งมากในการวิเคราะห์ตลาดทองคำ ใครอยากได้ความรู้อะไรสอบถามได้เลย';
@@ -1002,7 +1034,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'บิน') !== false) {
-                $rand = rand(0, 7);
+                $rand = rand(0, 8);
                 if ($rand == 0) {
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
                     $case = 1;
@@ -1024,6 +1056,9 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 6) {
                     $text = 'กินเต็มแท่งมั๊ยนั่น';
                     $case = 1;
+                } elseif ($rand == 7) {
+                    $text = 'ไปรอดาวพลูโตแปป';
+                    $case = 1;
                 } else {
                     $img = 'https://i.ytimg.com/vi/DUnO7weCfdM/maxresdefault.jpg';
                     $case = 2;
@@ -1031,7 +1066,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ทุบ') !== false) {
-                $rand = rand(0, 7);
+                $rand = rand(0, 8);
                 if ($rand == 0) {
                     $text = 'สงสัยจะไปแกนโลก';
                     $case = 1;
@@ -1052,6 +1087,9 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 } elseif ($rand == 6) {
                     $text = 'กินเต็มแท่งมั๊ยละนั่น';
+                    $case = 1;
+                } elseif ($rand == 7) {
+                    $text = 'Follow ตามเลยดีมั๊ยนะ 555';
                     $case = 1;
                 } else {
                     $img = 'https://s-media-cache-ak0.pinimg.com/originals/67/ff/5b/67ff5b84711240eb6361bc4e4094a890.jpg';
@@ -1562,7 +1600,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ล้างพอท') !== false || strpos($textinput, 'ล้างพอร์ต') !== false || strpos($textinput, 'ล้างพอต') !== false || strpos($textinput, 'ล้างพอร์ท') !== false) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'จงเชื่อในการสร้างใหม่';
                 } elseif ($rand == 1) {
@@ -1619,8 +1657,8 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false  || strpos($textinput, 'ส า ส') !== false || strpos($textinput, 'ส า ด') !== false ) {
-                $rand = rand(0, 3);
+            if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false || strpos($textinput, 'ส า ส') !== false || strpos($textinput, 'ส า ด') !== false ) {
+                $rand = rand(0, 2);
                 if ($rand == 0) {
                     $text = 'จะสาดน้ำไง๊';
                 } elseif ($rand == 1) {
@@ -1670,11 +1708,15 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'สดชื่น') !== false) {
-                $rand = rand(0, 2);
+                $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'ระวังลื่นถ้าสดจัด';
                 } elseif ($rand == 1) {
-                    $text = 'พึ่งอาบน้ำมาหรอเลยสดชื่นอ่ะ 555';
+                    $text = 'พึ่งอาบน้ำมาหรอเลยสดชื่นอ่ะ';
+                } elseif ($rand == 2) {
+                    $text = 'ไปทำอะไรมาสดชื่น อย่าบอกนะ .... 555';
+                } elseif ($rand == 3) {
+                    $text = 'จะสดอะไรกันบ่อยๆ';
                 } else {
                     $text = 'สดมากไปจะกลายสลดนะ';
                 }
@@ -1810,8 +1852,8 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 $case = 1;
             }
 
-            if (strpos($textinput, 'วิเคราะห์') !== false || strpos($textinput, 'วิเคราะ') !== false) {
-                $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ http://www.tradersociety.org หรือ add line id @tradersociety ครับ มีการวิเคราะห์ข่าวทุกเช้า ';
+            if (strpos($textinput, 'บทวิเคราะห์') !== false || strpos($textinput, 'บทวิเคราะ') !== false) {
+                $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ http://www.tradersociety.org หรือ add line id @tradersociety ครับ มีการวิเคราะห์ข่าวทุกเช้า';
                 $case = 1;
             }
 
