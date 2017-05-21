@@ -1903,50 +1903,43 @@ http://www.tradersociety.org/volumn-คืออะไร/';
 http://www.tradersociety.org/การใช้-fibonacci-retracement/';
                 $case = 1;
             }
-/*
-            if (strpos($textinput, 'ยืนยันตน') !== false || strpos($textinput, 'verify') !== false) {
-                $text = 'วิธีการ Verify เอกสาร
 
-https://www.youtube.com/watch?v=c1aJdZBIWO0';
+            if (strpos($textinput, 'ประเภทบัญชี') !== false || strpos($textinput, 'verify') !== false) {
+                $text = 'ประเภทบัญชี
+
+http://th.weltrade.com/trader/type_account/';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'copytrade') !== false) {
-                $text = 'วิธีการ CopyTrade
+            if (strpos($textinput, 'weltrade') !== false || strpos($textinput, 'Weltrade') !== false || strpos($textinput, 'เวลเทรด') !== false) {
+                $text = 'Link การสมัคร (  รหัสพันธมิตรหรือรหัสผู้เเนะนำ :: 12411 )
 
-https://www.youtube.com/watch?v=f6MjuI4A1bw';
+http://th.weltrade.com/?r1=ipartner&r2=12411
+
+หากใครใคร่สนับสนุนกลุ่มเราสามารถคลิกลิ้งด้านบนเพื่อเปิดบัญชีได้เลยครับ';
                 $case = 1;
             }
 
             if (strpos($textinput, 'ฝากเงิน') !== false) {
-                $text = 'วิธีฝากเงินผ่านหน้าเว็บ
+                $text = 'วิธีฝากเงิน
 
-https://www.youtube.com/watch?v=913IcRuVdu0
-
-หรือหากต้องการฝากกับแอดมิน add line id : tradersociety ได้เลยครับ';
+http://th.weltrade.com/trader/paysystems/';
                 $case = 1;
             }
 
             if (strpos($textinput, 'ถอนเงิน') !== false) {
-                $text = 'วิธีถอนเงินผ่านหน้าเว็บ
+                $text = 'วิธีถอนเงิน
 
-https://www.youtube.com/watch?v=uJqwt9Cd3k4
-
-หรือหากต้องการถอนกับแอดมิน add line id : tradersociety ได้เลยครับ';
+http://th.weltrade.com/trader/paysystems/';
                 $case = 1;
             }
-*/
+
             if (strpos($textinput, 'บทวิเคราะห์') !== false || strpos($textinput, 'บทวิเคราะ') !== false) {
                 $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ http://www.tradersociety.org หรือ add line id @tradersociety ครับ มีการวิเคราะห์ข่าวทุกเช้า';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'เงินไม่เข้า') !== false || strpos($textinput, 'เงินยังไม่เข้า') !== false) {
-                $text = 'หลังจากทำตามขั้นตอนของระบบแล้ว รอ 1-3 วันทำการ ถ้ายังไม่เข้า รบกวนส่งหลักฐานไปที่ finance@168fx.com และ support@168fx.com ครับ';
-                $case = 1;
-            }
-
-            if (strpos($textinput, 'ฮ่าๆๆ') !== false) {
+            if (strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555+') !== false || strpos($textinput, 'ฮา') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
                     $array = [
@@ -1959,13 +1952,11 @@ https://www.youtube.com/watch?v=uJqwt9Cd3k4
                 } elseif ($rand == 1) {
                     $text = 'จะขำอะไรกันนักหนา';
                 } elseif ($rand == 2) {
-                    $text = 'พอได้ละมั้ง';
+                    $text = 'ขำกันจังพอได้ละมั้ง';
                 } elseif ($rand == 3) {
-                    $text = 'พอๆๆ น้ำหูน้ำตาไหลหมดละ';
-                } elseif ($rand == 4) {
-                    $text = '5555';
-                } else {
                     $text = 'ขำจนท้องแข็งละ';
+                } else{
+                    $text = '5555';
                 }
                 $case = 1;
             }
