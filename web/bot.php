@@ -1189,8 +1189,8 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'อาจารย์แมน') !== false) {
-                $rand = rand(0, 5);
+            if (strpos($textinput, 'อาจารย์แมน') !== false || strpos($textinput, 'อ.แมน') !== false) {
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'อ.แมน แฟนน่ารัก ^^';
                     $case = 1;
@@ -1206,8 +1206,23 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 4) {
                     $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/16142550_10210594984963108_1211239256004129371_n.jpg?oh=372de61dec066ab7fd55adca70fee5c2&oe=5951EF77';
                     $case = 2;
+                } elseif ($rand == 5) {
+                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18920430_10211860321835739_981425349956281704_n.jpg?oh=b02090f97063a2de907d38115e548c1f&oe=59A991E2';
+                    $case = 2;
+                } elseif ($rand == 6) {
+                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18740766_10211828628363422_125714442740925379_n.jpg?oh=28002164420259de39de4d03a87a54f0&oe=59D8AD52';
+                    $case = 2;
+                } elseif ($rand == 7) {
+                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18698277_10211811423253305_5522386558081162403_n.jpg?oh=564996795861a7f8dcd00e772eef287f&oe=59D78DD7';
+                    $case = 2;
+                } elseif ($rand == 8) {
+                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18118696_10211519466554570_5752762901238707474_n.jpg?oh=2a72d9a3f0260e3906f73c5fd6f61dea&oe=59A33982';
+                    $case = 2;
+                } elseif ($rand == 9) {
+                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18010392_10211431463634552_4019572772572027709_n.jpg?oh=1ec11ceeb635174f27c1b313fa793cba&oe=599C6328';
+                    $case = 2;
                 } else {
-                    $text = 'ร.ต.ดร.อภิธัช เสาะการ เป็นไง ... จัดเต็มให้หน่อย 555';
+                    $text = 'ร.อ.ดร.อภิธัช เสาะการ เป็นไง ... จัดเต็มให้หน่อย 555';
                     $case = 1;
                 }
             }
@@ -1236,7 +1251,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'บิน') !== false) {
-                $rand = rand(0, 8);
+                $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
                     $case = 1;
@@ -1261,6 +1276,9 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 7) {
                     $text = 'ไปรอดาวพลูโตแปป';
                     $case = 1;
+                } elseif ($rand == 8) {
+                    $text = 'เช็คข่าวหน่อย มีข่าวอะไรทำไมถึงบิน';
+                    $case = 1;
                 } else {
                     $img = 'https://i.ytimg.com/vi/DUnO7weCfdM/maxresdefault.jpg';
                     $case = 2;
@@ -1268,7 +1286,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ทุบ') !== false) {
-                $rand = rand(0, 8);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'สงสัยจะไปแกนโลก';
                     $case = 1;
@@ -1292,6 +1310,12 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 } elseif ($rand == 7) {
                     $text = 'Follow ตามเลยดีมั๊ยนะ 555';
+                    $case = 1;
+                } elseif ($rand == 8) {
+                    $text = 'เช็คข่าวหน่อย มีข่าวอะไร FOMC ออกมาพูดหรือป่าว';
+                    $case = 1;
+                } elseif ($rand == 9) {
+                    $text = 'ป้าเยออกมาพูดอะไรมั๊ยกราฟถึงทุบ';
                     $case = 1;
                 } else {
                     $img = 'https://s-media-cache-ak0.pinimg.com/originals/67/ff/5b/67ff5b84711240eb6361bc4e4094a890.jpg';
@@ -1392,12 +1416,22 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ติดบาย') !== false || strpos($textinput, 'ติดไม้บาย') !== false || strpos($textinput, 'ติดbuy') !== false || strpos($textinput, 'ติดไม้buy') !== false || strpos($textinput, 'ติดไม้ buy') !== false) {
-                $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง buy limit ไว้';
+                $rand = rand(0, 1);
+                if ($rand == 0) {
+                    $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง buy limit ไว้';
+                } else {
+                    $text = 'หาจุดกลับตัวที่ขนาดใหญ่ๆหน่อย เราจะเอาจังหวะการชนแล้วเด้งทำกำไร';
+                }
                 $case = 1;
             }
 
             if (strpos($textinput, 'ติดเซล') !== false || strpos($textinput, 'ติดไม้เซล') !== false || strpos($textinput, 'ติดsell') !== false || strpos($textinput, 'ติดไม้sell') !== false || strpos($textinput, 'ติดไม้ sell') !== false) {
-                $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง sell limit ไว้';
+                $rand = rand(0, 1);
+                if ($rand == 0) {
+                    $text = 'แก้ไม้สิ ไปหาจุดกลับตัวแล้วตั้ง sell limit ไว้';
+                } else {
+                    $text = 'หาจุดกลับตัวที่ขนาดใหญ่ๆหน่อย เราจะเอาจังหวะการชนแล้วเด้งทำกำไร';
+                }
                 $case = 1;
             }
 
@@ -1879,7 +1913,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'แก้ไม้') !== false) {
                 $text = 'วิธีการแก้ไม้แบบปิดรวบ
 
-http://www.tradersociety.org/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%89/';
+https://goo.gl/cOQgUR';
                 $case = 1;
             }
 
@@ -1908,6 +1942,13 @@ http://www.tradersociety.org/การใช้-fibonacci-retracement/';
                 $text = 'ประเภทบัญชี
 
 http://th.weltrade.com/trader/type_account/';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'Spread') !== false || strpos($textinput, 'spread') !== false) {
+                $text = 'ค่าสเปรดบัญชีประเภทต่างๆ
+
+http://th.weltrade.com/trader/tools/';
                 $case = 1;
             }
 
