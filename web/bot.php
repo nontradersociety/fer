@@ -604,7 +604,7 @@ if (!is_null($events['events'])) {
                     $img = 'งดใช้คำหยาบคายในห้องนี้';
                     $case = 2;
                 } else
-                $text = 'จะพูดคำหยาบทำไมเนี่ย';
+                    $text = 'จะพูดคำหยาบทำไมเนี่ย';
                 $case = 1;
             }
 
@@ -1509,12 +1509,12 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'adp-nonfarm') !== false || strpos($textinput, 'Adp-Nonfarm') !== false || strpos($textinput, 'ADP-Nonfarm') !== false ) {
+            if (strpos($textinput, 'adp-nonfarm') !== false || strpos($textinput, 'Adp-Nonfarm') !== false ) {
                 $text = 'ADP-Nonfarm คือ รายงานการจ้างงานแห่งชาติเอดีพี จะวัดค่าการเปลี่ยนแปลงรายเดือนเพื่อทราบถึงการจ้างงานภาคเอกชนที่ไม่ใช่เกษตรกรรมซึ่งได้ยึดตามข้อมูลการคิดเงินเดือนที่ได้ข้อมูลจากกิจการธุรกิจต่างๆ ประมาณ 400,000 แห่งทั่วทั้งสหรัฐอเมริกา';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'nonfarm') !== false || strpos($textinput, 'non-farm') !== false || strpos($textinput, 'Non-Farm') !== false || strpos($textinput, 'Non-farm') !== false  ) {
+            if (strpos($textinput, 'nonfarm') !== false || strpos($textinput, 'non-farm') !== false ) {
                 $text = 'Non-farm payroll คือ รายงานตัวเลขการจ้างงานนอกภาคการเกษตร จะวัดค่าการเปลี่ยนแปลงในจำนวนของผู้ที่มีงานทำในระหว่างช่วงเดือนก่อนหน้านี้โดยไม่รวมอุตสาหกรรมภาคการเกษตร การสร้างงานนั้นเป็นดัชนีที่สำคัญที่บ่งชี้ถึงการใช้จ่ายของผู้บริโภคซึ่งถือเป็นส่วนที่มากที่สุดของกิจกรรมทางเศรษฐกิจ';
                 $case = 1;
             }
@@ -1665,6 +1665,22 @@ if (!is_null($events['events'])) {
                     $text = 'นอนแล้วหรอ อ้าว ... ใครยืนอยู่ปลายเตียงอ่ะ';
                 } else {
                     $text = 'Good Night ครับ ถ้ามีออเดอร์ตั้ง SL กำไรไว้ด้วยนะ';
+                }
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'กราฟป่วย') !== false) {
+                $rand = rand(0, 4);
+                if ($rand == 0) {
+                    $text = 'นั่นสิ เบื่อจริงๆเลย';
+                } elseif ($rand == 1) {
+                    $text = 'ป่วยบ่อยไปช่วงนี้';
+                } elseif ($rand == 2) {
+                    $text = 'มันกำลังรออะไรอยู่หรือป่าว เช็คข่าวหน่อย';
+                } elseif ($rand == 3) {
+                    $text = 'ว่าจะซัด lot หนักๆ หาจังหวะเข้าไม่ได้เลย';
+                } else {
+                    $text = 'นอนรอดีกว่า ZzzZz';
                 }
                 $case = 1;
             }
@@ -1931,7 +1947,7 @@ http://www.tradersociety.org/volumn-คืออะไร/';
                 $case = 1;
             }
 
-            if (strpos($textinput, 'Fibo') !== false) {
+            if (strpos($textinput, 'Fibo') !== false || strpos($textinput, 'fibo') !== false) {
                 $text = 'การใช้งาน Fibo Retractment
 
 http://www.tradersociety.org/การใช้-fibonacci-retracement/';
@@ -1981,7 +1997,7 @@ http://th.weltrade.com/trader/paysystems/';
             }
 
             if (strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555+') !== false || strpos($textinput, 'ฮา') !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 4);
                 if ($rand == 0) {
                     $array = [
                         "id" => "325708",
