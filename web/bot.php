@@ -1175,7 +1175,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'บิน') !== false) {
 
                 $today = date('l');
-                if ( $today = "Saturday" or $today = "Sunday" )
+                if ( $today == "Saturday" or $today == "Sunday" )
                 {
                     $text = 'วันนี้วันหยุดกราฟไม่ขยับ 555';
                     $case = 1;
@@ -1218,7 +1218,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'ทุบ') !== false) {
                 
                 $today = date('l');
-                if ( $today = "Saturday" or $today = "Sunday" )
+                if ( $today == "Saturday" or $today == "Sunday" )
                 {
                     $text = 'วันนี้วันหยุดกราฟจะทุบได้ไงบ้าป่าว 555';
                     $case = 1;
@@ -1302,7 +1302,7 @@ if (!is_null($events['events'])) {
             if (strpos($textinput, 'Sell') !== false || strpos($textinput, 'Buy') !== false) {
 
                 $today = date('l');
-                if ( $today = "Saturday" or $today = "Sunday" )
+                if ( $today == "Saturday" or $today == "Sunday" )
                 {
                     $text = 'วันนี้ตลาดปิดกดออเดอร์ไม่ได้';
                     $case = 1;
