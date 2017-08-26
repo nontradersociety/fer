@@ -1173,7 +1173,7 @@ if (!is_null($events['events'])) {
             }
             
             if (strpos($textinput, 'บิน') !== false) {
-                $today = date("D");
+                $today = date(“l”);
                 if ( strpos($today, 'Sat') !== false || strpos($today, 'Sun') !== false)
                 {
                     $text = 'วันนี้วันหยุดกราฟมันจะบินได้ไงบ้าป่าว 555';
