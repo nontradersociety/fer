@@ -1171,16 +1171,16 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-            
+
             if (strpos($textinput, 'บิน') !== false) {
-                
+
                 $today = date('l');
-                if (strpos($today, 'Saturday') !== false || strpos($today, 'Sunday') !== false )
+                if ( $today = "Saturday" or $today = "Sunday" )
                 {
                     $text = 'วันนี้วันหยุดกราฟไม่ขยับ 555';
                     $case = 1;
                 }
-                
+
                 $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
@@ -1216,13 +1216,14 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ทุบ') !== false) {
+                
                 $today = date('l');
-                if (strpos($today, 'Saturday') !== false || strpos($today, 'Sunday') !== false )
+                if ( $today = "Saturday" or $today = "Sunday" )
                 {
-                    $text = 'วันนี้วันหยุดกราฟจะทุบได้ไง บ้าป่าว 555';
+                    $text = 'วันนี้วันหยุดกราฟจะทุบได้ไงบ้าป่าว 555';
                     $case = 1;
                 }
-                
+
                 $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'สงสัยจะไปแกนโลก';
@@ -1299,6 +1300,14 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'Sell') !== false || strpos($textinput, 'Buy') !== false) {
+
+                $today = date('l');
+                if ( $today = "Saturday" or $today = "Sunday" )
+                {
+                    $text = 'วันนี้ตลาดปิดกดออเดอร์ไม่ได้';
+                    $case = 1;
+                }
+                
                 $rand = rand(0, 7);
                 if ($rand == 0) {
                     $text = 'กี่ lot ดี';
