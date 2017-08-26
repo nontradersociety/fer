@@ -1172,21 +1172,15 @@ if (!is_null($events['events'])) {
                 }
             }
             
-            if (strpos($textinput, 'asdf') !== false)
-            {
-                $today = date('l');
-                $text = $today;
-                    $case = 1;
-            }
-            
-            if (strpos($textinput, 'asdf2') !== false)
-            {
-                $today = date("l");
-                $text = $today;
-                $case = 1;
-            }
-
             if (strpos($textinput, 'บิน') !== false) {
+                
+                $today = date('l');
+                if (strpos($today, 'Saturday') !== false || strpos($today, 'Sunday') !== false )
+                {
+                    $text = 'วันนี้วันหยุดกราฟไม่ขยับ 555';
+                    $case = 1;
+                }
+                
                 $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
@@ -1222,6 +1216,13 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ทุบ') !== false) {
+                $today = date('l');
+                if (strpos($today, 'Saturday') !== false || strpos($today, 'Sunday') !== false )
+                {
+                    $text = 'วันนี้วันหยุดกราฟจะทุบได้ไง บ้าป่าว 555';
+                    $case = 1;
+                }
+                
                 $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'สงสัยจะไปแกนโลก';
