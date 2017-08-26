@@ -1,6 +1,5 @@
 <?php
 $access_token = '2VpxkqV0Vz54m3WU3OVwQVE29YtZ3a0yQYuTla4cm6wvb69soXq7hMWvfGl5KH8OmgABT6iunly2fcdr0X/UG+kswxOSiP13+fqi09GYzbtuwrU+/BHjYhODTi5rVypFd1vVUVr2XmytvsgPxdivwAdB04t89/1O/w1cDnyilFU=';
-
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -32,7 +31,6 @@ if (!is_null($events['events'])) {
                                 $text = 'เตะออกแล้วเชิญเข้ามาทำไม น้อยใจ !!';
                             }
                         }
-
                         if(strpos($textinput, 'ไปไกลๆเลยสัด') !== false){
                             $myfile = fopen("data.txt", "w") or die("Unable to open file!");
                             $txt = "2";
@@ -41,35 +39,25 @@ if (!is_null($events['events'])) {
                             $text = 'Bye Bye';
                             $case = 1;
                         }
-
                         $myfile = fopen("data.txt", "r") or die("Unable to open file!");
                         $data = fread($myfile,filesize("data.txt"));
                         if($data == "1") {*/
-
             if (strpos($textinput, 'บอล') !== false) {
                 $message = '
 ';
                 $html = file_get_contents('http://livescore.siamsport.co.th/widget/fixtures_results/1204/1');
                 /*** a new dom object ***/
                 $dom = new domDocument;
-
                 /*** load the html into the object ***/
                 $dom->loadHTML($html);
-
                 /*** discard white space ***/
                 $dom->preserveWhiteSpace = false;
-
                 /*** the table by its tag name ***/
-
                 $tables = getElementsByClass($dom, 'div', 'scoreBox');
-
-
                 /*** get all rows from the table ***/
 //$rows = $tables->item(0)->getElementsByTagName('tr');
-
                 /*** loop over the table rows ***/
                 foreach ($tables as $key => $row) {
-
                     $div = $row->getElementsByTagName('div');
                     $message .= '----- ' . $div->item(0)->nodeValue . ' -----
 ';
@@ -82,26 +70,20 @@ if (!is_null($events['events'])) {
                 $text = $message;
                 $case = 1;
             }
-
             if (strpos($textinput, 'ถ่ายทอด') !== false || strpos($textinput, 'ช่อง') !== false) {
                 $message = '
 ';
                 $html = file_get_contents('http://livescore.siamsport.co.th/widget/live_table');
                 /*** a new dom object ***/
                 $dom = new domDocument;
-
                 /*** load the html into the object ***/
                 $dom->loadHTML($html);
-
                 /*** discard white space ***/
                 $dom->preserveWhiteSpace = false;
-
                 /*** the table by its tag name ***/
                 $tables = $dom->getElementsByTagName('table');
-
                 /*** get all rows from the table ***/
 //$rows = $tables->item(0)->getElementsByTagName('tr');
-
                 /*** loop over the table rows ***/
                 foreach ($tables as $key => $row) {
                     if ($key >= 1) {
@@ -109,7 +91,6 @@ if (!is_null($events['events'])) {
                         foreach ($cols as $key2 => $cols) {
                             $td = $cols->getElementsByTagName('td');
                             if ($key2 == 0) {
-
                             } elseif ($key2 == 1) {
                                 $message .= '----- ' . $cols->nodeValue . ' -----
 ';
@@ -126,12 +107,10 @@ if (!is_null($events['events'])) {
                 $text = $message;
                 $case = 1;
             }
-
             if (strpos($textinput, 'คะแนน') !== false) {
                 $text = 'ดูเอาเอง -> http://livescore.siamsport.co.th/widget/standing/1204';
                 $case = 1;
             }
-
             if (strpos($textinput, 'สาว') !== false) {
                 $rand = rand(1, 29);
                 switch ($rand) {
@@ -253,7 +232,6 @@ if (!is_null($events['events'])) {
                         break;
                 }
             }
-
             if (strpos($textinput, 'ขอเพลง') !== false) {
                 $rand = rand(1, 29);
                 switch ($rand) {
@@ -359,7 +337,6 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-
             /*
                         if (strpos($textinput, 'fuck') !== false) {
                 $rand = rand(0, 4);
@@ -437,7 +414,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'ลูกกะหรี่') !== false || strpos($textinput, 'ลูกกระหรี่') !== false || strpos($textinput, 'ลูกกระหลี่') !== false || strpos($textinput, 'ลูกกะหลี่') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
@@ -455,7 +431,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false) {
                 $rand = rand(0, 14);
                 if ($rand == 0) {
@@ -491,7 +466,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'เสือก') !== false) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
@@ -507,7 +481,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'พ่อง') !== false) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
@@ -577,21 +550,8 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-                        if (strpos($textinput, 'หน้าหี') !== false || strpos($textinput, 'จิ๋ม') !== false) {
-                $rand = rand(0, 3);
-                if ($rand == 0) {
-                    $text = 'ว่าตัวเองทำไม บ้าป่าว';
-                } elseif ($rand == 1) {
-                    $text = 'ชักจะเอือมกับคำพูดคำจามึงละนะ';
-                } elseif ($rand == 2) {
-                    $text = 'ดูมึงพูด ยอดหน้าซักทีดีมั้ง';
-                } else {
-                    $text = 'พูดจาดีๆหน่อยสัส';
-                }
-                $case = 1;
-            }
             */
-
+            
             if (strpos($textinput, 'หน้าหี') !== false || strpos($textinput, 'จิ๋ม') !== false || strpos($textinput, 'เหี้ย') !== false || strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false || strpos($textinput, 'สั ส') !== false || strpos($textinput, 'สั ด') !== false || strpos($textinput, 'พ่อง') !== false || strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false || strpos($textinput, 'fuck') !== false || strpos($textinput, 'ตีน') !== false || strpos($textinput, 'ตรีน') !== false || strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'กรู') !== false || strpos($textinput, 'มรึง') !== false || strpos($textinput, 'เมิง') !== false || strpos($textinput, 'เมริง') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
@@ -653,7 +613,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ป้าเย') !== false || strpos($textinput, 'เยเลน') !== false || strpos($textinput, 'เยลเลน') !== false || strpos($textinput, 'yellen') !== false ) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $img = 'https://si.wsj.net/public/resources/images/BN-NM716_0412_4_P_20160411185052.jpg';
                     $case = 2;
@@ -669,14 +629,28 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 4) {
                     $text = 'คุณป้ามหาภัย มาทีไรบรรลัยทุกที';
                     $case = 1;
+                } elseif ($rand == 5) {
+                    $img = 'https://www.japantimes.co.jp/wp-content/uploads/2017/08/b-yellen-a-20170823.jpg';
+                    $case = 2;
+                } elseif ($rand == 6) {
+                    $img = 'https://s.wsj.net/public/resources/images/BN-UG181_YELLEN_M_20170712112930.jpg';
+                    $case = 2;
+                } elseif ($rand == 7) {
+                    $img = 'https://si.wsj.net/public/resources/images/BN-SC304_YELLEN_M_20170214110041.jpg';
+                    $case = 2;
+                } elseif ($rand == 8) {
+                    $img = 'https://i.cbc.ca/1.3889643.1481310324!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/janet-yellen.jpg';
+                    $case = 2;
+                } elseif ($rand == 9) {
+                    $img = 'https://thenypost.files.wordpress.com/2017/07/yellen1.jpg?quality=90&strip=all&w=1200';
+                    $case = 2;
                 } else {
                     $text = 'พาไปทัวแกนโลกหน่อยนะ';
                     $case = 1;
                 }
             }
-
             if (strpos($textinput, 'ทรัม') !== false || strpos($textinput, 'trump') !== false  || strpos($textinput, 'ทรั้ม') !== false) {
-                $rand = rand(0, 4);
+                $rand = rand(0, 8);
                 if ($rand == 0) {
                     $text = 'คุณลุงผู้ที่รักความสงบ 55';
                     $case = 1;
@@ -689,12 +663,23 @@ if (!is_null($events['events'])) {
                 } elseif ($rand == 3) {
                     $text = 'ลุงจะพาไปบินซักกี่จุดดีรอบนี้';
                     $case = 1;
+                } elseif ($rand == 4) {
+                    $img = 'https://timedotcom.files.wordpress.com/2017/07/donald-trump-nobody-scared.jpg';
+                    $case = 2;
+                } elseif ($rand == 5) {
+                    $img = 'https://pixel.nymag.com/imgs/daily/intelligencer/2017/06/30/30-donald-trump-fired.w710.h473.2x.jpg';
+                    $case = 2;
+                } elseif ($rand == 6) {
+                    $img = 'https://media.vanityfair.com/photos/58c88881ab44a73fea5578b5/master/pass/donald-trump-tax-returns.jpg';
+                    $case = 2;
+                } elseif ($rand == 7) {
+                    $img = 'https://img.huffingtonpost.com/asset/58de79e92c00002000ff18da.jpeg?ops=scalefit_720_noupscale';
+                    $case = 2;
                 } else {
                     $img = 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO5I7lwKP0KPUnNjVQzn3DmFqTyYDY01HTzyNLxrttnwoG6lIR';
                     $case = 2;
                 }
             }
-
             if (strpos($textinput, 'คิดถึงบอท') !== false || strpos($textinput, 'miss') !== false || strpos($textinput, 'miz') !== false) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
@@ -742,7 +727,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'เกลียดบอท') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
@@ -758,7 +742,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'อีบอท') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
@@ -772,7 +755,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'ไอ้บอท') !== false || strpos($textinput, 'ไอบอท') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
@@ -786,7 +768,6 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'รวย') !== false || strpos($textinput, 'rich') !== false) {
                 $rand = rand(0, 6);
                 if ($rand == 0) {
@@ -916,9 +897,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
             /*if (strpos($textinput, 'บอ ท') !== false || strpos($textinput, 'บ อท') !== false || strpos($textinput, 'บ อ ท') !== false || strpos($textinput, 'บอท') !== false || strpos($textinput, 'bot') !== false || strpos($textinput, 'Bot') !== false) {
-
                 $rand = rand(0, 7);
                 if($rand == 0){
                     $text = 'I am Artificial Intelligence. แปลออกมั๊ย ดูจากหน้าตาแล้วไม่น่าจะเข้าใจ';
@@ -939,7 +918,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }*/
-
+            
             if (strpos($textinput, 'รวน') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
@@ -951,7 +930,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-
+            
             if (strpos($textinput, 'หิว') !== false) {
                 $rand = rand(0, 20);
                 if ($rand == 0) {
@@ -1040,44 +1019,6 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'เตี๋ยว') !== false) {
-                $rand = rand(0, 10);
-                if ($rand == 0) {
-                    $text = 'ก๋วยเตี๋ยวหมูน้ำตกใส่ไข่ร้านพี่นนจัดไป';
-                    $case = 1;
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/13920658_519863781555401_3026708436745190096_n.jpg?oh=765e230908c1d0acbfae65c6ce7035ce&oe=594CBDB4';
-                    $case = 2;
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/17759933_622215077986937_7561433539968645256_n.jpg?oh=bf322fa4cb01123ddc698257cbbb5dad&oe=594CD153';
-                    $case = 2;
-                } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/17798986_621653594709752_8635109469633504184_n.jpg?oh=f770a552924938b27dc3108f6844d8ed&oe=598BF9D8';
-                    $case = 2;
-                } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/15672541_577039999171112_837219844315576863_n.jpg?oh=038ec78495578506a59e58a7a79725bf&oe=5980E59C';
-                    $case = 2;
-                } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/14732122_557620264446419_3272377450182637742_n.jpg?oh=5de6019353dd10b4433c06e661af8c20&oe=598F3162';
-                    $case = 2;
-                } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/14690900_550455421829570_544487863322192769_n.jpg?oh=dd1e9b5ee24376025ecefcd7085b7528&oe=5992B101';
-                    $case = 2;
-                } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/13082615_488131831395263_4384544117165089775_n.jpg?oh=d073762ba76400f9b667590b420a3742&oe=59926597';
-                    $case = 2;
-                } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t31.0-8/12363150_443535975854849_1520666602729577864_o.jpg?oh=06811f3288255e51fa9135cb4d4ee65c&oe=5994C51F';
-                    $case = 2;
-                } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/11898908_418731475001966_2588502630232562855_n.jpg?oh=ea83cd0ad13178e693584851c572182e&oe=59948544';
-                    $case = 2;
-                } else {
-                    $text = 'ไปเลยร้านพี่นนที่สุพรรณบุรี อย่างเด็ด';
-                    $case = 1;
-                }
-            }
-
             if (strpos($textinput, 'อาจารย์หยก') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
@@ -1094,23 +1035,6 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-
-            /*if ( strpos($textinput, 'อาจารย์นน') !== false ) {
-                $rand = rand(0, 5);
-                if($rand == 0){
-                    $text = 'ถนัดใช้ fibo + หลักจิตวิทยาเศรษฐศาสตร์ ใครสนใจไปสอบถามได้';
-                    $case = 1;
-                }elseif($rand == 1){
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16682017_1442764355742587_3708055595342157983_n.jpg?oh=8971bd4d3cc3b67a54ee5c17d5fcc902&oe=595657D9';
-                    $case = 2;
-                }elseif($rand == 2){
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/1917063_103156016370101_5458952_n.jpg?oh=1f51bbc443d6a4daa0ddbe91c921eabc&oe=5969CE8C';
-                    $case = 2;
-                }else {
-                    $text = 'ชวนไปซ้อมดนตรีดีกว่า 55';
-                    $case = 1;
-                }
-            }*/
 
             if (strpos($textinput, 'แอ็ค') !== false || strpos($textinput, 'แอค') !== false || strpos($textinput, 'acme') !== false) {
                 $rand = rand(0, 9);
@@ -1148,9 +1072,7 @@ if (!is_null($events['events'])) {
                     $text = 'เป็นอาจารย์ที่พวกเราเคารพนับถือ';
                     $case = 1;
                 }
-
             }
-
             if (strpos($textinput, 'อาจารย์เดียร์') !== false) {
                 $rand = rand(0, 9);
                 if ($rand == 0) {
@@ -1188,7 +1110,7 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-
+            
             if (strpos($textinput, 'อาจารย์แมน') !== false || strpos($textinput, 'อ.แมน') !== false) {
                 $rand = rand(0, 10);
                 if ($rand == 0) {
@@ -1226,7 +1148,7 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-
+            
             if (strpos($textinput, 'ตู่') !== false || strpos($textinput, 'ประยุท') !== false || strpos($textinput, 'จันทร์โอชา') !== false || strpos($textinput, 'จันทรโอชา') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
@@ -1249,8 +1171,14 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-
+            
             if (strpos($textinput, 'บิน') !== false) {
+                $today = date("D");
+                if ( strpos($textinput, 'Sat') !== false || strpos($textinput, 'Sun') !== false)
+                {
+                    $text = 'วันนี้วันหยุดกราฟมันจะบินได้ไงบ้าป่าว 555';
+                    $case = 1;
+                }
                 $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
@@ -1284,7 +1212,7 @@ if (!is_null($events['events'])) {
                     $case = 2;
                 }
             }
-
+            
             if (strpos($textinput, 'ทุบ') !== false) {
                 $rand = rand(0, 10);
                 if ($rand == 0) {
@@ -1323,7 +1251,7 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'ทองคำ') !== false || strpos($textinput, 'gold') !== false || strpos($textinput, 'xau') !== false || strpos($textinput, 'Xau') !== false || strpos($textinput, 'XAU') !== false || strpos($textinput, 'Gold') !== false || strpos($textinput, 'GOLD') !== false) {
+            if (strpos($textinput, 'ทองคำ') !== false || strpos($textinput, 'gold') !== false ) {
                 $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'buy หรือ sell ดีละ';
@@ -1500,8 +1428,14 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เด้ง') !== false) {
-                $text = 'กราฟชนแนวต้านแล้วเด้งใช่มั๊ย ? แสดงว่าแนวต้านแข็งแรง แต่ถ้าชนมากๆก็มีสิทธิ์ที่จะแตกได้';
+                $rand = rand(0, 1);
+                if ($rand == 0) {
+                    $text = 'กราฟชนแนวต้านแล้วเด้งใช่มั๊ย ? แสดงว่าแนวต้านแข็งแรง แต่ถ้าชนมากๆก็มีสิทธิ์ที่จะแตกได้';
+                } else {
+                    $text = 'แสดงว่าแนวราคานั้นมีขนาดแท่งเทียนที่มีขนาดใหญ่พอสมควร ทำให้มีการเด้งกลับ';
+                }
                 $case = 1;
+
             }
 
             if (strpos($textinput, 'จ่อ') !== false) {
@@ -1535,7 +1469,6 @@ if (!is_null($events['events'])) {
 ไม้ที่ 4 size lot = x/2
 ไม้ที่ 5 size lot = x
 ไม้ที่ 6 size lot = x
-
 คำนวณ x โดยนำทุนไปหาร 10000 แล้วนำผลลัพธ์ไปหาร 5 ผลลัพธ์สุดท้าย คือ จำนวน x lot';
                 $case = 1;
             }
@@ -1557,14 +1490,12 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'sideway') !== false || strpos($textinput, 'Sideway') !== false) {
-
                 $text = 'ตลาดแบบ Sideway คือ สภาวะที่ตลาดเลือกทิศทางไม่ได้ว่าจะขึ้นหรือจะลง วิ่งอยู่ในกรอบ นักลงทุนส่วนมากหากเจอสภาวะแบบนี้อาจไม่เข้าเทรดหรือถ้าเทรดก็เป็นแบบทำกำไรระยะสั้น ต้องใช้ประสบการณ์เพราะต้องเข้าเร็วออกเร็ว หากช้าอาจโดนกราฟลากได้';
                 $case = 1;
             }
 
             if (strpos($textinput, 'บายหรือเซล') !== false || strpos($textinput, 'บาย หรือ เซล') !== false || strpos($textinput, 'เซล หรือ บาย') !== false || strpos($textinput, 'เซลหรือบาย') !== false  ) {
                 $text = 'เช็คเหตุผลในการเข้าออเดอร์สิ
-
 1. เช็คข่าวต่างๆที่มีผลต่อสกุลเงิน usd
 2. เช็คข่าวใน forexfactory เทียบดัวเลขคาดการณ์และครั้งก่อนว่าดีขึ้นหรือแย่ลง
 3. เช็ค USDX ว่าแข็งค่าหรืออ่อนค่า
@@ -1623,7 +1554,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ต้านแข็ง') !== false) {
+            if (strpos($textinput, 'ต้านแข็ง') !== false || strpos($textinput, 'รับแข็ง') !== false) {
                 $rand = rand(0, 3);
                 if ($rand == 0) {
                     $text = 'ถ้าโดนกระแทกบ่อยๆก็อาจจะทะลุได้นะ ระวังกันด้วย';
@@ -1803,6 +1734,26 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if (strpos($textinput, 'เสือก') !== false ) {
+                $rand = rand(0, 6);
+                if ($rand == 0) {
+                    $text = 'พอใจอ่ะ';
+                } elseif ($rand == 1) {
+                    $text = 'พูดดีๆเป็นป่าว';
+                } elseif ($rand == 2) {
+                    $text = 'ก็อยากรู้ มีปัญหาอะไรมั๊ย';
+                } elseif ($rand == 3) {
+                    $text = 'พูดแบบนี้สงสัยอยากโดนเล่น';
+                } elseif ($rand == 4) {
+                    $text = 'เคยนั่งอยู่ดีๆแล้วหงายหลังป่ะ';
+                } elseif ($rand == 5) {
+                    $text = 'อยากโดนเท้าคู่มั๊ย';
+                } else {
+                    $text = 'ก็พอใจจะทำไมละ ??';
+                }
+                $case = 1;
+            }
+
             if (strpos($textinput, 'สาส') !== false || strpos($textinput, 'สาด') !== false || strpos($textinput, 'ส า ส') !== false || strpos($textinput, 'ส า ด') !== false ) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
@@ -1913,21 +1864,13 @@ if (!is_null($events['events'])) {
 
             if (strpos($textinput, 'กฎระเบียบ') !== false) {
                 $text = '⚠️ กฎระเบียบของห้อง ⚠️
-
 ❌ เนื้อหาที่ละเมิดต่อ สถาบันชาติ ศาสนา พระมหากษัตริย์ และพระบรมวงศานุวงศ์
-
 ❌ เนื้อหาที่เกี่ยวกับการเมือง อันจะก่อให้เกิดการแบ่งฝักฝ่าย และการโต้เถียงและแตกแยกกันในหมู่สมาชิก
-
 ❌ เนื้อหาที่ว่ากล่าวให้ร้าย แก่สมาชิกผู้อื่นหรือที่เป็นการยุยงให้ผู้อื่นเกิดความขัดแย้งซึ่งกันและกัน
-
 ❌ เนื้อหาที่เกี่ยวกับธุรกิจลูกโซ่ MLM
-
 ❌ Invite สมาชิกท่านอื่นเข้ามา
-
 ❌ เนื้อหาหรือข้อความใดๆออกไปเผยแพร่ภายนอก
-
 ⚠️ ก่อนโพสข้อความหรือเนื้อหาใดๆ ควรตรวจสอบให้เรียบร้อย ซึ่งเมื่อโพสต์ไปแล้วหากผิดระเบียบข้อบังคับ ผู้โพสต์ต้องรับผลที่เกิดขึ้น ⚠️
-
 💥 Admin มีสิทธิ์ที่จะ Ban สมาชิกที่ทำผิดกฎหรือที่พิจารณาแล้วว่าไม่เหมาะสมได้ทันที ซึ่งหากเกิดข้อพิพาท ทาง Admin จะปรึกษากันและทำตามคะแนนเสียงส่วนใหญ่ 💥';
                 $case = 1;
             }
@@ -1944,65 +1887,55 @@ if (!is_null($events['events'])) {
 
             if (strpos($textinput, 'แก้ไม้') !== false) {
                 $text = 'วิธีการแก้ไม้แบบปิดรวบ
-
 https://goo.gl/cOQgUR';
                 $case = 1;
             }
 
             if (strpos($textinput, 'ตะกร้า') !== false || strpos($textinput, 'ตระกร้า') !== false || strpos($textinput, 'finviz') !== false) {
                 $text = 'เช็คอันดับค่าเงินได้ที่นี่ ( Refresh every 1 min )
-
 http://www.tradersociety.org/finviz/';
                 $case = 1;
             }
 
             if (strpos($textinput, 'Volumn') !== false) {
                 $text = 'Volumn คืออะไร ???
-
 http://www.tradersociety.org/volumn-คืออะไร/';
                 $case = 1;
             }
 
             if (strpos($textinput, 'Fibo') !== false || strpos($textinput, 'fibo') !== false) {
                 $text = 'การใช้งาน Fibo Retractment
-
 http://www.tradersociety.org/การใช้-fibonacci-retracement/';
                 $case = 1;
             }
 
             if (strpos($textinput, 'ประเภทบัญชี') !== false || strpos($textinput, 'verify') !== false) {
                 $text = 'ประเภทบัญชี
-
 http://th.weltrade.com/trader/type_account/';
                 $case = 1;
             }
 
             if (strpos($textinput, 'Spread') !== false || strpos($textinput, 'spread') !== false) {
                 $text = 'ค่าสเปรดบัญชีประเภทต่างๆ
-
 http://th.weltrade.com/trader/tools/';
                 $case = 1;
             }
 
             if (strpos($textinput, 'weltrade') !== false || strpos($textinput, 'Weltrade') !== false || strpos($textinput, 'เวลเทรด') !== false) {
                 $text = 'Link การสมัคร (  รหัสพันธมิตรหรือรหัสผู้เเนะนำ :: 12411 )
-
 http://th.weltrade.com/?r1=ipartner&r2=12411
-
 หากใครใคร่สนับสนุนกลุ่มเราสามารถคลิกลิ้งด้านบนเพื่อเปิดบัญชีได้เลยครับ';
                 $case = 1;
             }
 
             if (strpos($textinput, 'ฝากเงิน') !== false) {
                 $text = 'วิธีฝากเงิน
-
 http://th.weltrade.com/trader/paysystems/';
                 $case = 1;
             }
 
             if (strpos($textinput, 'ถอนเงิน') !== false) {
                 $text = 'วิธีถอนเงิน
-
 http://th.weltrade.com/trader/paysystems/';
                 $case = 1;
             }
@@ -2033,7 +1966,6 @@ http://th.weltrade.com/trader/paysystems/';
                 }
                 $case = 1;
             }
-
             if (strpos($textinput, 'อะไรคือ') !== false) {
                 $text_ex = explode(':', $textinput);
                 //เอาข้อความมาแยก : ได้เป็น Array
@@ -2067,13 +1999,11 @@ http://th.weltrade.com/trader/paysystems/';
                 }
                 $case = 1;
             }
-
             if ($case == 1) {
                 $messages = [
                     'type' => 'text',
                     'text' => $text
                 ];
-
                 // Make a POST Request to Messaging API to reply to sender
                 $url = 'https://api.line.me/v2/bot/message/reply';
                 $data = [
@@ -2082,7 +2012,6 @@ http://th.weltrade.com/trader/paysystems/';
                 ];
                 $post = json_encode($data);
                 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -2091,7 +2020,6 @@ http://th.weltrade.com/trader/paysystems/';
                 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
                 $result = curl_exec($ch);
                 curl_close($ch);
-
                 echo $result . "\r\n";
             } elseif ($case == 2) {
                 $messages = [
@@ -2099,7 +2027,6 @@ http://th.weltrade.com/trader/paysystems/';
                     'originalContentUrl' => $img,
                     'previewImageUrl' => $img
                 ];
-
                 // Make a POST Request to Messaging API to reply to sender
                 $url = 'https://api.line.me/v2/bot/message/reply';
                 $data = [
@@ -2108,7 +2035,6 @@ http://th.weltrade.com/trader/paysystems/';
                 ];
                 $post = json_encode($data);
                 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -2117,10 +2043,8 @@ http://th.weltrade.com/trader/paysystems/';
                 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
                 $result = curl_exec($ch);
                 curl_close($ch);
-
                 echo $result . "\r\n";
             } elseif ($case == 3) {
-
                 $messages = $array;
                 // Make a POST Request to Messaging API to reply to sender
                 $url = 'https://api.line.me/v2/bot/message/reply';
@@ -2130,7 +2054,6 @@ http://th.weltrade.com/trader/paysystems/';
                 ];
                 $post = json_encode($data);
                 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -2139,10 +2062,8 @@ http://th.weltrade.com/trader/paysystems/';
                 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
                 $result = curl_exec($ch);
                 curl_close($ch);
-
                 echo $result . "\r\n";
             } elseif ($case == 4) {
-
                 $messages = $array;
                 // Make a POST Request to Messaging API to reply to sender
                 $url = 'https://api.line.me/v2/bot/message/reply';
@@ -2152,7 +2073,6 @@ http://th.weltrade.com/trader/paysystems/';
                 ];
                 $post = json_encode($data);
                 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -2161,17 +2081,14 @@ http://th.weltrade.com/trader/paysystems/';
                 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
                 $result = curl_exec($ch);
                 curl_close($ch);
-
                 echo $result . "\r\n";
             }
         }
-
     }
     //} openbot
 }
 function getElementsByClass(&$parentNode, $tagName, $className) {
     $nodes=array();
-
     $childNodeList = $parentNode->getElementsByTagName($tagName);
     for ($i = 0; $i < $childNodeList->length; $i++) {
         $temp = $childNodeList->item($i);
@@ -2179,8 +2096,6 @@ function getElementsByClass(&$parentNode, $tagName, $className) {
             $nodes[]=$temp;
         }
     }
-
     return $nodes;
 }
-
 echo "OK";
