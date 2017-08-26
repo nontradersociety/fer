@@ -551,7 +551,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
             */
-            
+
             if (strpos($textinput, 'หน้าหี') !== false || strpos($textinput, 'จิ๋ม') !== false || strpos($textinput, 'เหี้ย') !== false || strpos($textinput, 'สัด') !== false || strpos($textinput, 'สัส') !== false || strpos($textinput, 'สั ส') !== false || strpos($textinput, 'สั ด') !== false || strpos($textinput, 'พ่อง') !== false || strpos($textinput, 'ควย') !== false || strpos($textinput, 'คว ย') !== false || strpos($textinput, 'ค ว ย') !== false || strpos($textinput, 'ค วย') !== false || strpos($textinput, 'fuck') !== false || strpos($textinput, 'ตีน') !== false || strpos($textinput, 'ตรีน') !== false || strpos($textinput, 'มึง') !== false || strpos($textinput, 'กู') !== false || strpos($textinput, 'กรู') !== false || strpos($textinput, 'มรึง') !== false || strpos($textinput, 'เมิง') !== false || strpos($textinput, 'เมริง') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
@@ -918,7 +918,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }*/
-            
+
             if (strpos($textinput, 'รวน') !== false) {
                 $rand = rand(0, 2);
                 if ($rand == 0) {
@@ -930,7 +930,7 @@ if (!is_null($events['events'])) {
                 }
                 $case = 1;
             }
-            
+
             if (strpos($textinput, 'หิว') !== false) {
                 $rand = rand(0, 20);
                 if ($rand == 0) {
@@ -1110,7 +1110,7 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-            
+
             if (strpos($textinput, 'อาจารย์แมน') !== false || strpos($textinput, 'อ.แมน') !== false) {
                 $rand = rand(0, 10);
                 if ($rand == 0) {
@@ -1148,7 +1148,7 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-            
+
             if (strpos($textinput, 'ตู่') !== false || strpos($textinput, 'ประยุท') !== false || strpos($textinput, 'จันทร์โอชา') !== false || strpos($textinput, 'จันทรโอชา') !== false) {
                 $rand = rand(0, 5);
                 if ($rand == 0) {
@@ -1171,11 +1171,10 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
-            
+
             if (strpos($textinput, 'บิน') !== false) {
-                $today = date(“l”);
-                if ( strpos($today, 'Sat') !== false || strpos($today, 'Sun') !== false)
-                {
+                $today = date("l");
+                if ( $today == 'sat' || $today == 'sun' || $today == 'Sat' || $today == 'Sun'){
                     $text = 'วันนี้วันหยุดกราฟมันจะบินได้ไงบ้าป่าว 555';
                     $case = 1;
                 }
@@ -1212,7 +1211,7 @@ if (!is_null($events['events'])) {
                     $case = 2;
                 }
             }
-            
+
             if (strpos($textinput, 'ทุบ') !== false) {
                 $rand = rand(0, 10);
                 if ($rand == 0) {
