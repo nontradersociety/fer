@@ -1171,13 +1171,22 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }
             }
+            
+            if (strpos($textinput, 'asdf') !== false)
+            {
+                $today = date('l');
+                $text = $today;
+                    $case = 1;
+            }
+            
+            if (strpos($textinput, 'asdf2') !== false)
+            {
+                $today = date("l");
+                $text = $today;
+                $case = 1;
+            }
 
             if (strpos($textinput, 'บิน') !== false) {
-                $today = date("l");
-                if ( $today == 'sat' || $today == 'sun' || $today == 'Sat' || $today == 'Sun'){
-                    $text = 'วันนี้วันหยุดกราฟมันจะบินได้ไงบ้าป่าว 555';
-                    $case = 1;
-                }
                 $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
