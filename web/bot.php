@@ -233,7 +233,7 @@ if (!is_null($events['events'])) {
                 }
             }
             if (strpos($textinput, 'ขอเพลง') !== false) {
-                $rand = rand(1, 29);
+                $rand = rand(1, 20);
                 switch ($rand) {
                     case 1: //pull me under non
                         $text = 'https://www.facebook.com/naiinon/videos/vb.100000271105382/1440978912587798/?type=3&theater';
@@ -318,25 +318,6 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'epic') !== false || strpos($textinput, 'Epic') !== false || strpos($textinput, 'EPIC') !== false) {
-                $rand = rand(0, 4);
-                if ($rand == 0) {
-                    $text = 'https://www.youtube.com/watch?v=gpisNZ7QuoE'; //อยากรู้หัวใจตัวเอง
-                    $case = 1;
-                } elseif ($rand == 1) {
-                    $text = 'https://www.youtube.com/watch?v=9XA6ngcwkVw'; //ไม่เปลี่ยนใจ
-                    $case = 1;
-                } elseif ($rand == 2) {
-                    $text = 'https://www.youtube.com/watch?v=5MXzaw5Xe9w'; //ฝันไปเถอะ
-                    $case = 1;
-                } elseif ($rand == 3) {
-                    $text = 'https://www.youtube.com/watch?v=FLsLaU3Abc4'; //การรอคอย
-                    $case = 1;
-                } else {
-                    $text = 'https://www.youtube.com/watch?v=VX3oo0WPZug'; //เหงายิ่งกว่าเหงา
-                    $case = 1;
-                }
-            }
             /*
                         if (strpos($textinput, 'fuck') !== false) {
                 $rand = rand(0, 4);
@@ -855,7 +836,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false ) {
-                $rand = rand(0, 4);
+                $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'ลองซักตั้งมั๊ย';
                     $case = 1;
@@ -867,6 +848,12 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 } elseif ($rand == 3) {
                     $text = 'อยากโดนขมับป่ะละ';
+                    $case = 1;
+                } elseif ($rand == 4) {
+                    $text = 'อยากเจอจังว่าจะราคาคุยป่าว';
+                    $case = 1;
+                } elseif ($rand == 5) {
+                    $text = 'ส่งโลมาดิ๊ ขอเจอหน่อย';
                     $case = 1;
                 } else{
                     $text = 'อยากจะไฝว้';
@@ -1015,7 +1002,7 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'แอ็ค') !== false || strpos($textinput, 'แอค') !== false || strpos($textinput, 'acme') !== false) {
+            if (strpos($textinput, 'อาจารย์แอ็ค') !== false ) {
                 $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'หมายถึง คุณวรวัฒน์ นาคแนวดี ใช่มั๊ย';
@@ -1445,7 +1432,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'เด้ง') !== false) {
+            if (strpos($textinput, 'ชนแล้วเด้ง') !== false) {
                 $rand = rand(0, 1);
                 if ($rand == 0) {
                     $text = 'กราฟชนแนวต้านแล้วเด้งใช่มั๊ย ? แสดงว่าแนวต้านแข็งแรง แต่ถ้าชนมากๆก็มีสิทธิ์ที่จะแตกได้';
@@ -1619,7 +1606,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'กราฟป่วย') !== false) {
-                $rand = rand(0, 4);
+                $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = 'นั่นสิ เบื่อจริงๆเลย';
                 } elseif ($rand == 1) {
@@ -1628,6 +1615,8 @@ if (!is_null($events['events'])) {
                     $text = 'มันกำลังรออะไรอยู่หรือป่าว เช็คข่าวหน่อย';
                 } elseif ($rand == 3) {
                     $text = 'ว่าจะซัด lot หนักๆ หาจังหวะเข้าไม่ได้เลย';
+                } elseif ($rand == 4) {
+                    $text = 'หาที่เที่ยวดีกว่า 55';
                 } else {
                     $text = 'นอนรอดีกว่า ZzzZz';
                 }
@@ -1903,7 +1892,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'แก้ไม้') !== false) {
+            if (strpos($textinput, 'วิธีแก้ไม้') !== false) {
                 $text = 'วิธีการแก้ไม้แบบปิดรวบ
 https://goo.gl/cOQgUR';
                 $case = 1;
