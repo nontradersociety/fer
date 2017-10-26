@@ -750,7 +750,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
             if (strpos($textinput, 'รวย') !== false || strpos($textinput, 'rich') !== false) {
-                $rand = rand(0, 6);
+                $rand = rand(0, 8);
                 if ($rand == 0) {
                     $text = 'คนไหนรวยขอดูหน้าหน่อยดิ๊';
                     $case = 1;
@@ -768,6 +768,12 @@ if (!is_null($events['events'])) {
                     $case = 1;
                 }elseif ($rand == 5) {
                     $text = 'สงสัยซัดไป 10 lot เลยรวยกันเลย';
+                    $case = 1;
+                }elseif ($rand == 6) {
+                    $text = 'รวยหวยหรือรวยหุ้น 555';
+                    $case = 1;
+                }elseif ($rand == 7) {
+                    $text = 'แท็คชื่อให้ดูหน่อยอยากเห็นหน้า';
                     $case = 1;
                 } else {
                     $text = 'เอามาเติมพอร์ตหน่อยดิ๊';
@@ -810,14 +816,20 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เสียดาย') !== false) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'เสียดายดีกว่าเสียใจ';
                 } elseif ($rand == 1) {
                     $text = 'ความสำเร็จต้องทำซ้ำได้ ไม่ต้องไปเสียดายนะ';
                 } elseif ($rand == 2) {
                     $text = 'เสียดายทำไม มีเวลาให้ทำกำไรในตลาดตั้งเยอะแยะ';
-                } else {
+                } elseif ($rand == 3) {
+                    $text = 'เอาหน่า รอจังหวะแล้วเข้าใหม่';
+                } elseif ($rand == 4) {
+                    $text = 'อย่าไปเสียดาย เดี๋ยวบอกซิกให้เอาป่ะ 555';
+                } elseif ($rand == 5) {
+                    $text = 'เซ็งกันเลยละสิ เดี๋ยวพาไปแก้เครียด';
+                }  else {
                     $text = 'ไม่ต้องซี เริ่มต้นใหม่ไป';
                 }
                 $case = 1;
@@ -836,29 +848,31 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false ) {
-                $rand = rand(0, 6);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'ลองซักตั้งมั๊ย';
-                    $case = 1;
                 } elseif ($rand == 1) {
                     $text = 'รถถังฝั่งธนรู้จักป่ะ แววูฟรอวันหอน !!!';
-                    $case = 1;
                 } elseif ($rand == 2) {
                     $text = 'ไง ??? ได้ข่าวว่าฮอตหรอ';
-                    $case = 1;
                 } elseif ($rand == 3) {
                     $text = 'อยากโดนขมับป่ะละ';
-                    $case = 1;
                 } elseif ($rand == 4) {
                     $text = 'อยากเจอจังว่าจะราคาคุยป่าว';
-                    $case = 1;
                 } elseif ($rand == 5) {
                     $text = 'ส่งโลมาดิ๊ ขอเจอหน่อย';
-                    $case = 1;
+                } elseif ($rand == 6) {
+                    $text = 'ระวังพิมพ์ๆอยู่แล้วหงายหลัง';
+                } elseif ($rand == 7) {
+                    $text = 'จะแค่ไหนกันเชียว';
+                } elseif ($rand == 8) {
+                    $text = 'คิดว่าแน่ ??';
+                } elseif ($rand == 9) {
+                    $text = 'พูดแล้วมาให้ไว อย่าให้รอนาน';
                 } else{
                     $text = 'อยากจะไฝว้';
-                    $case = 1;
                 }
+                $case = 1;
             }
 
             if (strpos($textinput, 'โม้') !== false) {
@@ -1002,43 +1016,6 @@ if (!is_null($events['events'])) {
                 }
             }
 
-            if (strpos($textinput, 'อาจารย์แอ็ค') !== false ) {
-                $rand = rand(0, 9);
-                if ($rand == 0) {
-                    $text = 'หมายถึง คุณวรวัฒน์ นาคแนวดี ใช่มั๊ย';
-                    $case = 1;
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/12661835_1036387546404375_2097545346374459893_n.jpg?oh=85b60e203a05a440ecb3d8f0614f7db3&oe=5A2C292E';
-                    $case = 2;
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/11236424_941302239246240_6919555524224363128_n.jpg?oh=25eacd6c5db62477aae26e84b159e8fb&oe=5A1D2C6B';
-                    $case = 2;
-                } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/267203_578427552200379_1553780447_n.jpg?oh=c9e8fa5dfee95c48936d96f623bd19c1&oe=5A5A441C';
-                    $case = 2;
-                } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t31.0-8/337019_317019051674565_1054705995_o.jpg?oh=46c970c434997ef58da98494554e9335&oe=5A1F56A5';
-                    $case = 2;
-                } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/31514_111168312259641_5937151_n.jpg?oh=eebaa6336721301b0942c418afea249f&oe=5A20D713';
-                    $case = 2;
-                } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/18199201_1412541755455617_2320268591424297287_n.jpg?oh=2da65592aa7792b88dcc9794f1ee8132&oe=5A5B5845';
-                    $case = 2;
-                } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17634434_1377398558969937_3946440824920587815_n.jpg?oh=15b14a2ef482bb9f82563050b8fef343&oe=5A577551';
-                    $case = 2;
-                } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16711599_1330312867011840_5278709608965655057_n.jpg?oh=9bf250adc02cf67878a6d73aa17f61a4&oe=5A25A37E';
-                    $case = 2;
-                } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/15192730_1244822825560845_3642324080378233930_n.jpg?oh=33604b146c31b15c95bf78cb603ae002&oe=5A204089';
-                    $case = 2;
-                } else {
-                    $text = 'เป็นอาจารย์ที่พวกเราเคารพนับถือ';
-                    $case = 1;
-                }
-            }
             if (strpos($textinput, 'อาจารย์เดียร์') !== false) {
                 $rand = rand(0, 9);
                 if ($rand == 0) {
@@ -1155,15 +1132,6 @@ if (!is_null($events['events'])) {
 
             if (strpos($textinput, 'บิน') !== false) {
 
-                $today = date('l');
-                $holiday = "Saturday";
-                $holiday2 = "Sunday";
-                if ( $today == $holiday or $today == $holiday2 )
-                {
-                    $text = 'วันนี้วันหยุดกราฟไม่ขยับ 555';
-                    $case = 1;
-                }
-
                 $rand = rand(0, 9);
                 if ($rand == 0) {
                     $text = 'ไปดาวไซย่าเลยมั๊ย';
@@ -1199,15 +1167,6 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'ทุบ') !== false) {
-
-                $today = date('l');
-                $holiday = "Saturday";
-                $holiday2 = "Sunday";
-                if ( $today == $holiday or $today == $holiday2 )
-                {
-                    $text = 'วันนี้วันหยุดกราฟไม่ขยับ 555';
-                    $case = 1;
-                }
 
                 $rand = rand(0, 10);
                 if ($rand == 0) {
@@ -1285,15 +1244,6 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'Sell') !== false || strpos($textinput, 'Buy') !== false) {
-
-                $today = date('l');
-                $holiday = "Saturday";
-                $holiday2 = "Sunday";
-                if ( $today == $holiday or $today == $holiday2 )
-                {
-                    $text = 'วันนี้วันหยุดกราฟไม่ขยับ 555';
-                    $case = 1;
-                }
 
                 $rand = rand(0, 7);
                 if ($rand == 0) {
@@ -1522,7 +1472,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ตลาดเปิด') !== false || strpos($textinput, 'เปิดตลาด') !== false) {
+            if (strpos($textinput, 'ตลาดเปิด') !== false || strpos($textinput, 'เปิดตลาด') !== false || strpos($textinput, 'ปิดตลาด') !== false || strpos($textinput, 'ตลาดปิด') !== false) {
                 $text = 'ช่วงเวลาตลาดเปิด ( เวลาปกติไม่ใช่ DST )
                 
 05:00-13:00 ตลาดออสเตเรีย AUD
@@ -1684,7 +1634,7 @@ if (!is_null($events['events'])) {
             }
 
             if (strpos($textinput, 'หัวร้อน') !== false) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 7);
                 if ($rand == 0) {
                     $text = 'หัวร้อนใคร ?? ถ้ากับบอทแนะนำว่าอย่าเสี่ยง';
                 } elseif ($rand == 1) {
@@ -1695,6 +1645,10 @@ if (!is_null($events['events'])) {
                     $text = 'จะร้อนอะไรกันนักกันหนา';
                 } elseif ($rand == 4) {
                     $text = 'เมืองไทยนะ ไม่ใช่ขั้วโลกเหนือ';
+                } elseif ($rand == 5) {
+                    $text = 'เดี๋ยวพาไปให้หายเครียด 555';
+                } elseif ($rand == 6) {
+                    $text = 'หาที่ผ่อนคลายกันหน่อยมั๊ย';
                 } else {
                     $text = 'ซักป๋องมั๊ยจะได้หายร้อน';
                 }
@@ -1944,6 +1898,12 @@ http://th.weltrade.com/trader/paysystems/';
             if (strpos($textinput, 'ถอนเงิน') !== false) {
                 $text = 'วิธีถอนเงิน
 http://th.weltrade.com/trader/paysystems/';
+                $case = 1;
+            }
+
+            if (strpos($textinput, 'crypto') !== false || strpos($textinput, 'digital') !== false || strpos($textinput, 'btc') !== false || strpos($textinput, 'eth') !== false || strpos($textinput, 'ltc') !== false || strpos($textinput, 'บิท') !== false) {
+                $text = 'เช็คได้ที่นี่เลย
+http://tradersociety.org/crypto/';
                 $case = 1;
             }
 
