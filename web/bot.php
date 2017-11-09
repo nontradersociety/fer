@@ -1536,7 +1536,7 @@ http://th.weltrade.com/trader/paysystems/';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'crypto') !== false || strpos($textinput, 'digital') !== false || strpos($textinput, 'btc') !== false || strpos($textinput, 'eth') !== false || strpos($textinput, 'ltc') !== false || strpos($textinput, 'บิท') !== false || strpos($textinput, 'bitcoin') !== false  ) {
+            if ( strpos($textinput, 'crypto') !== false || strpos($textinput, 'digital') !== false || strpos($textinput, 'btc') !== false || strpos($textinput, 'eth') !== false || strpos($textinput, 'ltc') !== false || strpos($textinput, 'บิท') !== false || strpos($textinput, 'bitcoin') !== false || strpos($textinput, 'Bitcoin') !== false ) {
                 $text = 'เช็คได้ที่นี่เลย
 http://tradersociety.org/crypto/';
                 $case = 1;
@@ -1548,8 +1548,8 @@ http://tradersociety.org/crypto/';
             }
 
             if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555+') !== false || strpos($textinput, 'ฮา') !== false ) {
-                $rand = rand(0, 10);
-                if ($rand == 0) {
+                $rand = rand(0, 5);
+                if ($rand == 1) {
                     $array = [
                         "id" => "325708",
                         "type" => "sticker",
@@ -1557,31 +1557,10 @@ http://tradersociety.org/crypto/';
                         "stickerId" => "100"
                     ];
                     $case = 4;
-                } elseif ($rand == 1) {
-                    $img = 'https://pbs.twimg.com/media/BSh_ii_CUAAk9gk.jpg:large';
-                } elseif ($rand == 2) {
-                    $text = 'ขำกันจังพอได้ละมั้ง';
-                    $case = 1;
                 } elseif ($rand == 3) {
-                    $text = 'ขำจนท้องแข็งละ';
-                    $case = 1;
-                } elseif ($rand == 4) {
-                    $img = 'https://engineering.linecorp.com/image/2016/10/moon.png';
-                } elseif ($rand == 5) {
-                    $img = 'https://i.pinimg.com/originals/b2/7b/0f/b27b0f011ede1d2f09ae1aa3a5fe6668.jpg';
-                } elseif ($rand == 6) {
-                    $img = 'https://i.pinimg.com/736x/f2/09/58/f20958dc8c3631b2d6336850f05734e1--the-smile-brushes.jpg';
-                } elseif ($rand == 7) {
-                    $img = 'https://1.bp.blogspot.com/-bp9caDgtZc4/WE0P7AuGvMI/AAAAAAAMLeM/1k2-VT8oGu8fexlzIgTLUUTkA5CtGbQXgCLcB/s1600/AW295200_01.gif';
-                } elseif ($rand == 8) {
-                    $img = 'https://1.bp.blogspot.com/-GOx-YpVmGdg/WDuhJqo-tAI/AAAAAAALjGw/RjUsjjI25tIl7madfvhTsVZqjAHZBBhPACLcB/s1600/AS001448_02.gif';
-                } elseif ($rand == 9) {
-                    $img = 'https://sdl-stickershop.line.naver.jp/products/0/0/15/608/android/stickers/5509.png;compress=true';
-                } else{
                     $text = '5555';
                     $case = 1;
                 }
-                $case = 2;
             }
             if (strpos($textinput, 'อะไรคือ') !== false) {
                 $text_ex = explode(':', $textinput);
