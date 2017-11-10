@@ -614,7 +614,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'เสียดาย') !== false ) {
-                $rand = rand(0, 7);
+                $rand = rand(0, 15);
                 if ($rand == 0) {
                     $text = 'เสียดายดีกว่าเสียใจ';
                 } elseif ($rand == 1) {
@@ -629,7 +629,9 @@ if (!is_null($events['events'])) {
                     $text = 'เซ็งกันเลยละสิ เดี๋ยวพาไปแก้เครียด';
                 } elseif ($rand == 6) {
                     $text = 'เสียดายพี่ตูนใช่มั๊ย เพราะๆเพลงนี้ 555';
-                } else {
+                } elseif ($rand == 7) {
+                    $text = 'อยากจะทำทุกสิ่ง อยากจะทำทุกอย่าง หากจะพอมีหวัง ให้คืนวันมันย้อนไป 555';
+                } elseif ($rand == 8) {
                     $text = 'ไม่ต้องซี เริ่มต้นใหม่ไป';
                 }
                 $case = 1;
@@ -742,21 +744,6 @@ if (!is_null($events['events'])) {
                 $case = 2;
             }
 
-            if ( strpos($textinput, 'อาจารย์หยก') !== false ) {
-                $rand = rand(0, 3);
-                if ($rand == 0) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/10171191_756253384394684_4411628768631656336_n.jpg?oh=c1c5d0afa38a95cf4d06024b6c52e94a&oe=596CF484';
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/10628506_840056136014408_8923413406145159611_n.jpg?oh=d0db63559726241b08af34ea8b8eab79&oe=595C374D';
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/16996532_1408804965806186_2277513094450733648_n.jpg?oh=6e0819aaf5d3c9ee9f31f00325ccca47&oe=5950CC44';
-                } else {
-                    $text = 'หารูปยากหน่อยนะ เป็นคนไม่ยอมเปิดเผยตัวตน 555';
-                    $case = 1;
-                }
-                $case = 2;
-            }
-
             if ( strpos($textinput, 'อาจารย์เดียร์') !== false ) {
                 $rand = rand(0, 15);
                 if ($rand == 0) {
@@ -858,7 +845,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'บิน') !== false ) {
-                $rand = rand(0, 10);
+                $rand = rand(0, 16);
                 if ($rand == 0) {
                     $img = 'https://stickershop.line-scdn.net/stickershop/v1/product/1169980/LINEStorePC/main@2x.png;compress=true?__=20161019';
                     $case = 2;
@@ -880,7 +867,9 @@ if (!is_null($events['events'])) {
                     $text = 'เช็คข่าวหน่อย มีข่าวอะไรทำไมถึงบิน';
                 } elseif ($rand == 9) {
                     $text = 'เจ้าลากกินขา s หรือป่าวเนี่ย';
-                } else {
+                } elseif ($rand == 10) {
+                    $text = 'เสียดายไม่มีออเดอร์กับเขาเลย';
+                } elseif ($rand == 11) {
                     $img = 'https://i.ytimg.com/vi/DUnO7weCfdM/maxresdefault.jpg';
                     $case = 2;
                 }
@@ -888,7 +877,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'ทุบ') !== false ) {
-                $rand = rand(0, 10);
+                $rand = rand(0, 16);
                 if ($rand == 0) {
                     $text = 'สงสัยจะไปแกนโลก';
                 } elseif ($rand == 1) {
@@ -910,7 +899,9 @@ if (!is_null($events['events'])) {
                     $text = 'เช็คข่าวหน่อย มีข่าวอะไร FOMC ออกมาพูดหรือป่าว';
                 } elseif ($rand == 9) {
                     $text = 'สงสัยเจ้าลากกินขา b';
-                } else {
+                } elseif ($rand == 10) {
+                    $text = 'เสียดายไม่มีออเดอร์กับเขาเลย';
+                } elseif ($rand == 11) {
                     $img = 'https://s-media-cache-ak0.pinimg.com/originals/67/ff/5b/67ff5b84711240eb6361bc4e4094a890.jpg';
                     $case = 2;
                 }
@@ -1214,7 +1205,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'กราฟป่วย') !== false ) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'นั่นสิ เบื่อจริงๆเลย';
                 } elseif ($rand == 1) {
@@ -1225,7 +1216,7 @@ if (!is_null($events['events'])) {
                     $text = 'ว่าจะซัด lot หนักๆ หาจังหวะเข้าไม่ได้เลย';
                 } elseif ($rand == 4) {
                     $text = 'หาที่เที่ยวดีกว่า 55';
-                } else {
+                } elseif ($rand == 5) {
                     $text = 'นอนรอดีกว่า ZzzZz';
                 }
                 $case = 1;
@@ -1412,7 +1403,7 @@ if (!is_null($events['events'])) {
                     $text = 'ไปทำอะไรมาสดชื่น อย่าบอกนะ .... 555';
                 } elseif ($rand == 3) {
                     $text = 'จะสดอะไรกันบ่อยๆ';
-                } else {
+                } elseif ($rand == 4) {
                     $text = 'สดมากไปจะกลายสลดนะ';
                 }
                 $case = 1;
@@ -1481,7 +1472,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'วิธีแก้ไม้') !== false ) {
+            if ( strpos($textinput, 'แก้ไม้') !== false ) {
                 $text = 'วิธีการแก้ไม้แบบปิดรวบ
 https://goo.gl/cOQgUR';
                 $case = 1;
@@ -1547,9 +1538,9 @@ http://tradersociety.org/crypto/';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555+') !== false || strpos($textinput, 'ฮา') !== false ) {
+            if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false ) {
                 $rand = rand(0, 5);
-                if ($rand == 1) {
+                if ($rand == 0) {
                     $array = [
                         "id" => "325708",
                         "type" => "sticker",
@@ -1557,7 +1548,7 @@ http://tradersociety.org/crypto/';
                         "stickerId" => "100"
                     ];
                     $case = 4;
-                } elseif ($rand == 3) {
+                } elseif ($rand == 1) {
                     $text = '5555';
                     $case = 1;
                 }
