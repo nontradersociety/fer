@@ -650,7 +650,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'เก๋า') !== false || strpos($textinput, 'ไฝว้') !== false || strpos($textinput, 'ขมับ') !== false ) {
-                $rand = rand(0, 12);
+                $rand = rand(0, 15);
                 if ($rand == 0) {
                     $text = 'ลองซักตั้งมั๊ย';
                 } elseif ($rand == 1) {
@@ -675,6 +675,30 @@ if (!is_null($events['events'])) {
                     $text = 'ไม่เก๋าจริงอย่ามาห้าว';
                 } elseif ($rand == 11) {
                     $text = 'บ่นไร เดี๋ยวนั่งๆอยู่ก็หงายหลังหรอก';
+                } elseif ($rand == 12) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "7"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 13) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "520"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 14) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "5",
+                        "stickerId" => "527"
+                    ];
+                    $case = 4;
                 } else{
                     $text = 'อยากจะไฝว้';
                 }
@@ -1188,8 +1212,69 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
+            if ( strpos($textinput,'ขอบคุณ') !== false ) {
+                $rand = rand(0,6);
+                if ($rand == 0) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "5"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 1) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "13"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 2) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "14"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 3) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "125"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 4) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "407"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 5) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "410"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 6) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "171"
+                    ];
+                    $case = 4;
+                }
+            }
+
             if ( strpos($textinput, 'ฝันดี') !== false ) {
-                $rand = rand(0, 4);
+                $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'ฝันดีนะครับ';
                 } elseif ($rand == 1) {
@@ -1198,6 +1283,22 @@ if (!is_null($events['events'])) {
                     $text = 'Sweet Dream ครับ';
                 } elseif ($rand == 3) {
                     $text = 'นอนแล้วหรอ อ้าว ... ใครยืนอยู่ปลายเตียงอ่ะ';
+                } elseif ($rand == 4) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "3",
+                        "stickerId" => "193"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 5) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "42"
+                    ];
+                    $case = 4;
                 } else {
                     $text = 'Good Night ครับ ถ้ามีออเดอร์ตั้ง SL กำไรไว้ด้วยนะ';
                 }
@@ -1205,7 +1306,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'กราฟป่วย') !== false ) {
-                $rand = rand(0, 10);
+                $rand = rand(0, 7);
                 if ($rand == 0) {
                     $text = 'นั่นสิ เบื่อจริงๆเลย';
                 } elseif ($rand == 1) {
@@ -1218,6 +1319,22 @@ if (!is_null($events['events'])) {
                     $text = 'หาที่เที่ยวดีกว่า 55';
                 } elseif ($rand == 5) {
                     $text = 'นอนรอดีกว่า ZzzZz';
+                } elseif ($rand == 6) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "405"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 7) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "401"
+                    ];
+                    $case = 4;
                 }
                 $case = 1;
             }
@@ -1306,7 +1423,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'เหล้า') !== false || strpos($textinput, 'เบียร์') !== false || strpos($textinput, 'เมา') !== false || strpos($textinput, 'ปาร์ตี้') !== false || strpos($textinput, 'ปาตี้') !== false || strpos($textinput, 'party') !== false || strpos($textinput, 'Party') !== false || strpos($textinput, 'pub') !== false || strpos($textinput, 'Pub') !== false ) {
-                $rand = rand(0, 8);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'จัดไปอย่าให้เสีย';
                 } elseif ($rand == 1) {
@@ -1325,6 +1442,22 @@ if (!is_null($events['events'])) {
                     $text = 'คอแข็งพอป่าว';
                 } elseif ($rand == 7) {
                     $text = 'ที่ไหนว่ามา the pimp ดีมั๊ย';
+                } elseif ($rand == 8) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "132"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 9) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "28"
+                    ];
+                    $case = 4;
                 } else {
                     $text = 'ร้านนั่งเล่น ทองหล่อปะละ เอาเงินไปละลายหน่อย';
                 }
@@ -1426,7 +1559,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'กาก') !== false || strpos($textinput, 'กา ก') !== false || strpos($textinput, 'ก า ก') !== false || strpos($textinput, 'ก าก') !== false || strpos($textinput, 'kak') !== false || strpos($textinput, 'Kak') !== false || strpos($textinput, 'KAK') !== false ) {
-                $rand = rand(0, 8);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $text = 'ไม่สนิทอย่าติดตลก';
                 } elseif ($rand == 1) {
@@ -1443,6 +1576,22 @@ if (!is_null($events['events'])) {
                     $text = 'เดี่ยวกันหน่อยป่ะละ';
                 } elseif ($rand == 7) {
                     $text = 'อ้าวเป็นขี้กลากหรอ น่าสงสารจัง';
+                } elseif ($rand == 8) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "7"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 9) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "118"
+                    ];
+                    $case = 4;
                 } else {
                     $text = 'เอ้า ... ว่าตัวเองซะงั้น';
                 }
@@ -1539,7 +1688,7 @@ http://tradersociety.org/crypto/';
             }
 
             if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false ) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $array = [
                         "id" => "325708",
@@ -1551,6 +1700,14 @@ http://tradersociety.org/crypto/';
                 } elseif ($rand == 1) {
                     $text = '5555';
                     $case = 1;
+                } elseif ($rand == 2) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "110"
+                    ];
+                    $case = 4;
                 }
             }
             if (strpos($textinput, 'อะไรคือ') !== false) {
