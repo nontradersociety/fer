@@ -1146,14 +1146,14 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'ตลาดเปิด') !== false || strpos($textinput, 'เปิดตลาด') !== false || strpos($textinput, 'ปิดตลาด') !== false || strpos($textinput, 'ตลาดปิด') !== false ) {
-                $text = 'ช่วงเวลาตลาดเปิด ( เวลาปกติไม่ใช่ DST )
+                $text = 'ช่วงเวลาตลาดเปิด
                 
 05:00-13:00 ตลาดออสเตเรีย AUD
 07:00-14:00 ตลาดญี่ปุ่น JPY
 08:20-15:00 ตลาดจีน CNY
-13:00-21:00 ตลาดยุโรป EUR
-14:00-22:00 ตลาดอังกฤษ GBP
-19:20-03:00 ตลาดโคเมก USD';
+14:00-22:00 ตลาดยุโรป EUR
+15:00-23:00 ตลาดอังกฤษ GBP
+20:20-04:00 ตลาดโคเมก USD';
                 $case = 1;
             }
 
@@ -1210,67 +1210,6 @@ if (!is_null($events['events'])) {
                     $text = 'ovt ?? รวยกับล้างมีเส้นบางๆกันอยู่นะ 555';
                 }
                 $case = 1;
-            }
-
-            if ( strpos($textinput,'ขอบคุณ') !== false ) {
-                $rand = rand(0,6);
-                if ($rand == 0) {
-                    $array = [
-                        "id" => "325708",
-                        "type" => "sticker",
-                        "packageId" => "1",
-                        "stickerId" => "5"
-                    ];
-                    $case = 4;
-                } elseif ($rand == 1) {
-                    $array = [
-                        "id" => "325708",
-                        "type" => "sticker",
-                        "packageId" => "1",
-                        "stickerId" => "13"
-                    ];
-                    $case = 4;
-                } elseif ($rand == 2) {
-                    $array = [
-                        "id" => "325708",
-                        "type" => "sticker",
-                        "packageId" => "1",
-                        "stickerId" => "14"
-                    ];
-                    $case = 4;
-                } elseif ($rand == 3) {
-                    $array = [
-                        "id" => "325708",
-                        "type" => "sticker",
-                        "packageId" => "1",
-                        "stickerId" => "125"
-                    ];
-                    $case = 4;
-                } elseif ($rand == 4) {
-                    $array = [
-                        "id" => "325708",
-                        "type" => "sticker",
-                        "packageId" => "1",
-                        "stickerId" => "407"
-                    ];
-                    $case = 4;
-                } elseif ($rand == 5) {
-                    $array = [
-                        "id" => "325708",
-                        "type" => "sticker",
-                        "packageId" => "2",
-                        "stickerId" => "410"
-                    ];
-                    $case = 4;
-                } elseif ($rand == 6) {
-                    $array = [
-                        "id" => "325708",
-                        "type" => "sticker",
-                        "packageId" => "2",
-                        "stickerId" => "171"
-                    ];
-                    $case = 4;
-                }
             }
 
             if ( strpos($textinput, 'ฝันดี') !== false ) {
@@ -1644,8 +1583,8 @@ http://www.tradersociety.org/volumn-คืออะไร/';
 http://www.tradersociety.org/การใช้-fibonacci-retracement/';
                 $case = 1;
             }
-
-            if ( strpos($textinput, 'ประเภทบัญชี') !== false || strpos($textinput, 'verify') !== false ) {
+/*
+            if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
                 $text = 'ประเภทบัญชี
 http://th.weltrade.com/trader/type_account/';
                 $case = 1;
@@ -1654,13 +1593,6 @@ http://th.weltrade.com/trader/type_account/';
             if ( strpos($textinput, 'Spread') !== false || strpos($textinput, 'spread') !== false ) {
                 $text = 'ค่าสเปรดบัญชีประเภทต่างๆ
 http://th.weltrade.com/trader/tools/';
-                $case = 1;
-            }
-
-            if ( strpos($textinput, 'weltrade') !== false || strpos($textinput, 'Weltrade') !== false || strpos($textinput, 'เวลเทรด') !== false ) {
-                $text = 'Link การสมัคร (  รหัสพันธมิตรหรือรหัสผู้เเนะนำ :: 12411 )
-http://th.weltrade.com/?r1=ipartner&r2=12411
-หากใครใคร่สนับสนุนกลุ่มเราสามารถคลิกลิ้งด้านบนเพื่อเปิดบัญชีได้เลยครับ';
                 $case = 1;
             }
 
@@ -1673,6 +1605,19 @@ http://th.weltrade.com/trader/paysystems/';
             if ( strpos($textinput, 'ถอนเงิน') !== false ) {
                 $text = 'วิธีถอนเงิน
 http://th.weltrade.com/trader/paysystems/';
+                $case = 1;
+            }
+*/
+            if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
+                $text = 'ประเภทบัญชี
+https://ignisforex.com/?page=Trading_Account_Types';
+                $case = 1;
+            }
+
+            if ( strpos($textinput, 'weltrade') !== false || strpos($textinput, 'Weltrade') !== false || strpos($textinput, 'เวลเทรด') !== false ) {
+                $text = 'Link การสมัคร (  รหัสพันธมิตรหรือรหัสผู้เเนะนำ :: 12411 )
+http://th.weltrade.com/?r1=ipartner&r2=12411
+หากใครใคร่สนับสนุนกลุ่มเราสามารถคลิกลิ้งด้านบนเพื่อเปิดบัญชีได้เลยครับ';
                 $case = 1;
             }
 
@@ -1688,7 +1633,7 @@ http://tradersociety.org/crypto/';
             }
 
             if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false ) {
-                $rand = rand(0, 10);
+                $rand = rand(0, 5);
                 if ($rand == 0) {
                     $array = [
                         "id" => "325708",
@@ -1706,6 +1651,14 @@ http://tradersociety.org/crypto/';
                         "type" => "sticker",
                         "packageId" => "1",
                         "stickerId" => "110"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 3) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "163"
                     ];
                     $case = 4;
                 }
