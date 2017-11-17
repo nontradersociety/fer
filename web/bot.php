@@ -1039,14 +1039,11 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'จุดกลับตัว') !== false ) {
-                $rand = rand(0, 2);
+                $rand = rand(0, 1);
                 if ($rand == 0) {
                     $text = 'จุดกลับตัว คือ จุดที่เมื่อราคาได้วิ่งมาชนแล้ว มี "แนวโน้ม" ที่จะกลับตัว';
                 } elseif ($rand == 1) {
                     $text = 'สังเกตุกราฟด้วยนะว่ามาชนแล้วเด้งหรือแค่มาจ่อ';
-                } else {
-                    $img = 'https://img.in.th/images/4f495cb2b586e6bbcf68ba057a8e2c4a.jpg';
-                    $case = 2;
                 }
                 $case = 1;
             }
@@ -1146,7 +1143,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'ตลาดเปิด') !== false || strpos($textinput, 'เปิดตลาด') !== false || strpos($textinput, 'ปิดตลาด') !== false || strpos($textinput, 'ตลาดปิด') !== false ) {
-                $text = 'ช่วงเวลาตลาดเปิด-ปิด
+                $text = 'ช่วงเวลาตลาดเปิด-ปิด ( DST )
                 
 05:00-13:00 ตลาดออสเตเรีย AUD
 07:00-14:00 ตลาดญี่ปุ่น JPY
@@ -1638,7 +1635,7 @@ https://ignisforex.com/';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false ) {
+            if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555+') !== false || strpos($textinput, 'ฮา') !== false ) {
                 $rand = rand(0, 6);
                 if ($rand == 0) {
                     $array = [
