@@ -813,23 +813,23 @@ if (!is_null($events['events'])) {
                     $text = 'อ.แมน แฟนน่ารัก ^^';
                     $case = 1;
                 } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/11140317_10206572731289280_7624345875123365488_n.jpg?oh=da3a4568443fc1873f019efcbb471792&oe=5954F6A7';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22852070_10213154645153013_3124897876086884110_n.jpg?oh=a128eb3a85f115fcb51046671369254b&oe=5A98DC98';
                 } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/384131_2577324544681_916456512_n.jpg?oh=4cc5f01dbdd59fc3e8217c1bd34d95b6&oe=5998D916';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/14463020_10209511977968610_5947356336920460139_n.jpg?oh=e2a42331c40d6b76856d2d79d5e4cfa1&oe=5AAF03C8';
                 } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/1917188_1245936980824_1411898_n.jpg?oh=f820612f698220532eb342fd3858887f&oe=594E7C1D';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22852070_10213154645153013_3124897876086884110_n.jpg?oh=a128eb3a85f115fcb51046671369254b&oe=5A98DC98';
                 } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/16142550_10210594984963108_1211239256004129371_n.jpg?oh=372de61dec066ab7fd55adca70fee5c2&oe=5951EF77';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22310168_10213001281719023_419890656412232509_n.jpg?oh=fa92723f6e0112bda0364223109c254e&oe=5A8D7F28';
                 } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18920430_10211860321835739_981425349956281704_n.jpg?oh=b02090f97063a2de907d38115e548c1f&oe=59A991E2';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22008172_10212897968536258_410151284550634270_n.jpg?oh=59f281875df5013026d948b6d0ad076b&oe=5AAF583B';
                 } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18740766_10211828628363422_125714442740925379_n.jpg?oh=28002164420259de39de4d03a87a54f0&oe=59D8AD52';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/384131_2577324544681_916456512_n.jpg?oh=b03d6ca05667281f7ded1c28b114f666&oe=5AADB416';
                 } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18698277_10211811423253305_5522386558081162403_n.jpg?oh=564996795861a7f8dcd00e772eef287f&oe=59D78DD7';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/1917188_1245936980824_1411898_n.jpg?oh=c065aaf01ccd11709819525c6e794d91&oe=5A63571D';
                 } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18118696_10211519466554570_5752762901238707474_n.jpg?oh=2a72d9a3f0260e3906f73c5fd6f61dea&oe=59A33982';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/223602_2177276103720_7875713_n.jpg?oh=eba51161472ca8f7efbb108d6e5eb84c&oe=5A9C3248';
                 } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-2.fna.fbcdn.net/v/t1.0-9/18010392_10211431463634552_4019572772572027709_n.jpg?oh=1ec11ceeb635174f27c1b313fa793cba&oe=599C6328';
+                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21151330_10212708717445099_5429967283449282474_n.jpg?oh=8c95c51c393f0584b86c90be629e1494&oe=5A954201';
                 } else {
                     $text = 'ร.อ.ดร.อภิธัช เสาะการ เป็นไง ... จัดเต็มให้หน่อย 555';
                     $case = 1;
@@ -1146,7 +1146,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'ตลาดเปิด') !== false || strpos($textinput, 'เปิดตลาด') !== false || strpos($textinput, 'ปิดตลาด') !== false || strpos($textinput, 'ตลาดปิด') !== false ) {
-                $text = 'ช่วงเวลาตลาดเปิด
+                $text = 'ช่วงเวลาตลาดเปิด-ปิด
                 
 05:00-13:00 ตลาดออสเตเรีย AUD
 07:00-14:00 ตลาดญี่ปุ่น JPY
@@ -1627,13 +1627,19 @@ http://tradersociety.org/crypto/';
                 $case = 1;
             }
 
+            if ( strpos($textinput, 'ignis') !== false || strpos($textinput, 'โบรคอาจารย์เดีย') !== false || strpos($textinput, 'โบรค อ.เดีย') !== false || strpos($textinput, 'โบรคอ.เดีย') !== false ) {
+                $text = 'Link การสมัคร
+https://ignisforex.com/';
+                $case = 1;
+            }
+
             if ( strpos($textinput, 'บทวิเคราะห์') !== false || strpos($textinput, 'บทวิเคราะ') !== false ) {
                 $text = 'ดูบทวิเคราะห์ประจำวัน-ย้อนหลังได้ที่ http://www.tradersociety.org มีการวิเคราะห์ข่าวทุกเช้า';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false ) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 6);
                 if ($rand == 0) {
                     $array = [
                         "id" => "325708",
