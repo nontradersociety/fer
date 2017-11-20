@@ -769,43 +769,41 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'อาจารย์เดียร์') !== false ) {
-                $rand = rand(0, 17);
+                $rand = rand(0, 16);
                 if ($rand == 0) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21032321_10155626812432354_4662141697016054569_n.jpg?oh=e3b7d1d57120bc12ebdf31ee6a87baea&oe=5A720B7F';
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t31.0-8/21752568_10155675794147354_4338224038696237861_o.jpg?oh=c1e4bdf3e58f1f0dbf1994d02b04f237&oe=5A79C38E';
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21192144_10155638887367354_137853621252962502_n.jpg?oh=71c6e62e1295fe1623877e14e40af9a5&oe=5AAA5B76';
-                } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/17342477_10155104394162354_4121161709451174937_n.jpg?oh=8c602ba83210af5b2ec9e79589a50f43&oe=5A581250';
-                } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21032321_10155626812432354_4662141697016054569_n.jpg?oh=f38cc078912748d4e7dd59ee7f7ad563&oe=5A22F17F';
-                } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/20638781_10155577837622354_5178496901361026877_n.jpg?oh=c3a1d08a54b5819bf4934afa0e3fea43&oe=5A293909';
-                } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/20429619_10155539520822354_3692585598844473628_n.jpg?oh=0e7152cf57f301f038c986a0182e66a4&oe=5A135CFB';
-                } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/19748554_10155455806367354_9209956962704196089_n.jpg?oh=ca39cbed9c768e99f90dec83e2493cd0&oe=5A122D54';
-                } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/18951191_10155360825777354_992710615288693662_n.jpg?oh=1ef6afb3c59714b34207c7ed093860c9&oe=5A5B45F4';
-                } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/18813462_10155335914657354_2333391613399244789_n.jpg?oh=e4baac3a4009588c209d8e72f4abc898&oe=5A204101';
-                } elseif ($rand == 10) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22815176_10155796186057354_3089909814532017661_n.jpg?oh=5dccf0bd66a148aa3a1d7305a15e1001&oe=5A6EF922';
-                } elseif ($rand == 11) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22539681_10155775080152354_5569975504409721188_n.jpg?oh=7393d83d6786a270079ff0e7356bb6bc&oe=5A7A505D';
-                } elseif ($rand == 12) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22279583_10155748122467354_4328767145576280793_n.jpg?oh=5156cdd63651e6b9494993c3f14fc95e&oe=5AAE55DE';
-                } elseif ($rand == 13) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21752046_10155689205437354_8473301956420566230_n.jpg?oh=63483dbecc6d8ea88ffb5ecdb913c8b8&oe=5A6A0199';
-                } elseif ($rand == 14) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21761836_10155678777712354_8006739702253471315_n.jpg?oh=ac25a5344446c2581119d4c45bfba7e2&oe=5A632160';
-                } elseif ($rand == 15) {
                     $img = 'https://www.ignisforex.com/images/dear/DearProfile1.jpg';
-                } elseif ($rand == 16) {
+                } elseif ($rand == 1) {
                     $img = 'https://www.ignisforex.com/images/dear/DearProfile2.jpg';
-                } elseif ($rand == 17) {
+                } elseif ($rand == 2) {
                     $img = 'https://www.ignisforex.com/images/dear/DearProfile3.jpg';
+                } elseif ($rand == 3) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile4.jpg';
+                } elseif ($rand == 4) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile5.jpg';
+                } elseif ($rand == 5) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile6.jpg';
+                } elseif ($rand == 6) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile7.jpg';
+                } elseif ($rand == 7) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile8.jpg';
+                } elseif ($rand == 8) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile9.jpg';
+                } elseif ($rand == 9) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile10.jpg';
+                } elseif ($rand == 10) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile11.jpg';
+                } elseif ($rand == 11) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile12.jpg';
+                } elseif ($rand == 12) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile13.jpg';
+                } elseif ($rand == 13) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile14.jpg';
+                } elseif ($rand == 14) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile15.jpg';
+                } elseif ($rand == 15) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile16.jpg';
+                } elseif ($rand == 16) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile17.jpg';
                 }
                 $case = 2;
             }
