@@ -769,7 +769,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'อาจารย์เดียร์') !== false ) {
-                $rand = rand(0, 15);
+                $rand = rand(0, 17);
                 if ($rand == 0) {
                     $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21032321_10155626812432354_4662141697016054569_n.jpg?oh=e3b7d1d57120bc12ebdf31ee6a87baea&oe=5A720B7F';
                 } elseif ($rand == 1) {
@@ -800,9 +800,12 @@ if (!is_null($events['events'])) {
                     $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21752046_10155689205437354_8473301956420566230_n.jpg?oh=63483dbecc6d8ea88ffb5ecdb913c8b8&oe=5A6A0199';
                 } elseif ($rand == 14) {
                     $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21761836_10155678777712354_8006739702253471315_n.jpg?oh=ac25a5344446c2581119d4c45bfba7e2&oe=5A632160';
-                } else {
-                    $text = 'เป็นอาจารย์ที่เก่งมากในการวิเคราะห์ตลาดทองคำ ใครอยากได้ความรู้อะไรสอบถามได้เลย';
-                    $case = 1;
+                } elseif ($rand == 15) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile1.jpg';
+                } elseif ($rand == 16) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile2.jpg';
+                } elseif ($rand == 17) {
+                    $img = 'https://www.ignisforex.com/images/dear/DearProfile3.jpg';
                 }
                 $case = 2;
             }
