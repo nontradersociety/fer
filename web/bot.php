@@ -1596,42 +1596,49 @@ http://th.weltrade.com/trader/tools/';
 */
             if ( strpos($textinput, 'ฝากเงิน') !== false || strpos($textinput, 'เติมเงิน') !== false || strpos($textinput, 'deposit') !== false || strpos($textinput, 'Deposit') !== false ) {
                 $text = 'วิธีฝากเงินโบรค Ignis
+                
 https://goo.gl/is6a5b';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ถอนเงิน') !== false ) {
                 $text = 'วิธีถอนเงินโบรค Ignis
+                
 https://goo.gl/1j56Xj';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'เปิดบัญชีเทรด') !== false ) {
                 $text = 'วิธีการเปิดบัญชีสำหรับเทรดโบรค Ignis
+                
 https://goo.gl/xihMFe';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'wallet') !== false || strpos($textinput, 'Wallet') !== false ) {
                 $text = 'วิธีโอนเงินจาก Wallet โบรค Ignis
+                
 https://goo.gl/o512oJ';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ยืนยัน') !== false || strpos($textinput, 'verify') !== false || strpos($textinput, 'Verify') !== false) {
                 $text = 'วิธีการยืนยันตัวตนโบรค Ignis
+                
 https://goo.gl/pFLgHH';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
                 $text = 'ประเภทบัญชีโบรค Ignis
+                
 https://ignisforex.com/?page=Trading_Account_Types';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'weltrade') !== false || strpos($textinput, 'Weltrade') !== false || strpos($textinput, 'เวลเทรด') !== false ) {
                 $text = 'Link การสมัคร (  รหัสพันธมิตรหรือรหัสผู้เเนะนำ :: 12411 )
+                
 http://th.weltrade.com/?r1=ipartner&r2=12411
 หากใครใคร่สนับสนุนกลุ่มเราสามารถคลิกลิ้งด้านบนเพื่อเปิดบัญชีได้เลยครับ';
                 $case = 1;
@@ -1639,12 +1646,14 @@ http://th.weltrade.com/?r1=ipartner&r2=12411
 
             if ( strpos($textinput, 'crypto') !== false || strpos($textinput, 'digital') !== false || strpos($textinput, 'btc') !== false || strpos($textinput, 'eth') !== false || strpos($textinput, 'ltc') !== false || strpos($textinput, 'บิท') !== false || strpos($textinput, 'bitcoin') !== false || strpos($textinput, 'Bitcoin') !== false ) {
                 $text = 'เช็คได้ที่นี่เลย
+                
 https://goo.gl/BdLmhS';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ignis') !== false || strpos($textinput, 'Ignis') !== false || strpos($textinput, 'โบรคอาจารยเดีย') !== false || strpos($textinput, 'โบรคจารยเดีย') !== false || strpos($textinput, 'โบรค อ.เดีย') !== false || strpos($textinput, 'โบรคอ.เดีย') !== false ) {
-                $text = 'วิธีการสมัคร
+                $text = 'วิธีการสมัครโบรค Ignis
+                
 https://goo.gl/EN7wAF';
                 $case = 1;
             }
