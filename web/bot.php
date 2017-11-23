@@ -1564,21 +1564,21 @@ https://goo.gl/cOQgUR';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ตะกร้า') !== false || strpos($textinput, 'ตระกร้า') !== false || strpos($textinput, 'finviz') !== false ) {
+            if ( strpos($textinput, 'ตะกร้า') !== false || strpos($textinput, 'ตระกร้า') !== false || strpos($textinput, 'finviz') !== false || strpos($textinput, 'Finviz') !== false ) {
                 $text = 'เช็คอันดับค่าเงินได้ที่นี่ ( Refresh every 1 min )
-http://www.tradersociety.org/finviz/';
+https://goo.gl/xeza18';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'Volume') !== false || strpos($textinput, 'Volumes') !== false ) {
+            if ( strpos($textinput, 'Volume') !== false || strpos($textinput, 'Volumes') !== false  || strpos($textinput, 'volume') !== false ) {
                 $text = 'Volume คืออะไร ???
-http://www.tradersociety.org/volumn-คืออะไร/';
+https://goo.gl/RN5h1f';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'Fibo') !== false || strpos($textinput, 'fibo') !== false ) {
                 $text = 'การใช้งาน Fibo Retractment
-http://www.tradersociety.org/การใช้-fibonacci-retracement/';
+https://goo.gl/M3gbyK';
                 $case = 1;
             }
 /*
@@ -1593,21 +1593,39 @@ http://th.weltrade.com/trader/type_account/';
 http://th.weltrade.com/trader/tools/';
                 $case = 1;
             }
-
-            if ( strpos($textinput, 'ฝากเงิน') !== false ) {
-                $text = 'วิธีฝากเงิน
-http://th.weltrade.com/trader/paysystems/';
+*/
+            if ( strpos($textinput, 'ฝากเงิน') !== false || strpos($textinput, 'เติมเงิน') !== false || strpos($textinput, 'deposit') !== false || strpos($textinput, 'Deposit') !== false ) {
+                $text = 'วิธีฝากเงินโบรค Ignis
+https://goo.gl/is6a5b';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ถอนเงิน') !== false ) {
-                $text = 'วิธีถอนเงิน
-http://th.weltrade.com/trader/paysystems/';
+                $text = 'วิธีถอนเงินโบรค Ignis
+https://goo.gl/1j56Xj';
                 $case = 1;
             }
-*/
+
+            if ( strpos($textinput, 'เปิดบัญชีเทรด') !== false ) {
+                $text = 'วิธีการเปิดบัญชีสำหรับเทรดโบรค Ignis
+https://goo.gl/xihMFe';
+                $case = 1;
+            }
+
+            if ( strpos($textinput, 'wallet') !== false || strpos($textinput, 'Wallet') !== false ) {
+                $text = 'วิธีโอนเงินจาก Wallet โบรค Ignis
+https://goo.gl/o512oJ';
+                $case = 1;
+            }
+
+            if ( strpos($textinput, 'ยืนยัน') !== false || strpos($textinput, 'verify') !== false || strpos($textinput, 'Verify') !== false) {
+                $text = 'วิธีการยืนยันตัวตนโบรค Ignis
+https://goo.gl/pFLgHH';
+                $case = 1;
+            }
+
             if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
-                $text = 'ประเภทบัญชี
+                $text = 'ประเภทบัญชีโบรค Ignis
 https://ignisforex.com/?page=Trading_Account_Types';
                 $case = 1;
             }
@@ -1621,13 +1639,13 @@ http://th.weltrade.com/?r1=ipartner&r2=12411
 
             if ( strpos($textinput, 'crypto') !== false || strpos($textinput, 'digital') !== false || strpos($textinput, 'btc') !== false || strpos($textinput, 'eth') !== false || strpos($textinput, 'ltc') !== false || strpos($textinput, 'บิท') !== false || strpos($textinput, 'bitcoin') !== false || strpos($textinput, 'Bitcoin') !== false ) {
                 $text = 'เช็คได้ที่นี่เลย
-http://tradersociety.org/crypto/';
+https://goo.gl/BdLmhS';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ignis') !== false || strpos($textinput, 'โบรคอาจารย์เดีย') !== false || strpos($textinput, 'โบรค อ.เดีย') !== false || strpos($textinput, 'โบรคอ.เดีย') !== false ) {
-                $text = 'Link การสมัคร
-https://ignisforex.com/';
+            if ( strpos($textinput, 'ignis') !== false || strpos($textinput, 'Ignis') !== false || strpos($textinput, 'โบรคอาจารยเดีย') !== false || strpos($textinput, 'โบรคจารยเดีย') !== false || strpos($textinput, 'โบรค อ.เดีย') !== false || strpos($textinput, 'โบรคอ.เดีย') !== false ) {
+                $text = 'วิธีการสมัคร
+https://goo.gl/EN7wAF';
                 $case = 1;
             }
 
