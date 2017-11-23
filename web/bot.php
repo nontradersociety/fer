@@ -1560,24 +1560,28 @@ if (!is_null($events['events'])) {
 
             if ( strpos($textinput, 'แก้ไม้') !== false ) {
                 $text = 'วิธีการแก้ไม้แบบปิดรวบ
+                
 https://goo.gl/cOQgUR';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ตะกร้า') !== false || strpos($textinput, 'ตระกร้า') !== false || strpos($textinput, 'finviz') !== false || strpos($textinput, 'Finviz') !== false ) {
                 $text = 'เช็คอันดับค่าเงินได้ที่นี่ ( Refresh every 1 min )
+                
 https://goo.gl/xeza18';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'Volume') !== false || strpos($textinput, 'Volumes') !== false  || strpos($textinput, 'volume') !== false ) {
                 $text = 'Volume คืออะไร ???
+                
 https://goo.gl/RN5h1f';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'Fibo') !== false || strpos($textinput, 'fibo') !== false ) {
                 $text = 'การใช้งาน Fibo Retractment
+                
 https://goo.gl/M3gbyK';
                 $case = 1;
             }
