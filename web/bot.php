@@ -1130,13 +1130,15 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'คัน') !== false ) {
-                $rand = rand(0, 3);
+                $rand = rand(0, 4);
                 if ($rand == 0) {
                     $text = 'คันมือหรอ ?? จัดขำๆไป 5 lot ไป';
                 } elseif ($rand == 1) {
                     $text = 'คันมากมั๊ย';
                 } elseif ($rand == 2) {
                     $text = 'คันไร อย่าบอกนะว่าคัน ... 5555';
+                } elseif ($rand == 3) {
+                    $text = 'จะคันอะไรบ่อยๆ';
                 } else {
                     $text = 'ใจเย็นๆ รอสัญญาณก่อน รีบเข้าเจ็บตัวได้นะ';
                 }
@@ -1585,6 +1587,13 @@ https://goo.gl/RN5h1f';
 https://goo.gl/M3gbyK';
                 $case = 1;
             }
+
+            if ( strpos($textinput, 'Gap') !== false || strpos($textinput, 'gap') !== false ) {
+                $text = 'Gap คืออะไร ???
+                
+https://goo.gl/sw6qTp';
+                $case = 1;
+            }
 /*
             if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
                 $text = 'ประเภทบัญชี
@@ -1605,7 +1614,7 @@ https://goo.gl/is6a5b';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ถอนเงิน') !== false ) {
+            if ( strpos($textinput, 'ถอนเงิน') !== false || strpos($textinput, 'withdraw') !== false ) {
                 $text = 'วิธีถอนเงินโบรค Ignis
                 
 https://goo.gl/1j56Xj';
@@ -1649,7 +1658,7 @@ http://th.weltrade.com/?r1=ipartner&r2=12411
             }
 
             if ( strpos($textinput, 'crypto') !== false || strpos($textinput, 'digital') !== false || strpos($textinput, 'btc') !== false || strpos($textinput, 'eth') !== false || strpos($textinput, 'ltc') !== false || strpos($textinput, 'บิท') !== false || strpos($textinput, 'bitcoin') !== false || strpos($textinput, 'Bitcoin') !== false ) {
-                $text = 'เช็คได้ที่นี่เลย
+                $text = 'เช็คราคาได้ที่นี่เลย
                 
 https://goo.gl/BdLmhS';
                 $case = 1;
