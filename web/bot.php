@@ -938,7 +938,7 @@ if (!is_null($events['events'])) {
                 if ($rand == 0) {
                     $text = 'กี่ lot ดี';
                 } elseif ($rand == 1) {
-                    $text = '100 Lot เลยดีมั๊ย 555';
+                    $text = 'ขำๆไป 0.01 lot';
                 } elseif ($rand == 2) {
                     $text = 'เดี๋ยวเทสตลาดซัก 1 Lot';
                 } elseif ($rand == 3) {
@@ -1130,7 +1130,7 @@ if (!is_null($events['events'])) {
             }
 
             if ( strpos($textinput, 'คัน') !== false ) {
-                $rand = rand(0, 4);
+                $rand = rand(0, 5);
                 if ($rand == 0) {
                     $text = 'คันมือหรอ ?? จัดขำๆไป 5 lot ไป';
                 } elseif ($rand == 1) {
@@ -1139,6 +1139,8 @@ if (!is_null($events['events'])) {
                     $text = 'คันไร อย่าบอกนะว่าคัน ... 5555';
                 } elseif ($rand == 3) {
                     $text = 'จะคันอะไรบ่อยๆ';
+                } elseif ($rand == 4) {
+                    $text = 'แหย่ตลาดไป 0.01 555';
                 } else {
                     $text = 'ใจเย็นๆ รอสัญญาณก่อน รีบเข้าเจ็บตัวได้นะ';
                 }
@@ -1574,7 +1576,7 @@ https://goo.gl/xeza18';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'Volume') !== false || strpos($textinput, 'Volumes') !== false  || strpos($textinput, 'volume') !== false ) {
+            if ( strpos($textinput, 'Volume') !== false || strpos($textinput, 'volume') !== false ) {
                 $text = 'Volume คืออะไร ???
                 
 https://goo.gl/RN5h1f';
@@ -1614,7 +1616,7 @@ https://goo.gl/is6a5b';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ถอนเงิน') !== false || strpos($textinput, 'withdraw') !== false ) {
+            if ( strpos($textinput, 'ถอนเงิน') !== false || strpos($textinput, 'withdraw') !== false || strpos($textinput, 'Withdraw') !== false ) {
                 $text = 'วิธีถอนเงินโบรค Ignis
                 
 https://goo.gl/1j56Xj';
@@ -1664,7 +1666,7 @@ https://goo.gl/BdLmhS';
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ignis') !== false || strpos($textinput, 'Ignis') !== false || strpos($textinput, 'โบรคอาจารยเดีย') !== false || strpos($textinput, 'โบรคจารยเดีย') !== false || strpos($textinput, 'โบรค อ.เดีย') !== false || strpos($textinput, 'โบรคอ.เดีย') !== false ) {
+            if ( strpos($textinput, 'ignis') !== false || strpos($textinput, 'ลิ้งสมัคร') !== false || strpos($textinput, 'โบรคอาจารยเดีย') !== false || strpos($textinput, 'โบรคจารยเดีย') !== false || strpos($textinput, 'โบรค อ.เดีย') !== false || strpos($textinput, 'โบรคอ.เดีย') !== false ) {
                 $text = 'วิธีการสมัครโบรค Ignis
                 
 https://goo.gl/EN7wAF';
