@@ -1596,19 +1596,19 @@ https://goo.gl/M3gbyK';
 https://goo.gl/sw6qTp';
                 $case = 1;
             }
-/*
-            if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
-                $text = 'ประเภทบัญชี
-http://th.weltrade.com/trader/type_account/';
-                $case = 1;
-            }
+            /*
+                        if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
+                            $text = 'ประเภทบัญชี
+            http://th.weltrade.com/trader/type_account/';
+                            $case = 1;
+                        }
 
-            if ( strpos($textinput, 'Spread') !== false || strpos($textinput, 'spread') !== false ) {
-                $text = 'ค่าสเปรดบัญชีประเภทต่างๆ
-http://th.weltrade.com/trader/tools/';
-                $case = 1;
-            }
-*/
+                        if ( strpos($textinput, 'Spread') !== false || strpos($textinput, 'spread') !== false ) {
+                            $text = 'ค่าสเปรดบัญชีประเภทต่างๆ
+            http://th.weltrade.com/trader/tools/';
+                            $case = 1;
+                        }
+            */
             if ( strpos($textinput, 'ฝากเงิน') !== false || strpos($textinput, 'เติมเงิน') !== false || strpos($textinput, 'deposit') !== false || strpos($textinput, 'Deposit') !== false ) {
                 $text = 'วิธีฝากเงินโบรค Ignis
                 
@@ -1647,7 +1647,7 @@ https://goo.gl/pFLgHH';
             if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
                 $text = 'ประเภทบัญชีโบรค Ignis
                 
-https://ignisforex.com/?page=Trading_Account_Types';
+https://ignisforex.com/newvers/trading-account-types/';
                 $case = 1;
             }
 
