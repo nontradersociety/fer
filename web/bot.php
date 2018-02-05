@@ -1610,44 +1610,51 @@ https://goo.gl/sw6qTp';
                         }
             */
             if ( strpos($textinput, 'ฝากเงิน') !== false || strpos($textinput, 'เติมเงิน') !== false || strpos($textinput, 'deposit') !== false || strpos($textinput, 'Deposit') !== false ) {
-                $text = 'วิธีฝากเงินโบรค Ignis
+                $text = 'วิธีฝากเงินโบรค Trading789
                 
 https://goo.gl/is6a5b';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ถอนเงิน') !== false || strpos($textinput, 'withdraw') !== false || strpos($textinput, 'Withdraw') !== false ) {
-                $text = 'วิธีถอนเงินโบรค Ignis
+                $text = 'วิธีถอนเงินโบรค Trading789
                 
 https://goo.gl/1j56Xj';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'เปิดบัญชีเทรด') !== false ) {
-                $text = 'วิธีการเปิดบัญชีสำหรับเทรดโบรค Ignis
+                $text = 'วิธีการเปิดบัญชีสำหรับเทรดโบรค Trading789
                 
 https://goo.gl/xihMFe';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'wallet') !== false || strpos($textinput, 'Wallet') !== false ) {
-                $text = 'วิธีโอนเงินจาก Wallet โบรค Ignis
+                $text = 'วิธีโอนเงินจาก Wallet โบรค Trading789
                 
 https://goo.gl/o512oJ';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ยืนยัน') !== false || strpos($textinput, 'verify') !== false || strpos($textinput, 'Verify') !== false) {
-                $text = 'วิธีการยืนยันตัวตนโบรค Ignis
+                $text = 'วิธีการยืนยันตัวตนโบรค Trading789
                 
 https://goo.gl/pFLgHH';
                 $case = 1;
             }
 
             if ( strpos($textinput, 'ประเภทบัญชี') !== false ) {
-                $text = 'ประเภทบัญชีโบรค Ignis
+                $text = 'ประเภทบัญชีโบรค Trading789
                 
-https://ignisforex.com/newvers/trading-account-types/';
+https://trading789.com/trading-account-types/';
+                $case = 1;
+            }
+
+            if ( strpos($textinput, 'promo code') !== false || strpos($textinput, 'Promo Code') !== false  ) {
+                $text = 'วิธีใช้ Promo Code
+                
+https://trading789.com/how-to-use-promo-code/';
                 $case = 1;
             }
 
