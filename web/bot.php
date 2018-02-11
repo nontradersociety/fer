@@ -807,6 +807,75 @@ No.3 กล่องขาว - สำหรับผิวสองสี-ผ�
                 $case = 1;
             }
 
+            if ( strpos($textinput, 'บอส') !== false ) {
+                $rand = rand(0, 5);
+                if ($rand == 0) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27544650_1871384622902695_6878011479622397713_n.jpg?oh=0e030f007e8568eadb76e3daaeea2f32&oe=5B1EF8BB';
+                } elseif ($rand == 1) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27331621_1861515450556279_3799625377040559973_n.jpg?oh=da67a2adb4ed0cc5221d06a6b622eb45&oe=5ADF3B47';
+                } elseif ($rand == 2) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/13007237_1081002088607623_2892395732327681880_n.jpg?oh=e391e426feee3313ce1ff7ae9f1b1fa9&oe=5B0F369F';
+                } elseif ($rand == 3) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26733699_1766140890347763_3403733336265681048_n.jpg?oh=ca88e9ada2a99c92e3b0006129ed6c39&oe=5B1F2AE6';
+                } elseif ($rand == 4) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26730923_1766140017014517_6571737114174423608_n.jpg?oh=60f2782f62dd45396cbb338066492ec0&oe=5B0A3EE8';
+                } else {
+                    $text = 'ใจปล้ำกว่าบอสเราไม่มีอีกแล้ว';
+                    $case = 1;
+                }
+                $case = 2;
+            }
+
+            if ( strpos($textinput, 'รีวิว') !== false ) {
+                $rand = rand(0, 21);
+                if ($rand == 0) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27545631_1774447369517115_8418884251711439726_n.jpg?oh=66042cda075d7f8c9e6dee1bd4a24c15&oe=5B175173';
+                } elseif ($rand == 1) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27654890_1774219029539949_1823616645746809142_n.jpg?oh=53c0d4e822391f01d9c757cd8e88dec7&oe=5B190180';
+                } elseif ($rand == 2) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27655060_1774218989539953_2603733436147044040_n.jpg?oh=31d42cd05ffd9a52b26f91b3407114a5&oe=5ADC17F9';
+                } elseif ($rand == 3) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27658101_1774218896206629_4201269419790923584_n.jpg?oh=d7e144e7baf62bd03dee90b06a24a7b1&oe=5B1E65DE';
+                } elseif ($rand == 4) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27540375_1771142156514303_5733393034142421795_n.jpg?oh=62bd772fdd124edae159ff1abd5c9faa&oe=5B0B1CA8';
+                } elseif ($rand == 5) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27545157_1771142129847639_5437998824196077925_n.jpg?oh=140128810516dcfd61ab2fb96bb0eb53&oe=5B214911';
+                } elseif ($rand == 6) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26993765_1770342563260929_954229361789278446_n.jpg?oh=2bae7675f63564886234fcc4e08bd53d&oe=5B143CDB';
+                } elseif ($rand == 7) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26907755_1768164590145393_3602005396848999715_n.jpg?oh=b539a92ea76c4dbf8c8018528beef860&oe=5AD80291';
+                } elseif ($rand == 8) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26904366_1766888866939632_6624370060383494528_n.jpg?oh=3e0a05b0a6cafecc180204f06923a5a3&oe=5ADAEED3';
+                } elseif ($rand == 9) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26730639_1762836314011554_7674905273915945868_n.jpg?oh=3d63c3088925321798363b9705bb5719&oe=5B23328B';
+                } elseif ($rand == 10) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26166157_1761494460812406_1809095597479189164_n.jpg?oh=6c360cfcf23d152b1480dc5901f2edf3&oe=5B1082F3';
+                } elseif ($rand == 11) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25552041_1757460667882452_3512858797120896757_n.jpg?oh=8d16c8ce94c961fd374a7d7bbef23b75&oe=5B1A1170';
+                } elseif ($rand == 12) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25445942_1755704134724772_5206721810411500352_n.jpg?oh=51b9bbca2c428ff9c7c25538b3359678&oe=5B17ADF1';
+                } elseif ($rand == 13) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25552269_1755703908058128_1647934888254080275_n.jpg?oh=06fe44f5f611c0d632a7fe3aa735f6be&oe=5B1CA0AB';
+                } elseif ($rand == 14) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26230326_1762882644006921_4164713745715746674_n.jpg?oh=a24ae44890b4b76812389214d58e25b4&oe=5B0F7EF8';
+                } elseif ($rand == 15) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26229483_1762882624006923_7219294025239128209_n.jpg?oh=b2780e86d3b232c32814978bc2ec70b2&oe=5B19FA4C';
+                } elseif ($rand == 16) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26231397_1763638723931313_8660548644260636181_n.jpg?oh=2463c05b2003395f2f97ce9f6256cf9b&oe=5B217D4B';
+                } elseif ($rand == 17) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26230319_1763520413943144_2312262994347262581_n.jpg?oh=1be33b851cd8c015f38a2917eb813633&oe=5B1A2231';
+                } elseif ($rand == 18) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26804509_1764223370539515_7766593739629300345_n.jpg?oh=13ef93fd8f0bda1e8cff132645e442a0&oe=5B122F0F';
+                } elseif ($rand == 19) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26734522_1765018227126696_6456629715175832879_n.jpg?oh=940e171904811948114c22d673fba7ab&oe=5B223E49';
+                } elseif ($rand == 20) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26815444_1766888886939630_2133701583660041873_n.jpg?oh=25d761ea00537686d1427a04f4bd0423&oe=5ADBA6C0';
+                } elseif ($rand == 21) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27540483_1771820736446445_3785278193364656321_n.jpg?oh=63f6c225008c8936995d504534c74642&oe=5B07E24C';
+                }
+                $case = 2;
+            }
+
             if ( strpos($textinput, 'สวัสดี') !== false ) {
                 $rand = rand(0,2);
                 if ($rand == 0) {
