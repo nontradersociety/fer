@@ -901,7 +901,87 @@ No.3 กล่องขาว - สำหรับผิวสองสี-ผ�
                 }
             }
 
-            if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false ) {
+            if ( strpos($textinput, 'บอทน่ารัก') !== false ) {
+                $rand = rand(0,4);
+                if ($rand == 0) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "100"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 1) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "119"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 2) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "410"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 3) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "407"
+                    ];
+                    $case = 4;
+                } else {
+                    $text = 'บอกแบบนี้เขินเลย 555';
+                    $case = 1;
+                }
+            }
+
+            if ( strpos($textinput, 'บอทขี้เหล่') !== false || strpos($textinput, 'บอทไม่น่ารัก') !== false || strpos($textinput, 'บอทน่าเกลียด') !== false ) {
+                $rand = rand(0,4);
+                if ($rand == 0) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "6"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 1) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "1",
+                        "stickerId" => "16"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 2) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "19"
+                    ];
+                    $case = 4;
+                } elseif ($rand == 3) {
+                    $array = [
+                        "id" => "325708",
+                        "type" => "sticker",
+                        "packageId" => "2",
+                        "stickerId" => "519"
+                    ];
+                    $case = 4;
+                } else {
+                    $text = 'คุณนั่นแหละ :p';
+                    $case = 1;
+                }
+            }
+
+            if ( strpos($textinput, 'ฮ่าๆๆ') !== false || strpos($textinput, '555') !== false || strpos($textinput, 'ฮา') !== false || strpos($textinput, 'ขำ') !== false || strpos($textinput, 'ก๊าก') !== false ) {
                 $rand = rand(0, 4);
                 if ($rand == 0) {
                     $array = [
