@@ -70,6 +70,7 @@ if (!is_null($events['events'])) {
                 $text = $message;
                 $case = 1;
             }
+
             if (strpos($textinput, 'ถ่ายทอด') !== false || strpos($textinput, 'ช่อง') !== false) {
                 $message = '
 ';
@@ -812,7 +813,7 @@ No.3 กล่องขาว - สำหรับผิวสองสี-ผ�
             }
 
             if ( strpos($textinput, 'บอส') !== false ) {
-                $rand = rand(0, 5);
+                $rand = rand(0, 10);
                 if ($rand == 0) {
                     $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27544650_1871384622902695_6878011479622397713_n.jpg?oh=0e030f007e8568eadb76e3daaeea2f32&oe=5B1EF8BB';
                 } elseif ($rand == 1) {
@@ -823,7 +824,17 @@ No.3 กล่องขาว - สำหรับผิวสองสี-ผ�
                     $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26733699_1766140890347763_3403733336265681048_n.jpg?oh=ca88e9ada2a99c92e3b0006129ed6c39&oe=5B1F2AE6';
                 } elseif ($rand == 4) {
                     $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26730923_1766140017014517_6571737114174423608_n.jpg?oh=60f2782f62dd45396cbb338066492ec0&oe=5B0A3EE8';
-                } else {
+                } elseif ($rand == 5) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27973376_1888049611236196_6901525281103716799_n.jpg?oh=5b0bfc6bd14db643d236b197956719e4&oe=5B0B3B20';
+                } elseif ($rand == 6) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/22788832_1738736032834222_7138933060220393527_n.jpg?oh=5035326b22a31288bf29a0dad0c0440e&oe=5B1D692A';
+                } elseif ($rand == 7) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/302360_419249134782925_1527216099_n.jpg?oh=8c827410b293da8ebbe97374d1e008b0&oe=5B08E621';
+                } elseif ($rand == 8) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/36559_364391663602006_884651032_n.jpg?oh=2544e057668671220ef35515fec0faab&oe=5B17D9DF';
+                } elseif ($rand == 9) {
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/1013782_554575474583623_1809958430_n.jpg?oh=89cdedc19966711335ea4564310f7639&oe=5B1D086B';
+                }  else {
                     $text = 'ใจปล้ำกว่าบอสเราไม่มีอีกแล้ว';
                     $case = 1;
                 }
