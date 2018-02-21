@@ -452,35 +452,35 @@ if (!is_null($events['events'])) {
             if ( strpos($textinput, 'หิว') !== false ) {
                 $rand = rand(0, 15);
                 if ($rand == 0) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22491697_1693628180656202_116602565607057498_n.jpg?oh=9565274767ecf25921e9b5c119b91aae&oe=5AABA6F3';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27971948_1818542621498090_3134464236976117527_n.jpg?oh=c8123f775d1564fa9cb41aef5583e610&oe=5B1C1743';
                 } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22366558_1688105804541773_201235090864310341_n.jpg?oh=b95794045ae1d1b8d1a3ce796e054771&oe=5A7BAD1E';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27867620_1815337965151889_5350018651032137830_n.jpg?oh=61d10625fb2aca66b9704414de86373e&oe=5B1DDF86';
                 } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22448233_1687484741270546_8496100566807712587_n.jpg?oh=4132f8fe2923759030b670a2c3a46d8d&oe=5A7C202E';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27972889_1815037425181943_3100505020411309469_n.jpg?oh=70f2f77494ea0eabc01c282ac71c73eb&oe=5B21D29B';
                 } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22221681_1684095844942769_8348154018004486401_n.jpg?oh=36b05393306f7fd2e85832cbf90994df&oe=5A742391';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27971546_1814830915202594_1725759710889326744_n.jpg?oh=54604e6bee351f1e3966e35c9e0aed1a&oe=5B0E669F';
                 } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22228307_1684095584942795_6351904036547807229_n.jpg?oh=922f2b691b0a52cbd40492a983194977&oe=5A6D4D2D';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27459146_1804832476202438_8014537451850746980_n.jpg?oh=aa59fc54a9ee1f1910c9e6987e020a26&oe=5B157CA9';
                 } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22310386_1684095728276114_4065027234226412289_n.jpg?oh=5a4425049b1e9c890aaf4f92a55de51d&oe=5A788165';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26231424_1779288775423475_8054943813766556845_n.jpg?oh=dcc3040110f293cbec2b430206a84ad7&oe=5B221357';
                 } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/22090051_1681642531854767_6579216749155424623_n.jpg?oh=40117d0ac84436fe501c716ac29f6ff8&oe=5AA7D961';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26734524_1778390582179961_4791974254997596730_n.jpg?oh=cd16db02d417a58d79df41ddee1e2f65&oe=5B1530B6';
                 } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/21557506_1666668403352180_1244606924793551897_n.jpg?oh=e95737f870614d216e5e61921bf7110e&oe=5A6F0AAC';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26196254_1777251192293900_795575755694987765_n.jpg?oh=dd63685c84c8c4fd229fa0408c7a7851&oe=5B015D09';
                 } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/20994193_1645770805441940_5389767377977641457_n.jpg?oh=a692bfce2f4ed16b03692a4f36ba3f25&oe=5A6D76F5';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26730696_1776416525710700_4803894715913006789_n.jpg?oh=0dac0973873c1b119dc5ca7dea0abb93&oe=5B0FED59';
                 } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/20228587_1606627489356272_6001114156515142436_n.jpg?oh=bb9dcd33d0da9af483fb976e56e9f13d&oe=5AB02565';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26055814_1765491353469884_3641913322482277572_n.jpg?oh=5252fa822918201e56a7d2ae5635ae94&oe=5B059435';
                 } elseif ($rand == 10) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/19511608_1590359287649759_3473750033971233852_n.jpg?oh=f91543cfe54ec64d74e4b7c7056aa968&oe=5A71C53B';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25594380_1762768060408880_8805544669051389136_n.jpg?oh=14036db9e26e86c0bbb806990172053f&oe=5B094F81';
                 } elseif ($rand == 11) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t31.0-8/19143329_1571294106222944_9144120841680281456_o.jpg?oh=1bde635f51131c7e4d1eadad594c7dac&oe=5AAF0D93';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25594263_1761647477187605_9187118063705898636_n.jpg?oh=b0c3c9e1f3135f81058926553fc51274&oe=5B1F0B30';
                 } elseif ($rand == 12) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/18765947_1554005964618425_1041047060437650651_n.jpg?oh=482645031f762acb09934cb9f901d28e&oe=5A7523B6';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t31.0-8/23826338_1731099396909080_2635986154995136501_o.jpg?oh=65976d3ec1a647dbccae9a9b5fe8eec2&oe=5B18597F';
                 } elseif ($rand == 13) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/18425365_1539811952704493_6081567633266493650_n.jpg?oh=447dfb854b4682f34f774908847a333a&oe=5AAE6FC2';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/23172754_1709825359036484_154731462704399796_n.jpg?oh=f5e64d8eef6b2f74a234e421c9a32f35&oe=5B209BE4';
                 } elseif ($rand == 14) {
-                    $img = 'https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/15822839_1398062340212789_2540425215817570183_n.jpg?oh=96a6bfca75fb58da82a654893097e9c9&oe=5AAF0776';
+                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/23130847_1709356149083405_8808444705405691823_n.jpg?oh=4ab07c658cc0a9decb5a8866c29513dd&oe=5B4E2221';
                 } else {
                     $text = 'กินอะไรกันดีละ';
                     $case = 1;
@@ -575,7 +575,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'ฝันดี') !== false || strpos($textinput, 'ฝานดี') !== false ) {
+            if ( strpos($textinput, 'ฝันดี') !== false || strpos($textinput, 'ฝานดี') !== false || strpos($textinput, 'นอน') !== false ) {
                 $rand = rand(0, 6);
                 if ($rand == 0) {
                     $text = 'ฝันดีนะครับ';
@@ -810,35 +810,6 @@ No.3 กล่องขาว - สำหรับผิวสองสี-ผ�
  SALICYLIC ACID ,
  CI77492,CI77491,CI77499';
                 $case = 1;
-            }
-
-            if ( strpos($textinput, 'บอส') !== false ) {
-                $rand = rand(0, 10);
-                if ($rand == 0) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27544650_1871384622902695_6878011479622397713_n.jpg?oh=0e030f007e8568eadb76e3daaeea2f32&oe=5B1EF8BB';
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27331621_1861515450556279_3799625377040559973_n.jpg?oh=da67a2adb4ed0cc5221d06a6b622eb45&oe=5ADF3B47';
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/13007237_1081002088607623_2892395732327681880_n.jpg?oh=e391e426feee3313ce1ff7ae9f1b1fa9&oe=5B0F369F';
-                } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26733699_1766140890347763_3403733336265681048_n.jpg?oh=ca88e9ada2a99c92e3b0006129ed6c39&oe=5B1F2AE6';
-                } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26730923_1766140017014517_6571737114174423608_n.jpg?oh=60f2782f62dd45396cbb338066492ec0&oe=5B0A3EE8';
-                } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27973376_1888049611236196_6901525281103716799_n.jpg?oh=5b0bfc6bd14db643d236b197956719e4&oe=5B0B3B20';
-                } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/22788832_1738736032834222_7138933060220393527_n.jpg?oh=5035326b22a31288bf29a0dad0c0440e&oe=5B1D692A';
-                } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/302360_419249134782925_1527216099_n.jpg?oh=8c827410b293da8ebbe97374d1e008b0&oe=5B08E621';
-                } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/36559_364391663602006_884651032_n.jpg?oh=2544e057668671220ef35515fec0faab&oe=5B17D9DF';
-                } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/1013782_554575474583623_1809958430_n.jpg?oh=89cdedc19966711335ea4564310f7639&oe=5B1D086B';
-                }  else {
-                    $text = 'ใจปล้ำกว่าบอสเราไม่มีอีกแล้ว';
-                    $case = 1;
-                }
-                $case = 2;
             }
 
             if ( strpos($textinput, 'รีวิว') !== false ) {
