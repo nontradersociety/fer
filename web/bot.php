@@ -452,35 +452,35 @@ if (!is_null($events['events'])) {
             if ( strpos($textinput, 'หิว') !== false ) {
                 $rand = rand(0, 15);
                 if ($rand == 0) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27971948_1818542621498090_3134464236976117527_n.jpg?oh=c8123f775d1564fa9cb41aef5583e610&oe=5B1C1743';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/41666377_2086524668033216_2962612296968306688_n.jpg?_nc_cat=111&oh=746e376b794035f878a69867f29a7966&oe=5C2C1300';
                 } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27867620_1815337965151889_5350018651032137830_n.jpg?oh=61d10625fb2aca66b9704414de86373e&oe=5B1DDF86';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/41406711_2081436165208733_4081266241795260416_n.jpg?_nc_cat=106&oh=b6fb4a4e7f45286759573a552c2d243e&oe=5C60CF4D';
                 } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27972889_1815037425181943_3100505020411309469_n.jpg?oh=70f2f77494ea0eabc01c282ac71c73eb&oe=5B21D29B';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/41452159_2079025628783120_7944850643242450944_n.jpg?_nc_cat=104&oh=479d30af7731d26e3f4521451fbfb601&oe=5C2B9C9C';
                 } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27971546_1814830915202594_1725759710889326744_n.jpg?oh=54604e6bee351f1e3966e35c9e0aed1a&oe=5B0E669F';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/41302178_2079025525449797_7889831734223568896_n.jpg?_nc_cat=102&oh=c7c0c7d8bf043c093ee4932472f41758&oe=5C34002F';
                 } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27459146_1804832476202438_8014537451850746980_n.jpg?oh=aa59fc54a9ee1f1910c9e6987e020a26&oe=5B157CA9';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/40526229_2071719922847024_3964923128299126784_n.jpg?_nc_cat=109&oh=04162ceabdbe5ed378702713939950b1&oe=5C607249';
                 } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26231424_1779288775423475_8054943813766556845_n.jpg?oh=dcc3040110f293cbec2b430206a84ad7&oe=5B221357';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/40567826_2069165536435796_6183874293370191872_n.jpg?_nc_cat=103&oh=de064609bcfc31c305de6ffe790fcdf5&oe=5C5C592D';
                 } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26734524_1778390582179961_4791974254997596730_n.jpg?oh=cd16db02d417a58d79df41ddee1e2f65&oe=5B1530B6';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/40410005_2069164666435883_7752830476573736960_n.jpg?_nc_cat=102&oh=3cccf5393942e46dffac2aab49d6b08c&oe=5C2F6AC5';
                 } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26196254_1777251192293900_795575755694987765_n.jpg?oh=dd63685c84c8c4fd229fa0408c7a7851&oe=5B015D09';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/40319026_2067964449889238_1581670007954210816_n.jpg?_nc_cat=109&oh=17413c091570a528b0334364f971ac2e&oe=5C1AA50B';
                 } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26730696_1776416525710700_4803894715913006789_n.jpg?oh=0dac0973873c1b119dc5ca7dea0abb93&oe=5B0FED59';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/40209204_2063188067033543_133535176092286976_n.jpg?_nc_cat=111&oh=8bb95db096cab227572c43c9840cf539&oe=5C28176C';
                 } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26055814_1765491353469884_3641913322482277572_n.jpg?oh=5252fa822918201e56a7d2ae5635ae94&oe=5B059435';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/37594928_2003893716296312_1694883932832530432_n.jpg?_nc_cat=105&oh=c4efcff7034c783726ef08ad739410e5&oe=5C1983F8';
                 } elseif ($rand == 10) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25594380_1762768060408880_8805544669051389136_n.jpg?oh=14036db9e26e86c0bbb806990172053f&oe=5B094F81';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/37598012_2003292043023146_2180520021044756480_n.jpg?_nc_cat=111&oh=2c2e99094f813647c371eee26f2d21c7&oe=5C2B4656';
                 } elseif ($rand == 11) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25594263_1761647477187605_9187118063705898636_n.jpg?oh=b0c3c9e1f3135f81058926553fc51274&oe=5B1F0B30';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/37606793_2001575799861437_7539845157194039296_n.jpg?_nc_cat=107&oh=106c7767f0e86719ceb7de363407b65c&oe=5C24AC9D';
                 } elseif ($rand == 12) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t31.0-8/23826338_1731099396909080_2635986154995136501_o.jpg?oh=65976d3ec1a647dbccae9a9b5fe8eec2&oe=5B18597F';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/36814450_1981013961917621_365646452992507904_n.jpg?_nc_cat=105&oh=bb32f3b611aedae38b091e825e55b947&oe=5C1AFEAD';
                 } elseif ($rand == 13) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/23172754_1709825359036484_154731462704399796_n.jpg?oh=f5e64d8eef6b2f74a234e421c9a32f35&oe=5B209BE4';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/36617498_1976721709013513_1975849762645082112_n.jpg?_nc_cat=105&oh=5bddc043627a25e7c408c69938dd1eea&oe=5C1901ED';
                 } elseif ($rand == 14) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/23130847_1709356149083405_8808444705405691823_n.jpg?oh=4ab07c658cc0a9decb5a8866c29513dd&oe=5B4E2221';
+                    $img = 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/36580724_1974934392525578_6851075730269274112_n.jpg?_nc_cat=101&oh=77098cd3dd95344087cdfe111c6971a5&oe=5C3093C3';
                 } else {
                     $text = 'กินอะไรกันดีละ';
                     $case = 1;
@@ -784,12 +784,14 @@ if (!is_null($events['events'])) {
 ⠀
 ขนาด 12 กรัม ราคา 399฿
 ⠀
-เลขจดแจ้ง : 10-1-6010058047
+เลขจดแจ้ง : 10-1-6100018488
 ⠀
-No.1+ กล่องชั่วคราว กล่องจริงสีขาวชมพู - สำหรับผิวขาวซีด ไร้ริ้วรอย
-No.1 กล่องสีดำ - สำหรับผิวขาว
-No.2 กล่องชมพู - สำหรับผิวขาวเหลือง
-No.3 กล่องขาว - สำหรับผิวสองสี-ผิวคล้ำ
+No.Pกล่องขาวชมพู สำหรับผิวมากกก
+No.Lกล่องทองขาวออร่า
+No.1 กล่องสีดำ สำหรับผิวขาว
+No.2 กล่องชมพู  สำหรับผิวขาวเหลือง
+No.3 กล่องขาว สำหรับผิวสองสี-ผิวคล้ำ
+No.4กล่องสีชมพูลายริ้ว สำหรับสาวผิวเข้ม
 ⠀
 คุณสมบัติพิเศษ No.Pink เอาไปผสมได้ทุกสี กลางคืนเหมือนมีประกายทำบัตออน-ไฮไลต์ได้';
                 $case = 1;
@@ -813,53 +815,8 @@ No.3 กล่องขาว - สำหรับผิวสองสี-ผ�
             }
 
             if ( strpos($textinput, 'รีวิว') !== false ) {
-                $rand = rand(0, 21);
-                if ($rand == 0) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27545631_1774447369517115_8418884251711439726_n.jpg?oh=66042cda075d7f8c9e6dee1bd4a24c15&oe=5B175173';
-                } elseif ($rand == 1) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27654890_1774219029539949_1823616645746809142_n.jpg?oh=53c0d4e822391f01d9c757cd8e88dec7&oe=5B190180';
-                } elseif ($rand == 2) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27655060_1774218989539953_2603733436147044040_n.jpg?oh=31d42cd05ffd9a52b26f91b3407114a5&oe=5ADC17F9';
-                } elseif ($rand == 3) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27658101_1774218896206629_4201269419790923584_n.jpg?oh=d7e144e7baf62bd03dee90b06a24a7b1&oe=5B1E65DE';
-                } elseif ($rand == 4) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27540375_1771142156514303_5733393034142421795_n.jpg?oh=62bd772fdd124edae159ff1abd5c9faa&oe=5B0B1CA8';
-                } elseif ($rand == 5) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27545157_1771142129847639_5437998824196077925_n.jpg?oh=140128810516dcfd61ab2fb96bb0eb53&oe=5B214911';
-                } elseif ($rand == 6) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26993765_1770342563260929_954229361789278446_n.jpg?oh=2bae7675f63564886234fcc4e08bd53d&oe=5B143CDB';
-                } elseif ($rand == 7) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26907755_1768164590145393_3602005396848999715_n.jpg?oh=b539a92ea76c4dbf8c8018528beef860&oe=5AD80291';
-                } elseif ($rand == 8) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26904366_1766888866939632_6624370060383494528_n.jpg?oh=3e0a05b0a6cafecc180204f06923a5a3&oe=5ADAEED3';
-                } elseif ($rand == 9) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26730639_1762836314011554_7674905273915945868_n.jpg?oh=3d63c3088925321798363b9705bb5719&oe=5B23328B';
-                } elseif ($rand == 10) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26166157_1761494460812406_1809095597479189164_n.jpg?oh=6c360cfcf23d152b1480dc5901f2edf3&oe=5B1082F3';
-                } elseif ($rand == 11) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25552041_1757460667882452_3512858797120896757_n.jpg?oh=8d16c8ce94c961fd374a7d7bbef23b75&oe=5B1A1170';
-                } elseif ($rand == 12) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25445942_1755704134724772_5206721810411500352_n.jpg?oh=51b9bbca2c428ff9c7c25538b3359678&oe=5B17ADF1';
-                } elseif ($rand == 13) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/25552269_1755703908058128_1647934888254080275_n.jpg?oh=06fe44f5f611c0d632a7fe3aa735f6be&oe=5B1CA0AB';
-                } elseif ($rand == 14) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26230326_1762882644006921_4164713745715746674_n.jpg?oh=a24ae44890b4b76812389214d58e25b4&oe=5B0F7EF8';
-                } elseif ($rand == 15) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26229483_1762882624006923_7219294025239128209_n.jpg?oh=b2780e86d3b232c32814978bc2ec70b2&oe=5B19FA4C';
-                } elseif ($rand == 16) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26231397_1763638723931313_8660548644260636181_n.jpg?oh=2463c05b2003395f2f97ce9f6256cf9b&oe=5B217D4B';
-                } elseif ($rand == 17) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26230319_1763520413943144_2312262994347262581_n.jpg?oh=1be33b851cd8c015f38a2917eb813633&oe=5B1A2231';
-                } elseif ($rand == 18) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26804509_1764223370539515_7766593739629300345_n.jpg?oh=13ef93fd8f0bda1e8cff132645e442a0&oe=5B122F0F';
-                } elseif ($rand == 19) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26734522_1765018227126696_6456629715175832879_n.jpg?oh=940e171904811948114c22d673fba7ab&oe=5B223E49';
-                } elseif ($rand == 20) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/26815444_1766888886939630_2133701583660041873_n.jpg?oh=25d761ea00537686d1427a04f4bd0423&oe=5ADBA6C0';
-                } elseif ($rand == 21) {
-                    $img = 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/27540483_1771820736446445_3785278193364656321_n.jpg?oh=63f6c225008c8936995d504534c74642&oe=5B07E24C';
-                }
-                $case = 2;
+                $text = 'ใครอยากได้รีวิวเข้าไปดูได้ที่ Album รูปนะครับ';
+                $case = 1;
             }
 
             if ( strpos($textinput, 'สวัสดี') !== false ) {
