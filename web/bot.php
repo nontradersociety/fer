@@ -71,7 +71,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if (strpos($textinput, 'ถ่ายทอด') !== false || strpos($textinput, 'ช่อง') !== false) {
+            if ( strpos($textinput, 'ถ่ายทอด') !== false ) {
                 $message = '
 ';
                 $html = file_get_contents('http://livescore.siamsport.co.th/widget/live_table');
@@ -107,128 +107,6 @@ if (!is_null($events['events'])) {
                 $message = strip_tags($message);
                 $text = $message;
                 $case = 1;
-            }
-
-            if (strpos($textinput, 'สาว') !== false) {
-                $rand = rand(1, 29);
-                switch ($rand) {
-                    case 1:
-                        $text = 'https://www.instagram.com/nookzii/';
-                        $case = 1;
-                        break;
-                    case 2:
-                        $text = 'https://www.instagram.com/bunny_ployfon/';
-                        $case = 1;
-                        break;
-                    case 3:
-                        $text = 'https://www.instagram.com/bamzilla/';
-                        $case = 1;
-                        break;
-                    case 4:
-                        $text = 'https://www.instagram.com/nannyy/';
-                        $case = 1;
-                        break;
-                    case 5:
-                        $text = 'https://www.instagram.com/alexz_sarocha/';
-                        $case = 1;
-                        break;
-                    case 6:
-                        $text = 'https://www.instagram.com/berryying/';
-                        $case = 1;
-                        break;
-                    case 7:
-                        $text = 'https://www.instagram.com/_nungnink_/';
-                        $case = 1;
-                        break;
-                    case 8:
-                        $text = 'https://www.instagram.com/beth_lookgade/';
-                        $case = 1;
-                        break;
-                    case 9:
-                        $text = 'https://www.instagram.com/elle_elin/';
-                        $case = 1;
-                        break;
-                    case 10:
-                        $text = 'https://www.instagram.com/fearythanyarat/';
-                        $case = 1;
-                        break;
-                    case 11:
-                        $text = 'https://www.instagram.com/bunny.fuengfah/';
-                        $case = 1;
-                        break;
-                    case 12:
-                        $text = 'https://www.instagram.com/n_kang_nung/';
-                        $case = 1;
-                        break;
-                    case 13:
-                        $text = 'https://www.instagram.com/dejarvu/';
-                        $case = 1;
-                        break;
-                    case 14:
-                        $text = 'https://www.instagram.com/wpearita/';
-                        $case = 1;
-                        break;
-                    case 15:
-                        $text = 'https://www.instagram.com/miikuskie/';
-                        $case = 1;
-                        break;
-                    case 16:
-                        $text = 'https://www.instagram.com/cutegirlthailand/';
-                        $case = 1;
-                        break;
-                    case 17:
-                        $text = 'https://www.instagram.com/jomjamspch/';
-                        $case = 1;
-                        break;
-                    case 18:
-                        $text = 'https://www.instagram.com/nuchcheeber/';
-                        $case = 1;
-                        break;
-                    case 19:
-                        $text = 'https://www.instagram.com/skykikijung/';
-                        $case = 1;
-                        break;
-                    case 20:
-                        $text = 'https://www.instagram.com/crystal_girls_/';
-                        $case = 1;
-                        break;
-                    case 21:
-                        $text = 'https://www.instagram.com/donutacm/';
-                        $case = 1;
-                        break;
-                    case 22:
-                        $text = 'https://www.instagram.com/jaaeynano/';
-                        $case = 1;
-                        break;
-                    case 23:
-                        $text = 'https://www.instagram.com/fhm_ohly/';
-                        $case = 1;
-                        break;
-                    case 24:
-                        $text = 'https://www.instagram.com/padpudd/';
-                        $case = 1;
-                        break;
-                    case 25:
-                        $text = 'https://www.instagram.com/fhm_tanya/';
-                        $case = 1;
-                        break;
-                    case 26:
-                        $img = 'https://scontent-kul1-1.xx.fbcdn.net/v/t1.0-0/p350x350/16265186_10210453831156519_7957454316529614986_n.jpg?oh=4cff46558aaa4064c6cbb740a5ba2508&oe=591C5013';
-                        $case = 2;
-                        break;
-                    case 27:
-                        $img = 'https://scontent-kul1-1.xx.fbcdn.net/v/t1.0-9/16142628_10210453831076517_6780299885516424767_n.jpg?oh=485e0dd80b787a79ceb299be998ac152&oe=58FFF81B';
-                        $case = 2;
-                        break;
-                    case 28:
-                        $img = 'https://scontent-kul1-1.xx.fbcdn.net/v/t1.0-9/16195768_10210453831116518_1834306896464001100_n.jpg?oh=096fdcfcf742753b5a3468281ebac8b3&oe=5909F9D0';
-                        $case = 2;
-                        break;
-                    case 29:
-                        $img = 'https://scontent-kul1-1.xx.fbcdn.net/v/t1.0-9/16143305_10210453831516528_4406585939313454026_n.jpg?oh=1d266be09bf56aadc21ea57df61a9048&oe=594ADC78';
-                        $case = 2;
-                        break;
-                }
             }
 
             if (strpos($textinput, 'ขอเพลง') !== false) {
@@ -777,7 +655,7 @@ if (!is_null($events['events'])) {
                 $case = 1;
             }
 
-            if ( strpos($textinput, 'fercushion') !== false || strpos($textinput, 'Fercushion') !== false  || strpos($textinput, 'Fer cushion') !== false || strpos($textinput, 'fer cushion') !== false ) {
+            if ( strpos($textinput, 'fercushion') !== false ) {
                 $text = '🔆 FER CUSHION 🔆
 ⠀
 เมคอัพผสมรองพื้นครีมบำรุงและสารกันแดด SPF50PA+++ เนื้อแมทควบคุมความมันด้วยสูตรออยฟรีและ Argan oil ช่วยปกปิดริ้วรอยและจุดด่างดำ ช่วยกระจายแสงบนใบหน้า ควบคุมความมัน ลบเลือนริ้วรอยและเติมเต็มร่องลึกด้วยส่วนผสมจากธรรมชาติ  กันน้ำกันเหงื่อ99% ไม่เยิ้มระหว่างวัน ผลิตจาก พืชซินนาม่อน และ ผสานกันแดดระดับนาโนยูวี มีBHA ช่วยลดการอักเสบของผิวและลดสาเหตุของการเกิดสิวอุดตัน
